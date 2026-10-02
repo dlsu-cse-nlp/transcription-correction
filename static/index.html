@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Transcript review</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="content">
+      <h1>Manual correction for audio transcriptions</h1>
+      <p>Python server root is at: <span id="root"></span></p>
+
+      <p>
+        Generally speaking, follow this procedure:
+        <ol>
+          <li>Check first with <a href="https://www.tagalog.com">Tagalog.com</a>, which includes spellings of the word with diacritics, which should let you see where stress should be.</li>
+          <li>Check on Wiktionary to see if it includes stress-marked IPA for the word.</li>
+        </ol>
+      </p>
+
+      <section id="setup" class="card">
+        <fieldset>
+          <legend>Manifest</legend>
+          <input
+            type="text"
+            id="mpath"
+            list="files"
+            placeholder="path/to/manifest.json (relative to the server root)"
+            autocomplete="off"
+          />
+          <p class="hint">
+            Or pick a file from your computer:
+            <input type="file" id="mfile" accept=".json,.jsonl,.txt" />
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Progress file</legend>
+          <div class="opt">
+            <input type="radio" name="mode" id="m-new" value="new" checked />
+            <label for="m-new">Start a new file</label>
+            <input
+              type="text"
+              id="npath"
+              aria-label="New progress file name"
+              placeholder="manifest_reviewed.jsonl"
+              autocomplete="off"
+            />
+          </div>
+          <div class="opt">
+            <input type="radio" name="mode" id="m-res" value="resume" />
+            <label for="m-res">Resume from</label>
+            <input
+              type="text"
+              id="rpath"
+              list="files"
+              aria-label="Existing progress file"
+              placeholder="existing progress file"
+              autocomplete="off"
+            />
+          </div>
+          <p class="hint">
+            Entries already in the progress file are skipped. New results are
+            added to it one entry at a time.
+          </p>
+        </fieldset>
+        <br />
+        <datalist id="files"></datalist>
+        <button class="primary" id="start">Start reviewing</button>
+        <div class="error hidden" id="setup-err" role="alert"></div>
+      </section>
+
+      <section id="review" class="hidden">
+        <hr />
+        <div class="card">
+          <div class="bar">
+            <span class="count" id="count"></span>
+            (<span class="hint" id="meta"></span>)
+          </div>
+          <progress id="prog" value="0" max="1"></progress>
+        </div>
+        <hr />
+        <div class="card">
+          <div class="path" id="path"></div>
+          <div class="error hidden" id="noaudio" role="alert"></div>
+          <audio id="au" controls preload="auto"></audio>
+          <label class="autoplay"
+            ><input type="checkbox" id="autoplay" checked /> Play
+            automatically</label
+          >
+        </div>
+        <hr />
+        <div class="card">
+          <label for="text">Transcription</label>
+          <textarea
+            id="text"
+            rows="3"
+            lang="fil"
+            spellcheck="false"
+            autocomplete="off"
+          ></textarea>
+          <div class="orig hidden" id="orig"></div>
+          <div class="row">
+            <button id="back">Back</button>
+            <button id="reset" class="hidden">Reset to original</button>
+            <span class="grow"></span>
+            <span class="edited hidden" id="edited">Edited</span>
+            <button class="primary" id="save">Save and next</button>
+          </div>
+          <div class="error hidden" id="msg" role="alert"></div>
+          <hr />
+          <p class="hint">
+            <kbd>Enter</kbd> save and next &nbsp; <kbd>Alt</kbd>+<kbd>P</kbd>
+            play / pause &nbsp; <kbd>Alt</kbd>+<kbd>←</kbd> back
+          </p>
+        </div>
+      </section>
+
+      <section id="done" class="card hidden">
+        <h1>All entries reviewed</h1>
+        <p id="done-text"></p>
+        <button id="done-back">Back to last entry</button>
+      </section>
+    </main>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

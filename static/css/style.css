@@ -1,0 +1,42 @@
+.hidden {
+  display: none !important;
+}
+
+.error {
+  color: crimson;
+}
+
+textarea,
+#orig {
+  font-family:
+    "Charis SIL", "Doulos SIL", "Gentium Plus", "Noto Serif", "DejaVu Serif",
+    serif !important;
+}
+
+textarea {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+audio {
+  width: 100%;
+}
+
+body {
+  font-family: "Arial";
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 800px;
+}
+
+#root, #path, #meta {
+  font-family: monospace;
+}
+
+kbd {
+  border: 1px solid gray;
+  padding: 5px;
+}
