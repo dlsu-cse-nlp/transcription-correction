@@ -1,0 +1,191 @@
+.hidden {
+  display: none !important;
+}
+
+.error {
+  color: crimson;
+}
+
+textarea,
+#orig {
+  font-family:
+    "Charis SIL", "Doulos SIL", "Gentium Plus", "Noto Serif", "DejaVu Serif",
+    serif !important;
+}
+
+textarea {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+audio {
+  width: 100%;
+}
+
+body {
+  font-family: "Arial";
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 800px;
+}
+
+#root, #path, #meta {
+  font-family: monospace;
+}
+
+kbd {
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+/* ---- layout ---- */
+.content {
+  width: 100%;
+  max-width: 960px;
+}
+
+details#guide {
+  margin: 0.5rem 0 1rem;
+}
+
+details#guide summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ---- waveform / spectrogram ---- */
+.wave {
+  position: relative;
+  margin-top: 0.5rem;
+  cursor: crosshair;
+  user-select: none;
+  box-shadow: 0 0 0 1px #bbb;
+  background: #fff;
+}
+
+.wave canvas,
+#wv-ruler {
+  display: block;
+  width: 100%;
+}
+
+#wv-wave {
+  height: 70px;
+  border-bottom: 1px solid #ddd;
+}
+
+#wv-spec {
+  height: 150px;
+}
+
+#wv-ruler {
+  height: 18px;
+}
+
+.wv-sel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 200, 0, 0.28);
+  border-left: 1px solid #c90;
+  border-right: 1px solid #c90;
+  pointer-events: none;
+}
+
+.wv-head {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  border-left: 2px solid crimson;
+  pointer-events: none;
+}
+
+.wv-msg {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  pointer-events: none;
+}
+
+/* ---- controls ---- */
+.tools,
+.palette-row,
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.group {
+  display: inline-flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.group button.active {
+  background: #2a5db0;
+  color: #fff;
+  border-color: #2a5db0;
+}
+
+.grow {
+  flex: 1;
+}
+
+button.sym {
+  font-family: "Charis SIL", "Doulos SIL", "Gentium Plus", "Noto Serif", "DejaVu Serif", serif;
+  font-size: 1.15rem;
+  min-width: 2.4rem;
+  padding: 0.15rem 0.4rem;
+}
+
+button.sym small {
+  font-family: Arial, sans-serif;
+  font-size: 0.65rem;
+  color: #777;
+  margin-left: 0.25rem;
+}
+
+/* ---- diff vs original ---- */
+.diffrow {
+  margin: 0.4rem 0;
+  font-size: 1.25rem;
+  font-family: "Charis SIL", "Doulos SIL", "Gentium Plus", "Noto Serif", "DejaVu Serif", serif;
+  white-space: pre-wrap;
+}
+
+.diffrow .hint {
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+}
+
+#diff del {
+  background: #fdd;
+  color: #a00;
+  text-decoration: line-through;
+}
+
+#diff ins {
+  background: #cfc;
+  color: #060;
+  text-decoration: none;
+}
+
+.edited {
+  color: #a60;
+}
+
+.keys kbd {
+  padding: 1px 4px;
+  margin: 0 1px;
+}

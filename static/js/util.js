@@ -17,3 +17,22 @@ export function setError(el, message) {
   el.textContent = message;
   el.classList.toggle("hidden", !message);
 }
+
+// Small persisted preferences (speed, loop, ...). Fails silently if storage is unavailable.
+export const pref = {
+  get(name, fallback) {
+    try {
+      const v = localStorage.getItem(`pc.${name}`);
+      return v === null ? fallback : JSON.parse(v);
+    } catch {
+      return fallback;
+    }
+  },
+  set(name, value) {
+    try {
+      localStorage.setItem(`pc.${name}`, JSON.stringify(value));
+    } catch {
+      /* ignore */
+    }
+  },
+};

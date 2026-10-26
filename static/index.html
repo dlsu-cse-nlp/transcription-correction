@@ -11,6 +11,8 @@
       <h1>Manual correction for audio transcriptions</h1>
       <p>Python server root is at: <span id="root"></span></p>
 
+      <details id="guide" open>
+        <summary>Guidelines and phoneme chart</summary>
       <p>
         Generally speaking, follow this procedure:
         <ol>
@@ -54,6 +56,7 @@
           <tr class="last"><td class="row-label">Vowel</td><td>e, i</td><td>a, ə</td><td>o, u</td><td></td></tr>
         </tbody>
       </table>
+      </details>
 
       <section id="setup" class="card">
         <fieldset>
@@ -121,10 +124,21 @@
           <div class="path" id="path"></div>
           <div class="error hidden" id="noaudio" role="alert"></div>
           <audio id="au" controls preload="auto"></audio>
-          <label class="autoplay"
-            ><input type="checkbox" id="autoplay" checked /> Play
-            automatically</label
-          >
+          <div class="wave" id="wave" title="Click to play from a point. Drag to select a region to loop.">
+            <canvas id="wv-wave"></canvas>
+            <canvas id="wv-spec"></canvas>
+            <div class="wv-sel hidden" id="wv-sel"></div>
+            <div class="wv-head" id="wv-head"></div>
+            <div class="wv-msg" id="wv-msg"></div>
+          </div>
+          <canvas id="wv-ruler"></canvas>
+          <div class="tools">
+            <span class="group" id="speeds" aria-label="Playback speed"></span>
+            <button type="button" id="replay">Replay 2 s</button>
+            <label><input type="checkbox" id="loop" checked /> Loop selection</label>
+            <label><input type="checkbox" id="autoplay" checked /> Play automatically</label>
+          </div>
+          <div class="hint" id="selinfo"></div>
         </div>
         <hr />
         <div class="card">
@@ -136,9 +150,16 @@
             spellcheck="false"
             autocomplete="off"
           ></textarea>
-          <div class="orig hidden" id="orig"></div>
+          <div class="palette-row">
+            <span class="group" id="palette" aria-label="Insert phoneme symbol"></span>
+            <label class="hint"><input type="checkbox" id="shortcuts" checked /> Typing shortcuts</label>
+          </div>
+          <div class="diffrow hidden" id="diff-row">
+            <span class="hint">vs. original:</span> <span id="diff"></span>
+          </div>
           <div class="row">
             <button id="back">Back</button>
+            <button id="fwd">Forward</button>
             <button id="reset" class="hidden">Reset to original</button>
             <span class="grow"></span>
             <span class="edited hidden" id="edited">Edited</span>
@@ -146,9 +167,14 @@
           </div>
           <div class="error hidden" id="msg" role="alert"></div>
           <hr />
-          <p class="hint">
-            <kbd>Enter</kbd> save and next &nbsp; <kbd>Alt</kbd>+<kbd>P</kbd>
-            play / pause &nbsp; <kbd>Alt</kbd>+<kbd>←</kbd> back
+          <p class="hint keys">
+            <kbd>Enter</kbd> save and next &nbsp;
+            <kbd>Alt</kbd>+<kbd>P</kbd> play / pause &nbsp;
+            <kbd>Alt</kbd>+<kbd>R</kbd> replay last 2 s (<kbd>Shift</kbd> = from start) &nbsp;
+            <kbd>Alt</kbd>+<kbd>↑</kbd><kbd>↓</kbd> speed &nbsp;
+            <kbd>Alt</kbd>+<kbd>L</kbd> loop &nbsp;
+            <kbd>Alt</kbd>+<kbd>←</kbd><kbd>→</kbd> back / forward &nbsp;
+            <kbd>Esc</kbd> clear selection
           </p>
         </div>
       </section>

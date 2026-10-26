@@ -193,7 +193,7 @@ def load(req: LoadRequest):
         out.touch()
 
     queue = []
-    for key, entry in entries.items():
+    for key, entry in reversed(list(entries.items())):  # bottom-up
         if key not in done:
             audio_file = resolve_audio(entry["audio_filepath"])
             queue.append(
