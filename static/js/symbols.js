@@ -13,12 +13,11 @@ export const SHORTCUTS = {
   N: "ŋ",
   S: "ʃ",
   Z: "ʒ",
-  "@": "ə",
-  "'": "ˈ",
+  "@": "ə"
 };
 
 // Buttons shown under the textbox. Only symbols that are awkward to type.
-export const PALETTE = ["ˈ", "ˌ", "ʔ", "ŋ", "ɾ", "ɡ", "ʃ", "ʒ", "ə", "t͡s", "d͡z", "t͡ʃ", "d͡ʒ"];
+export const PALETTE = ["ʔ", "ŋ", "ɾ", "ɡ", "ʃ", "ʒ", "ə", "t͡s", "d͡z", "t͡ʃ", "d͡ʒ"];
 
 // ---------------------------------------------------------------------------
 
