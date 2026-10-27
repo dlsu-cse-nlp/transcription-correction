@@ -150,9 +150,27 @@
             spellcheck="false"
             autocomplete="off"
           ></textarea>
+          <div class="vimbar hidden" id="vimbar">
+            <span class="vimmode" id="vimmode"></span>
+            <span class="vimpend" id="vimpend"></span>
+            <details class="vimhelp">
+              <summary>Vim commands</summary>
+              <p><b>Move</b> <kbd>h</kbd> <kbd>l</kbd> <kbd>j</kbd> <kbd>k</kbd> (one phoneme / wrapped line) &nbsp;
+                <kbd>w</kbd> <kbd>b</kbd> <kbd>e</kbd> (<kbd>W</kbd> <kbd>B</kbd> <kbd>E</kbd>) &nbsp;
+                <kbd>0</kbd> <kbd>^</kbd> <kbd>$</kbd> &nbsp; <kbd>f</kbd><kbd>t</kbd><kbd>F</kbd><kbd>T</kbd>+symbol, <kbd>;</kbd> <kbd>,</kbd></p>
+              <p><b>Edit</b> <kbd>x</kbd> <kbd>X</kbd> <kbd>D</kbd> <kbd>C</kbd> <kbd>s</kbd> <kbd>S</kbd> &nbsp; <kbd>r</kbd>+symbol &nbsp;
+                <kbd>d</kbd>/<kbd>c</kbd>/<kbd>y</kbd> + motion or <kbd>iw</kbd> <kbd>aw</kbd> (<kbd>dd</kbd> <kbd>cc</kbd> <kbd>yy</kbd>) &nbsp;
+                <kbd>p</kbd> <kbd>P</kbd> &nbsp; <kbd>~</kbd> &nbsp; <kbd>u</kbd> <kbd>Ctrl</kbd>+<kbd>R</kbd> &nbsp; <kbd>.</kbd></p>
+              <p><b>Insert</b> <kbd>i</kbd> <kbd>a</kbd> <kbd>I</kbd> <kbd>A</kbd>, <kbd>Esc</kbd> to leave &nbsp;
+                <b>Visual</b> <kbd>v</kbd> then move, <kbd>d</kbd> <kbd>c</kbd> <kbd>y</kbd> <kbd>p</kbd> <kbd>o</kbd> &nbsp;
+                <b>Save</b> <kbd>Enter</kbd> or <kbd>ZZ</kbd>. Counts work (<kbd>3x</kbd>, <kbd>d2w</kbd>).
+                Typing shortcuts also work after <kbd>r</kbd> <kbd>f</kbd> <kbd>t</kbd> (e.g. <kbd>f</kbd><kbd>?</kbd> finds ʔ).</p>
+            </details>
+          </div>
           <div class="palette-row">
             <span class="group" id="palette" aria-label="Insert phoneme symbol"></span>
             <label class="hint"><input type="checkbox" id="shortcuts" checked /> Typing shortcuts</label>
+            <label class="hint"><input type="checkbox" id="vim" /> Vim mode</label>
           </div>
           <div class="diffrow hidden" id="diff-row">
             <span class="hint">vs. original:</span> <span id="diff"></span>

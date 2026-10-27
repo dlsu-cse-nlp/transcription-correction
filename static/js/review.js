@@ -4,7 +4,8 @@ import {
   initWaveform, showWaveform, clearWaveform, applySpeed, stepSpeed,
   togglePlay, replay, restart, toggleLoop, hasSelection, clearSelection,
 } from "./waveform.js";
-import { initSymbols } from "./symbols.js";
+import { initSymbols, translateKey } from "./symbols.js";
+import { initVim, vimReset } from "./vim.js";
 import { renderDiff } from "./diff.js";
 
 const PRELOAD_AHEAD = 2;
@@ -92,6 +93,7 @@ function render() {
   updateEdited();
   loadAudio(item);
   $("#text").focus();
+  vimReset();
 }
 
 function updateEdited() {
@@ -154,6 +156,7 @@ export function initReview() {
 
   initWaveform();
   initSymbols();
+  initVim({ translate: translateKey, onSave: save });
 
   textarea.addEventListener("input", updateEdited);
   textarea.addEventListener("keydown", (e) => {
@@ -178,6 +181,7 @@ export function initReview() {
     textarea.value = original(s.queue[s.pos]);
     updateEdited();
     textarea.focus();
+    vimReset();
   });
   $("#done-back").addEventListener("click", () => { s.pos = s.queue.length - 1; render(); });
 }

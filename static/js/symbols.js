@@ -5,7 +5,7 @@ import { $, pref } from "./util.js";
 // Typing the key on the left inserts the symbol on the right (only while
 // "Typing shortcuts" is ticked). Keys are chosen so they never occur in the
 // phoneme set themselves: your table has no ASCII g (it uses ɡ U+0261), no r
-// (tap is ɾ), and no uppercase letters or punctuation.
+// (tap is ɾ), and no uppercase letters.
 export const SHORTCUTS = {
   "?": "ʔ",
   g: "ɡ",
@@ -13,7 +13,7 @@ export const SHORTCUTS = {
   N: "ŋ",
   S: "ʃ",
   Z: "ʒ",
-  "@": "ə"
+  "@": "ə",
 };
 
 // Buttons shown under the textbox. Only symbols that are awkward to type.
@@ -22,6 +22,12 @@ export const PALETTE = ["ʔ", "ŋ", "ɾ", "ɡ", "ʃ", "ʒ", "ə", "t͡s", "d͡z"
 // ---------------------------------------------------------------------------
 
 const keyFor = Object.fromEntries(Object.entries(SHORTCUTS).map(([k, v]) => [v, k]));
+
+// What a typed key stands for right now (used by Vim mode for r, f, t, ...).
+export function translateKey(key) {
+  const on = $("#shortcuts")?.checked;
+  return on && SHORTCUTS[key] ? SHORTCUTS[key] : key;
+}
 
 // Insert at the caret via execCommand so the browser's undo (Ctrl+Z) still works.
 export function insertAtCursor(textarea, str) {
@@ -58,13 +64,17 @@ export function initSymbols() {
         b.title = `Insert ${sym}`;
       }
       b.addEventListener("mousedown", (e) => e.preventDefault()); // keep caret in textbox
-      b.addEventListener("click", () => insertAtCursor(textarea, sym));
+      b.addEventListener("click", () => {
+        textarea.dispatchEvent(new Event("vim:prepare-insert")); // Vim mode: switch to insert first
+        insertAtCursor(textarea, sym);
+      });
       return b;
     }),
   );
 
   textarea.addEventListener("keydown", (e) => {
     if (!toggle.checked || e.isComposing || e.ctrlKey || e.altKey || e.metaKey) return;
+    if (textarea.dataset.vim === "normal" || textarea.dataset.vim === "visual") return; // Vim owns these keys
     const sym = SHORTCUTS[e.key];
     if (!sym) return;
     e.preventDefault();
