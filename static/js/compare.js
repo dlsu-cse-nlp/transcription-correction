@@ -14,7 +14,7 @@ const s = { queue: [], pos: 0, maxPos: 0, total: 0, alreadyDone: 0, outName: "",
 const show = (id, on) => $(id).classList.toggle("hidden", !on);
 const clean = (v) => v.replace(/[\r\n]+/g, " ").trim();
 const stem = (name, fallback) => (name ? name.replace(/^.*[\\/]/, "").replace(/\.[^.]*$/, "") : fallback);
-const LABEL = { a: "A", b: "B", manual: "your edit", expert: "raised to expert" };
+const LABEL = { a: "all A", b: "all B", manual: "your edit", merge: "merged by differences", expert: "raised to expert" };
 
 // ---------------------------------------------------------------- setup
 
@@ -44,6 +44,7 @@ async function analyze() {
     $("#analyze").disabled = true;
     const r = await api("/api/compare/load", {
       ...aReq, ...bReq, mode, out_path: outPath, include_unpaired: $("#unpaired").checked,
+      order: $("#easy").checked ? "easy" : "file",
     });
     s.analysis = r;
     renderSummary(r);
@@ -67,6 +68,17 @@ function renderSummary(r) {
     ["Conflicting text", r.conflicts, "hl"],
   ];
   if (r.conflicts !== r.conflicts_left) rows.push(["Conflicts still to resolve", r.conflicts_left, "sub"]);
+  if (r.hunks) {
+    const pc = (n, d) => `${n} (${Math.round((100 * n) / d)}%)`;
+    rows.push(
+      ["Word-level differences to settle", r.hunks, "hl"],
+      ["…with a suggestion", pc(r.hunks_suggested, r.hunks), "sub"],
+      ["…distinct A/B pairs (repeats decided once)", r.unique_pairs, "sub"],
+      ["Conflicts where every difference has a suggestion", r.tier0, "sub"],
+      ["Conflicts with some suggestions", r.tier1, "sub"],
+      ["Conflicts with none (need your ears)", r.tier2, "sub"],
+    );
+  }
   rows.push(
     [`Only in ${labels.a}`, r.only_a],
     [`Only in ${labels.b}`, r.only_b],
@@ -107,6 +119,7 @@ async function commit() {
 // ---------------------------------------------------------------- review
 
 function startReview(r) {
+  for (const it of r.queue) Object.assign(it, { pick: {}, active: 0, custom: false });
   Object.assign(s, {
     queue: r.queue, total: r.total_conflicts, alreadyDone: r.already_done,
     outName: r.out, pos: 0, maxPos: 0, written: r.written_agreed,
@@ -118,22 +131,161 @@ function startReview(r) {
   render();
 }
 
+// ---- word-level differences ----------------------------------------------
+
+// What you chose earlier for the same A/B word pair (stored as the chosen spelling, so A/B order doesn't matter).
+const memory = new Map(Object.entries(pref.get("cmpmem", {})));
+function remember(h, side) {
+  memory.set(h.pair, h[side].join(" "));
+  pref.set("cmpmem", Object.fromEntries([...memory].slice(-5000)));
+}
+
+function suggestion(h) {
+  const seen = memory.get(h.pair);
+  if (seen !== undefined) {
+    const side = seen === h.a.join(" ") ? "a" : seen === h.b.join(" ") ? "b" : null;
+    if (side) return { pick: side, why: "you chose this earlier" };
+  }
+  return { pick: h.sug, why: h.why };
+}
+
+const hunksOf = (item) => item.parts.filter((p) => p.t === "h");
+const undecided = (item) => hunksOf(item).filter((h) => item.pick[h.id] === undefined);
+
+function compose(item, fill = () => "a") {
+  const words = [];
+  for (const p of item.parts) {
+    if (p.t === "eq") words.push(...p.w);
+    else words.push(...p[item.pick[p.id] ?? fill(p)]);
+  }
+  return words.join(" ");
+}
+
+function marked(x, y, keep) {
+  return diffTokens(tokenize(x), tokenize(y)).parts
+    .filter((p) => p.type === "eq" || p.type === keep)
+    .map((p) => {
+      if (p.type === "eq") return document.createTextNode(p.text);
+      const m = document.createElement("mark");
+      m.textContent = p.text.replace(/ /g, "␣");
+      return m;
+    });
+}
+
 function paintVersions(item) {
-  const parts = diffTokens(tokenize(item.a), tokenize(item.b)).parts;
-  const fill = (el, keep) => {
-    el.replaceChildren(
-      ...parts.filter((p) => p.type === "eq" || p.type === keep).map((p) => {
-        if (p.type === "eq") return document.createTextNode(p.text);
-        const m = document.createElement("mark");
-        m.textContent = p.text.replace(/ /g, "␣");
-        return m;
-      }),
-    );
-  };
-  fill($("#ta"), "del");
-  fill($("#tb"), "ins");
+  $("#ta").replaceChildren(...marked(item.a, item.b, "del"));
+  $("#tb").replaceChildren(...marked(item.a, item.b, "ins"));
   $("#va").classList.toggle("chosen", item.saved?.choice === "a");
   $("#vb").classList.toggle("chosen", item.saved?.choice === "b");
+}
+
+function chip(item, h, side, sug) {
+  const b = document.createElement("button");
+  b.type = "button";
+  b.className = `chip ${side}`;
+  b.classList.toggle("sel", item.pick[h.id] === side);
+  b.classList.toggle("sug", sug.pick === side);
+  const k = document.createElement("small");
+  k.textContent = side.toUpperCase();
+  const form = h[side].join(" ");
+  const other = h[side === "a" ? "b" : "a"].join(" ");
+  b.append(k);
+  if (!form) b.append("∅");
+  else b.append(...marked(form, other, side === "a" ? "del" : "ins"));
+  b.title = sug.pick === side && sug.why ? `Suggested: ${sug.why}` : "";
+  b.addEventListener("mousedown", (e) => e.preventDefault());
+  b.addEventListener("click", () => pickHunk(h.id, side));
+  return b;
+}
+
+function paintHunks() {
+  const item = s.queue[s.pos];
+  if (!item) return;
+  const hs = hunksOf(item);
+  const box = $("#hunks");
+  box.replaceChildren(
+    ...item.parts.map((p, i) => {
+      if (p.t !== "h") return null;
+      const row = document.createElement("div");
+      row.className = "hunk";
+      row.classList.toggle("active", item.active === p.id);
+      row.classList.toggle("decided", item.pick[p.id] !== undefined);
+      const sug = suggestion(p);
+      const prev = item.parts[i - 1]?.w?.at(-1);
+      const next = item.parts[i + 1]?.w?.[0];
+      const ctx = (t) => Object.assign(document.createElement("span"), { className: "ctx", textContent: t });
+      row.append(...(prev ? [ctx(`…${prev}`)] : []), chip(item, p, "a", sug), chip(item, p, "b", sug), ...(next ? [ctx(`${next}…`)] : []));
+      if (p.repeats > 1) {
+        const r = Object.assign(document.createElement("span"), { className: "badge", textContent: `×${p.repeats}` });
+        r.title = `This A/B pair occurs ${p.repeats} times in this comparison; deciding once pre-fills the rest.`;
+        row.append(r);
+      }
+      if (sug.pick && sug.why) row.append(Object.assign(document.createElement("span"), { className: "why", textContent: `★ ${sug.why}` }));
+      row.addEventListener("click", (e) => {
+        if (e.target.closest("button")) return;
+        item.active = p.id;
+        paintHunks();
+      });
+      return row;
+    }).filter(Boolean),
+  );
+  const left = undecided(item).length;
+  const sugs = hs.filter((h) => item.pick[h.id] === undefined && suggestion(h).pick).length;
+  $("#hunkinfo").textContent = `${hs.length} · ${hs.length - left} decided · ${sugs} suggested`;
+  show("#customnote", item.custom);
+  $("#hunkcard").classList.toggle("hidden", hs.length === 0);
+}
+
+function syncText(item) {
+  if (item.custom) return;
+  $("#text").value = compose(item);
+  vimReset();
+}
+
+function nextUndecided(item, from) {
+  const hs = hunksOf(item);
+  const order = [...hs.slice(from + 1), ...hs.slice(0, from + 1)];
+  return order.find((h) => item.pick[h.id] === undefined)?.id ?? item.active;
+}
+
+function pickHunk(id, side) {
+  const item = s.queue[s.pos];
+  const h = item?.parts.find((p) => p.t === "h" && p.id === id);
+  if (!h) return;
+  item.pick[id] = side;
+  remember(h, side);
+  item.custom = false;
+  item.active = nextUndecided(item, id);
+  syncText(item);
+  paintHunks();
+  $("#text").focus();
+}
+
+function moveActive(dir) {
+  const item = s.queue[s.pos];
+  const n = hunksOf(item).length;
+  if (!n) return;
+  item.active = (item.active + dir + n) % n;
+  paintHunks();
+}
+
+function applySuggestions(item) {
+  for (const h of hunksOf(item)) {
+    const sg = suggestion(h).pick;
+    if (item.pick[h.id] === undefined && sg) { item.pick[h.id] = sg; remember(h, sg); }
+  }
+  item.custom = false;
+  item.active = hunksOf(item).find((h) => item.pick[h.id] === undefined)?.id ?? item.active;
+  syncText(item);
+  paintHunks();
+}
+
+function acceptSuggestions() {
+  const item = s.queue[s.pos];
+  applySuggestions(item);
+  const left = undecided(item).length;
+  if (left) setError($("#msg"), `${left} difference${left === 1 ? " has" : "s have"} no suggestion. Decide ${left === 1 ? "it" : "them"} yourself, then save.`);
+  else save("manual");
 }
 
 function paintStatus(item) {
@@ -187,12 +339,12 @@ function render() {
 
   if (finished) {
     $("#au").pause();
-    const tally = { a: 0, b: 0, manual: 0, expert: 0 };
+    const tally = { a: 0, b: 0, manual: 0, merge: 0, expert: 0 };
     for (const it of s.queue) if (it.saved) tally[it.saved.choice]++;
     $("#done-title").textContent = s.queue.length ? "All conflicts resolved" : "Nothing to resolve";
     $("#done-text").textContent = s.queue.length
       ? `${s.queue.length} conflict${s.queue.length === 1 ? "" : "s"} resolved this session ` +
-        `(${tally.a} ${labels.a}, ${tally.b} ${labels.b}, ${tally.manual} edited, ${tally.expert} raised to expert). ` +
+        `(${tally.merge} merged by differences, ${tally.a} all ${labels.a}, ${tally.b} all ${labels.b}, ${tally.manual} edited, ${tally.expert} raised to expert). ` +
         `Everything is in ${s.outName}.`
       : `${s.written} non-conflicting entr${s.written === 1 ? "y was" : "ies were"} written to ${s.outName}` +
         (s.alreadyDone ? `; the ${s.alreadyDone} conflict${s.alreadyDone === 1 ? "" : "s"} were already resolved there.` : ". There were no conflicts.");
@@ -202,14 +354,17 @@ function render() {
 
   s.maxPos = Math.max(s.maxPos, s.pos);
   const item = s.queue[s.pos];
-  $("#count").textContent = `Conflict ${s.alreadyDone + s.pos + 1} of ${s.total}`;
+  const nh = hunksOf(item).length;
+  $("#count").textContent = `Conflict ${s.alreadyDone + s.pos + 1} of ${s.total} · ${nh} difference${nh === 1 ? "" : "s"}`;
   $("#path").textContent = item.path;
   $("#back").disabled = s.pos === 0;
   $("#fwd").disabled = s.pos >= s.maxPos;
   setError($("#msg"), "");
+  if (item.draft === undefined && item.saved && item.saved.choice !== "merge") item.custom = true;
   paintVersions(item);
   paintStatus(item);
-  $("#text").value = item.draft ?? item.saved?.text ?? item.a;
+  paintHunks();
+  $("#text").value = item.draft ?? (item.custom ? item.saved?.text ?? item.a : compose(item));
   loadAudio(item);
   $("#text").focus();
   vimReset();
@@ -224,11 +379,22 @@ async function save(choice) {
     setError($("#msg"), "The text box is empty.");
     return;
   }
+  if (choice === "manual") {
+    if (!item.custom) {
+      const left = undecided(item).length;
+      if (left) {
+        setError($("#msg"), `${left} difference${left === 1 ? " is" : "s are"} still undecided. Pick A or B for ${left === 1 ? "it" : "each"} (Alt+S applies suggestions), or edit the text box by hand.`);
+        return;
+      }
+      choice = "merge";
+    }
+  }
   s.busy = true;
   for (const id of ["#save", "#use-a", "#use-b", "#expert"]) $(id).disabled = true;
   try {
     await api("/api/compare/save", { key: item.key, choice, text: choice === "a" || choice === "b" ? null : text });
     item.saved = { choice, text: choice === "a" ? item.a : choice === "b" ? item.b : text };
+    if (choice === "manual") item.custom = true;
     delete item.draft;
     s.pos++;
     render();
@@ -243,16 +409,27 @@ async function save(choice) {
 function back() { if (s.pos > 0) { stashDraft(); s.pos--; render(); } }
 function forward() { if (s.pos < s.maxPos && s.pos + 1 < s.queue.length) { stashDraft(); s.pos++; render(); } }
 
+function pickActive(side) {
+  const item = s.queue[s.pos];
+  if (hunksOf(item).length) pickHunk(item.active, side);
+}
+
 function editFrom(which) {
   const ta = $("#text");
   ta.value = s.queue[s.pos][which];
+  s.queue[s.pos].custom = true;
+  paintHunks();
   ta.focus();
   vimReset();
 }
 
 const HOTKEYS = {
-  Digit1: () => save("a"),
-  Digit2: () => save("b"),
+  Digit1: (e) => (e.shiftKey ? save("a") : pickActive("a")),
+  Digit2: (e) => (e.shiftKey ? save("b") : pickActive("b")),
+  KeyS: () => applySuggestions(s.queue[s.pos]),
+  KeyA: () => acceptSuggestions(),
+  KeyJ: () => moveActive(+1),
+  KeyK: () => moveActive(-1),
   KeyE: () => save("expert"),
   KeyP: () => togglePlay(),
   KeyR: (e) => (e.shiftKey ? restart() : replay(2)),
@@ -288,6 +465,10 @@ function init() {
   initSymbols();
   initVim({ translate: translateKey, onSave: () => save("manual") });
 
+  ta.addEventListener("input", () => {
+    const item = s.queue[s.pos];
+    if (item && !item.custom) { item.custom = true; paintHunks(); }
+  });
   ta.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.isComposing && !e.shiftKey) { e.preventDefault(); save("manual"); }
   });
@@ -307,6 +488,9 @@ function init() {
   $("#edit-a").addEventListener("click", () => editFrom("a"));
   $("#edit-b").addEventListener("click", () => editFrom("b"));
   $("#expert").addEventListener("click", () => save("expert"));
+  $("#apply-sug").addEventListener("click", () => applySuggestions(s.queue[s.pos]));
+  $("#accept-sug").addEventListener("click", acceptSuggestions);
+  $("#resync").addEventListener("click", () => { const it = s.queue[s.pos]; it.custom = false; syncText(it); paintHunks(); });
   $("#save").addEventListener("click", () => save("manual"));
   $("#back").addEventListener("click", back);
   $("#fwd").addEventListener("click", forward);

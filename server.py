@@ -14,6 +14,8 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
+import triage
+
 import pandas as pd
 from fastapi import FastAPI, HTTPException, Response
 
@@ -274,6 +276,8 @@ class CompareSession:
     out: Path | None = None
     mode: str = "new"
     committed: bool = False
+    triage: dict = field(default_factory=dict)  # key -> {parts, hunks, suggested, tier}
+    order: str = "easy"
     stats: dict = field(default_factory=dict)
     lock: threading.Lock = field(default_factory=threading.Lock)
 
@@ -289,11 +293,12 @@ class CompareLoadRequest(BaseModel):
     b_path: str | None = None
     b_text: str | None = None
     include_unpaired: bool = True
+    order: Literal["easy", "file"] = "easy"
 
 
 class CompareSaveRequest(BaseModel):
     key: str
-    choice: Literal["a", "b", "manual", "expert"]
+    choice: Literal["a", "b", "manual", "merge", "expert"]
     text: str | None = None
 
 
@@ -369,6 +374,16 @@ def compare_load(req: CompareLoadRequest):
         elif req.include_unpaired:
             agreed[k] = ra or rb
 
+    aligned = {
+        k: triage.align(p["a"].get("text") or "", p["b"].get("text") or "")
+        for k, p in conflicts.items()
+    }
+    agreed_texts = [
+        (a[k].get("text") or "") for k in agreed if k in a and k in b
+    ]
+    notes = triage.annotate(aligned, triage.lexicon(list(aligned.values()), agreed_texts))
+    pending = [notes[k] for k in conflicts if k not in done]
+
     stats = {
         "total_a": len(a),
         "total_b": len(b),
@@ -384,8 +399,15 @@ def compare_load(req: CompareLoadRequest):
         "duplicates": a_dup + b_dup,
         "ignored_lines": ignored,
         "include_unpaired": req.include_unpaired,
+        "hunks": sum(n["hunks"] for n in pending),
+        "hunks_suggested": sum(n["suggested"] for n in pending),
+        "unique_pairs": len({h["pair"] for n in pending for h in n["parts"] if h["t"] == "h"}),
+        "tier0": sum(n["tier"] == 0 for n in pending),
+        "tier1": sum(n["tier"] == 1 for n in pending),
+        "tier2": sum(n["tier"] == 2 for n in pending),
     }
     with compare.lock:
+        compare.triage, compare.order = notes, req.order
         compare.agreed, compare.conflicts, compare.done = agreed, conflicts, done
         compare.out, compare.mode, compare.committed = out, req.mode, False
         compare.stats = stats
@@ -430,8 +452,12 @@ def compare_commit():
                     "a": pair["a"].get("text") or "",
                     "b": pair["b"].get("text") or "",
                     "audio_ok": audio_exists(pair["a"]["audio_filepath"]),
+                    "parts": compare.triage[k]["parts"],
+                    "tier": compare.triage[k]["tier"],
                 }
             )
+        if compare.order == "easy":
+            queue.sort(key=lambda q: q["tier"])  # stable: file order kept inside each tier
         return {
             "queue": queue,
             "total_conflicts": len(compare.conflicts),
@@ -457,7 +483,7 @@ def compare_save(req: CompareSaveRequest):
             rec = {**base, "text": tb}
         elif req.text is None:
             fail("No text was provided.")
-        elif req.choice == "manual":
+        elif req.choice in ("manual", "merge"):
             rec = {**base, "text": req.text}
         else:  # expert: unresolved, keep both versions; "text" is the current textbox content
             rec = {

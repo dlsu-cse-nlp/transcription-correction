@@ -21,3 +21,29 @@
 
 button.expert { border-color: #c60; color: #a40; }
 .edited.flagged { color: #a40; }
+
+/* ---- word-level differences ---- */
+#hunks { margin-top: 0.4rem; }
+.hunk {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem;
+  padding: 0.3rem 0.5rem; border-left: 3px solid transparent; border-radius: 3px;
+  font-family: "Charis SIL", "Doulos SIL", "Gentium Plus", "Noto Serif", "DejaVu Serif", serif;
+  font-size: 1.15rem;
+}
+.hunk.active { border-left-color: #2a5db0; background: #f2f6fc; }
+.hunk.decided { opacity: 0.85; }
+.hunk .ctx { color: #888; }
+.hunk .badge { font-family: Arial, sans-serif; font-size: 0.75rem; color: #777; }
+.hunk .why { font-family: Arial, sans-serif; font-size: 0.75rem; color: #a60; }
+button.chip {
+  font: inherit; cursor: pointer; padding: 0.1rem 0.5rem; min-width: 2rem;
+  border: 1px solid #aaa; border-radius: 4px; background: #fff;
+}
+button.chip small { font-family: Arial, sans-serif; font-size: 0.65rem; color: #777; margin-right: 0.3rem; }
+button.chip.sug { border-color: #c90; box-shadow: 0 0 0 1px #c90 inset; }
+button.chip.sel { background: #2a9a4a; border-color: #2a9a4a; color: #fff; }
+button.chip.sel small { color: #dfd; }
+button.chip mark { background: #fdd; color: #a00; }
+button.chip.b mark { background: #cfc; color: #060; }
+button.chip.sel mark { background: rgba(255,255,255,0.25); color: #fff; }
+.stats tr.sub2 td:first-child { padding-left: 1.2rem; color: #555; }

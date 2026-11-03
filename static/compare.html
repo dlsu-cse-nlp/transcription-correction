@@ -47,6 +47,11 @@
             <input type="checkbox" id="unpaired" checked />
             Also write entries that appear in only one file (nothing to compare)
           </label>
+          <br />
+          <label class="hint">
+            <input type="checkbox" id="easy" checked />
+            Easiest conflicts first (every difference has a suggestion), hardest last
+          </label>
         </fieldset>
         <br />
         <datalist id="files"></datalist>
@@ -100,18 +105,18 @@
         <div class="card">
           <div class="versions">
             <div class="version" id="va">
-              <div class="vhead"><b id="la">A</b> <span class="hint">(<kbd>Alt</kbd>+<kbd>1</kbd>)</span></div>
+              <div class="vhead"><b id="la">A</b> <span class="hint">(<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd> = all A)</span></div>
               <div class="vtext" id="ta"></div>
               <div class="row">
-                <button class="primary" id="use-a">Use A</button>
+                <button id="use-a">Use all A</button>
                 <button id="edit-a" title="Copy A into the box below to edit it">Edit A…</button>
               </div>
             </div>
             <div class="version" id="vb">
-              <div class="vhead"><b id="lb">B</b> <span class="hint">(<kbd>Alt</kbd>+<kbd>2</kbd>)</span></div>
+              <div class="vhead"><b id="lb">B</b> <span class="hint">(<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>2</kbd> = all B)</span></div>
               <div class="vtext" id="tb"></div>
               <div class="row">
-                <button class="primary" id="use-b">Use B</button>
+                <button id="use-b">Use all B</button>
                 <button id="edit-b" title="Copy B into the box below to edit it">Edit B…</button>
               </div>
             </div>
@@ -119,8 +124,23 @@
           <div class="error hidden" id="msg" role="alert"></div>
         </div>
         <hr />
+        <div class="card" id="hunkcard">
+          <div class="row">
+            <b>Differences</b>
+            <span class="hint" id="hunkinfo"></span>
+            <span class="grow"></span>
+            <button id="apply-sug" title="Fill every undecided difference with its suggestion (Alt+S)">Apply suggestions</button>
+            <button id="accept-sug" title="Apply suggestions and save if nothing is left undecided (Alt+A)">Accept suggestions &amp; save</button>
+          </div>
+          <div id="hunks"></div>
+          <p class="hint hidden" id="customnote">
+            The text box was edited by hand. Pick a difference above to rebuild it from your choices, or
+            <button id="resync" type="button">rebuild now</button>.
+          </p>
+        </div>
+        <hr />
         <div class="card">
-          <label for="text">Fix it yourself</label>
+          <label for="text">Result (follows your choices above; edit freely)</label>
           <textarea id="text" rows="3" lang="fil" spellcheck="false" autocomplete="off"></textarea>
           <div class="vimbar hidden" id="vimbar">
             <span class="vimmode" id="vimmode"></span>
@@ -137,13 +157,16 @@
             <span class="grow"></span>
             <span class="edited hidden" id="status"></span>
             <button class="expert" id="expert" title="Can't decide: keep both versions and flag for an expert">Raise to expert</button>
-            <button class="primary" id="save">Save my version and next</button>
+            <button class="primary" id="save">Save and next</button>
           </div>
           <hr />
           <p class="hint keys">
-            <kbd>Enter</kbd> save my version &nbsp;
-            <kbd>Alt</kbd>+<kbd>1</kbd> use A &nbsp;
-            <kbd>Alt</kbd>+<kbd>2</kbd> use B &nbsp;
+            <kbd>Alt</kbd>+<kbd>1</kbd>/<kbd>2</kbd> pick A / B for the current difference &nbsp;
+            <kbd>Alt</kbd>+<kbd>J</kbd>/<kbd>K</kbd> next / previous difference &nbsp;
+            <kbd>Alt</kbd>+<kbd>S</kbd> apply suggestions &nbsp;
+            <kbd>Alt</kbd>+<kbd>A</kbd> accept suggestions &amp; save &nbsp;
+            <kbd>Enter</kbd> save the result &nbsp;
+            <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd>/<kbd>2</kbd> use all A / all B &nbsp;
             <kbd>Alt</kbd>+<kbd>E</kbd> raise to expert &nbsp;
             <kbd>Alt</kbd>+<kbd>P</kbd> play / pause &nbsp;
             <kbd>Alt</kbd>+<kbd>R</kbd> replay (<kbd>Shift</kbd> = from start) &nbsp;
