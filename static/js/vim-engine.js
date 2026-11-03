@@ -14,7 +14,7 @@
 
 import { tokenize } from "./diff.js";
 
-const KEYWORD = /^[\p{L}\p{M}\p{N}_]/u;
+const KEYWORD = /^[\p{L}\p{M}\p{N}_']/u;
 const isSpace = (t) => /^\s/.test(t);
 // 0 = blank, 1 = punctuation (or any non-blank for WORD motions), 2 = word character
 const cls = (t, big = false) => (t === undefined || isSpace(t) ? 0 : big ? 1 : KEYWORD.test(t) ? 2 : 1);

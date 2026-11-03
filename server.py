@@ -13,6 +13,11 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
+import pandas as pd
+from fastapi import FastAPI, HTTPException, Response
+
+_parquet_cache: dict[Path, pd.DataFrame] = {}
+
 HERE = Path(__file__).resolve().parent
 ROOT = Path.cwd().resolve()
 
@@ -68,6 +73,26 @@ def resolve_audio(rel: str) -> Path | None:
         ROOT / norm(rel)
     ) 
 
+def split_parquet(rel: str) -> tuple[Path, int] | None:
+    """'a/b.parquet/sample_000012.wav' -> (parquet path inside ROOT, 12)."""
+    parquet, _, sample = norm(rel).rpartition("/")
+    path = inside_root(ROOT / parquet) if parquet.endswith(".parquet") else None
+    idx = sample.removeprefix("sample_").removesuffix(".wav")
+    return (path, int(idx)) if path and idx.isdigit() else None
+
+
+def audio_exists(rel: str) -> bool:
+    if pq := split_parquet(rel):
+        return pq[0].is_file()  # the sample itself is only checked when played
+    path = resolve_audio(rel)
+    return bool(path and path.is_file())
+
+
+def parquet_audio(path: Path, idx: int) -> bytes | None:
+    if path not in _parquet_cache:
+        _parquet_cache[path] = pd.read_parquet(path, columns=["audio"])
+    df = _parquet_cache[path]
+    return df.loc[idx, "audio"]["bytes"] if idx in df.index else None
 
 def read_records(text: str) -> tuple[list[dict], int]:
     text = text.lstrip("\ufeff")
@@ -136,13 +161,16 @@ def list_json_files(max_depth: int = 3) -> list[str]:
 def files():
     return {"root": str(ROOT), "files": list_json_files()}
 
-
 @app.get("/audio")
 def audio(p: str):
-    path = resolve_audio(p)
-    if not path or not path.is_file():
+    if not audio_exists(p):
         fail("Audio file not found", 404)
-    return FileResponse(path)
+    if pq := split_parquet(p):
+        data = parquet_audio(*pq)
+        if data is None:
+            fail("Sample not found in parquet file", 404)
+        return Response(data, media_type="audio/wav")
+    return FileResponse(resolve_audio(p))
 
 
 @app.post("/api/load")
@@ -193,17 +221,15 @@ def load(req: LoadRequest):
         out.touch()
 
     queue = []
-    for key, entry in reversed(list(entries.items())):  # bottom-up
+    for key, entry in list(entries.items()):  # bottom-up
         if key not in done:
-            audio_file = resolve_audio(entry["audio_filepath"])
             queue.append(
                 {
                     "key": key,
                     "entry": entry,
-                    "audio_ok": bool(audio_file and audio_file.is_file()),
+                    "audio_ok": audio_exists(entry["audio_filepath"]),
                 }
             )
-
     with session.lock:
         session.entries, session.done, session.out = entries, done, out
     return {
