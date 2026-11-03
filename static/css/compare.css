@@ -1,0 +1,23 @@
+/* Styles only used by compare.html (shared styles live in style.css) */
+.stats { border-collapse: collapse; margin: 0.5rem 0; }
+.stats td { padding: 0.2rem 1rem 0.2rem 0; }
+.stats td:last-child { text-align: right; font-variant-numeric: tabular-nums; font-family: monospace; }
+.stats tr.hl td { font-weight: bold; color: #a60; }
+.stats tr.sub td:first-child { padding-left: 1.2rem; color: #555; }
+
+.versions { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media (max-width: 700px) { .versions { grid-template-columns: 1fr; } }
+.version { border: 1px solid #bbb; border-radius: 4px; padding: 0.5rem 0.75rem; }
+.version.chosen { border-color: #2a9a4a; box-shadow: 0 0 0 2px #cfe9d6; }
+.vtext {
+  font-size: 1.3rem;
+  min-height: 3.5em;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: "Charis SIL", "Doulos SIL", "Gentium Plus", "Noto Serif", "DejaVu Serif", serif;
+}
+.vtext mark { background: #fdd; color: #a00; }
+#vb .vtext mark { background: #cfc; color: #060; }
+
+button.expert { border-color: #c60; color: #a40; }
+.edited.flagged { color: #a40; }

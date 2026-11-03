@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compare transcriptions</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/compare.css" />
+  </head>
+  <body>
+    <main class="content">
+      <h1>Compare two transcription outputs</h1>
+      <p>
+        Python server root is at: <span id="root"></span> ·
+        <a href="index.html">Single-file review</a>
+      </p>
+
+      <section id="setup" class="card">
+        <fieldset>
+          <legend>File A</legend>
+          <input type="text" id="apath" list="files" placeholder="path/to/a.jsonl (relative to the server root)" autocomplete="off" />
+          <p class="hint">Or pick from your computer: <input type="file" id="afile" accept=".json,.jsonl,.txt" /></p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>File B</legend>
+          <input type="text" id="bpath" list="files" placeholder="path/to/b.jsonl (relative to the server root)" autocomplete="off" />
+          <p class="hint">Or pick from your computer: <input type="file" id="bfile" accept=".json,.jsonl,.txt" /></p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Output file</legend>
+          <div class="opt">
+            <input type="radio" name="mode" id="m-new" value="new" checked />
+            <label for="m-new">Start a new file</label>
+            <input type="text" id="npath" aria-label="New output file name" placeholder="merged.jsonl" autocomplete="off" />
+          </div>
+          <div class="opt">
+            <input type="radio" name="mode" id="m-res" value="resume" />
+            <label for="m-res">Resume from</label>
+            <input type="text" id="rpath" list="files" aria-label="Existing output file" placeholder="existing output file" autocomplete="off" />
+          </div>
+          <p class="hint">
+            Entries are matched on <code>audio_filepath</code>. Entries already in a resumed output are skipped.
+          </p>
+          <label class="hint">
+            <input type="checkbox" id="unpaired" checked />
+            Also write entries that appear in only one file (nothing to compare)
+          </label>
+        </fieldset>
+        <br />
+        <datalist id="files"></datalist>
+        <button class="primary" id="analyze">Count conflicts</button>
+        <div class="error hidden" id="setup-err" role="alert"></div>
+      </section>
+
+      <section id="summary" class="card hidden">
+        <h2>Comparison</h2>
+        <table class="stats" id="stats"></table>
+        <p id="summary-note" class="hint"></p>
+        <div class="row">
+          <button id="sum-back">Change files</button>
+          <span class="grow"></span>
+          <button class="primary" id="commit"></button>
+        </div>
+        <div class="error hidden" id="sum-err" role="alert"></div>
+      </section>
+
+      <section id="review" class="hidden">
+        <hr />
+        <div class="card">
+          <div class="bar">
+            <span class="count" id="count"></span>
+            (<span class="hint" id="meta"></span>)
+          </div>
+          <progress id="prog" value="0" max="1"></progress>
+        </div>
+        <hr />
+        <div class="card">
+          <div class="path" id="path"></div>
+          <div class="error hidden" id="noaudio" role="alert"></div>
+          <audio id="au" controls preload="auto"></audio>
+          <div class="wave" id="wave" title="Click to play from a point. Drag to select a region to loop.">
+            <canvas id="wv-wave"></canvas>
+            <canvas id="wv-spec"></canvas>
+            <div class="wv-sel hidden" id="wv-sel"></div>
+            <div class="wv-head" id="wv-head"></div>
+            <div class="wv-msg" id="wv-msg"></div>
+          </div>
+          <canvas id="wv-ruler"></canvas>
+          <div class="tools">
+            <span class="group" id="speeds" aria-label="Playback speed"></span>
+            <button type="button" id="replay">Replay 2 s</button>
+            <label><input type="checkbox" id="loop" checked /> Loop selection</label>
+            <label><input type="checkbox" id="autoplay" checked /> Play automatically</label>
+          </div>
+          <div class="hint" id="selinfo"></div>
+        </div>
+        <hr />
+        <div class="card">
+          <div class="versions">
+            <div class="version" id="va">
+              <div class="vhead"><b id="la">A</b> <span class="hint">(<kbd>Alt</kbd>+<kbd>1</kbd>)</span></div>
+              <div class="vtext" id="ta"></div>
+              <div class="row">
+                <button class="primary" id="use-a">Use A</button>
+                <button id="edit-a" title="Copy A into the box below to edit it">Edit A…</button>
+              </div>
+            </div>
+            <div class="version" id="vb">
+              <div class="vhead"><b id="lb">B</b> <span class="hint">(<kbd>Alt</kbd>+<kbd>2</kbd>)</span></div>
+              <div class="vtext" id="tb"></div>
+              <div class="row">
+                <button class="primary" id="use-b">Use B</button>
+                <button id="edit-b" title="Copy B into the box below to edit it">Edit B…</button>
+              </div>
+            </div>
+          </div>
+          <div class="error hidden" id="msg" role="alert"></div>
+        </div>
+        <hr />
+        <div class="card">
+          <label for="text">Fix it yourself</label>
+          <textarea id="text" rows="3" lang="fil" spellcheck="false" autocomplete="off"></textarea>
+          <div class="vimbar hidden" id="vimbar">
+            <span class="vimmode" id="vimmode"></span>
+            <span class="vimpend" id="vimpend"></span>
+          </div>
+          <div class="palette-row">
+            <span class="group" id="palette" aria-label="Insert phoneme symbol"></span>
+            <label class="hint"><input type="checkbox" id="shortcuts" checked /> Typing shortcuts</label>
+            <label class="hint"><input type="checkbox" id="vim" /> Vim mode</label>
+          </div>
+          <div class="row">
+            <button id="back">Back</button>
+            <button id="fwd">Forward</button>
+            <span class="grow"></span>
+            <span class="edited hidden" id="status"></span>
+            <button class="expert" id="expert" title="Can't decide: keep both versions and flag for an expert">Raise to expert</button>
+            <button class="primary" id="save">Save my version and next</button>
+          </div>
+          <hr />
+          <p class="hint keys">
+            <kbd>Enter</kbd> save my version &nbsp;
+            <kbd>Alt</kbd>+<kbd>1</kbd> use A &nbsp;
+            <kbd>Alt</kbd>+<kbd>2</kbd> use B &nbsp;
+            <kbd>Alt</kbd>+<kbd>E</kbd> raise to expert &nbsp;
+            <kbd>Alt</kbd>+<kbd>P</kbd> play / pause &nbsp;
+            <kbd>Alt</kbd>+<kbd>R</kbd> replay (<kbd>Shift</kbd> = from start) &nbsp;
+            <kbd>Alt</kbd>+<kbd>↑</kbd><kbd>↓</kbd> speed &nbsp;
+            <kbd>Alt</kbd>+<kbd>L</kbd> loop &nbsp;
+            <kbd>Alt</kbd>+<kbd>←</kbd><kbd>→</kbd> back / forward
+          </p>
+        </div>
+      </section>
+
+      <section id="done" class="card hidden">
+        <h1 id="done-title">Done</h1>
+        <p id="done-text"></p>
+        <button id="done-back" class="hidden">Back to last conflict</button>
+        <button id="done-again">Compare other files</button>
+      </section>
+    </main>
+    <script type="module" src="js/compare.js"></script>
+  </body>
+</html>
