@@ -1,9 +1,11 @@
 import argparse
+import hashlib
 import json
 import os
 import threading
 import unicodedata
 import webbrowser
+from functools import lru_cache
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Literal
@@ -279,6 +281,8 @@ class CompareSession:
     triage: dict = field(default_factory=dict)  # key -> {parts, hunks, suggested, tier}
     order: str = "easy"
     stats: dict = field(default_factory=dict)
+    edited: set = field(default_factory=set)  # keys whose saved text goes beyond picking A/B
+    edit_log: Path | None = None  # txt file listing the audio_filepath of every edited entry
     lock: threading.Lock = field(default_factory=threading.Lock)
 
 
@@ -305,6 +309,59 @@ class CompareSaveRequest(BaseModel):
 def canon(text) -> str:
     """Texts that differ only in whitespace / Unicode normalisation don't conflict."""
     return unicodedata.normalize("NFC", " ".join(str(text or "").split()))
+
+
+def swapped(key: str) -> bool:
+    """Blind review: whether this entry shows B on the left. Pseudo-random per entry but stable
+    across sessions / resumes, so the same sample always appears the same way round."""
+    return hashlib.sha256(("side:" + key).encode("utf-8")).digest()[0] & 1 == 1
+
+
+def is_pick(text, parts) -> bool:
+    """True if `text` can be built purely by choosing A or B for each word-level difference
+    (this includes 'all A', 'all B' and any merge of the two). Anything else is a further edit."""
+    toks = canon(text).split()
+
+    @lru_cache(maxsize=None)
+    def go(i: int, j: int) -> bool:
+        if i == len(parts):
+            return j == len(toks)
+        p = parts[i]
+        options = [p["w"]] if p["t"] == "eq" else [p["a"], p["b"]]
+        return any(
+            toks[j : j + len(w)] == w and go(i + 1, j + len(w)) for w in options
+        )
+
+    return go(0, 0)
+
+
+def counts() -> dict:
+    """Live tallies for the review page."""
+    return {
+        "expert": sum(
+            bool(compare.done[k].get("raise_to_expert"))
+            for k in compare.conflicts
+            if k in compare.done
+        ),
+        "edited": len(compare.edited),
+    }
+
+
+def write_edit_log() -> None:
+    """Rewrite the txt file of audio_filepaths where the adjudicator edited beyond picking."""
+    if compare.edit_log is None:
+        return
+    lines = [
+        pair["a"]["audio_filepath"]
+        for k, pair in compare.conflicts.items()
+        if k in compare.edited
+    ]
+    tmp = compare.edit_log.with_name(compare.edit_log.name + ".tmp")
+    with open(tmp, "w", encoding="utf-8", newline="\n") as f:
+        f.write("".join(line + "\n" for line in lines))
+        f.flush()
+        os.fsync(f.fileno())
+    os.replace(tmp, compare.edit_log)
 
 
 def load_side(path: str | None, text: str | None, name: str):
@@ -411,6 +468,8 @@ def compare_load(req: CompareLoadRequest):
         compare.agreed, compare.conflicts, compare.done = agreed, conflicts, done
         compare.out, compare.mode, compare.committed = out, req.mode, False
         compare.stats = stats
+        compare.edited = set()
+        compare.edit_log = out.with_name(f"{out.stem}_edited.txt")
     return {**stats, "out": out.relative_to(ROOT).as_posix()}
 
 
@@ -441,6 +500,14 @@ def compare_commit():
                 compare.done.setdefault(k, compare.agreed[k])
             compare.committed = True
             compare.stats["written_agreed"] = len(todo)
+            # resumed output: work out which earlier decisions were free edits
+            compare.edited = {
+                k
+                for k in compare.conflicts
+                if k in compare.done
+                and not is_pick(compare.done[k].get("text"), compare.triage[k]["parts"])
+            }
+            write_edit_log()
         queue = []
         for k, pair in compare.conflicts.items():
             if k in compare.done:
@@ -454,6 +521,7 @@ def compare_commit():
                     "audio_ok": audio_exists(pair["a"]["audio_filepath"]),
                     "parts": compare.triage[k]["parts"],
                     "tier": compare.triage[k]["tier"],
+                    "swap": swapped(k),
                 }
             )
         if compare.order == "easy":
@@ -464,6 +532,8 @@ def compare_commit():
             "already_done": len(compare.conflicts) - len(queue),
             "written_agreed": compare.stats.get("written_agreed", 0),
             "out": out.relative_to(ROOT).as_posix(),
+            "edit_log": compare.edit_log.relative_to(ROOT).as_posix(),
+            **counts(),
         }
 
 
@@ -499,8 +569,16 @@ def compare_save(req: CompareSaveRequest):
             rewrite_all(compare.out, compare.done.values())
         else:
             append_record(compare.out, rec)
+        # a free edit = hand-typed text (or an expert flag's text) that is not a pick of A/B
+        if req.choice in ("manual", "expert") and not is_pick(
+            rec["text"], compare.triage[req.key]["parts"]
+        ):
+            compare.edited.add(req.key)
+        else:
+            compare.edited.discard(req.key)
+        write_edit_log()
         left = sum(k not in compare.done for k in compare.conflicts)
-        return {"ok": True, "left": left}
+        return {"ok": True, "left": left, **counts()}
 
 
 app.mount(

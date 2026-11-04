@@ -13,13 +13,16 @@ const PRELOAD_AHEAD = 2;
 const s = { queue: [], pos: 0, maxPos: 0, total: 0, alreadyDone: 0, outName: "", busy: false, loadSeq: 0, analysis: null };
 const show = (id, on) => $(id).classList.toggle("hidden", !on);
 const clean = (v) => v.replace(/[\r\n]+/g, " ").trim();
-const stem = (name, fallback) => (name ? name.replace(/^.*[\\/]/, "").replace(/\.[^.]*$/, "") : fallback);
-const LABEL = { a: "all A", b: "all B", manual: "your edit", merge: "merged by differences", expert: "raised to expert" };
+// Blind review: nothing on this page names an annotator. Which transcription is shown on the left
+// is decided per entry by the server (item.swap) and undone only when the choice is sent back.
+const LABEL = { a: "version 1", b: "version 2", manual: "your edit", merge: "merged by differences", expert: "raised to expert" };
+const flip = (c) => (c === "a" ? "b" : c === "b" ? "a" : c);
+const NUM = { a: "1", b: "2" };
 
 // ---------------------------------------------------------------- setup
 
 let nameTouched = false;
-let labels = { a: "A", b: "B" };
+const labels = { a: "file 1", b: "file 2" }; // setup order only; real file names are never shown in review
 
 async function sideRequest(side) {
   const file = $(`#${side}file`).files[0];
@@ -37,10 +40,8 @@ async function analyze() {
   try {
     const [a, b] = [await sideRequest("a"), await sideRequest("b")];
     if (!outPath) throw new Error(mode === "resume" ? "Choose the output file to resume." : "Enter a name for the new output file.");
-    const { name: an, ...aReq } = a;
-    const { name: bn, ...bReq } = b;
-    labels = { a: stem(an, "A"), b: stem(bn, "B") };
-    if (labels.a === labels.b) labels = { a: `${labels.a} (A)`, b: `${labels.b} (B)` };
+    const { name: _an, ...aReq } = a;
+    const { name: _bn, ...bReq } = b;
     $("#analyze").disabled = true;
     const r = await api("/api/compare/load", {
       ...aReq, ...bReq, mode, out_path: outPath, include_unpaired: $("#unpaired").checked,
@@ -118,15 +119,41 @@ async function commit() {
 
 // ---------------------------------------------------------------- review
 
+// Show B on the left for entries the server marked `swap`, and rewrite the differences to match.
+function blind(it) {
+  if (!it.swap) return it;
+  [it.a, it.b] = [it.b, it.a];
+  const lab = { A: "version 2", B: "version 1" }; // where the file-A / file-B reasons now sit
+  it.parts = it.parts.map((p) => p.t !== "h" ? p : {
+    ...p, a: p.b, b: p.a, sug: flip(p.sug), why: (p.why ?? "").replace(/\{([AB])\}/g, (_, x) => lab[x]),
+  });
+  return it;
+}
+
+function showTally(r) {
+  s.expert = r.expert;
+  s.edited = r.edited;
+  $("#expcount").textContent = r.expert;
+  $("#editcount").textContent = r.edited;
+}
+
 function startReview(r) {
-  for (const it of r.queue) Object.assign(it, { pick: {}, active: 0, custom: false });
+  for (const it of r.queue) {
+    if (!it.swap) it.parts = it.parts.map((p) => p.t !== "h" ? p : {
+      ...p, why: (p.why ?? "").replace(/\{([AB])\}/g, (_, x) => (x === "A" ? "version 1" : "version 2")),
+    });
+    blind(it);
+    Object.assign(it, { pick: {}, active: 0, custom: false });
+  }
   Object.assign(s, {
     queue: r.queue, total: r.total_conflicts, alreadyDone: r.already_done,
-    outName: r.out, pos: 0, maxPos: 0, written: r.written_agreed,
+    outName: r.out, pos: 0, maxPos: 0, written: r.written_agreed, editLog: r.edit_log,
   });
   $("#meta").textContent = `${r.out} · ${r.written_agreed} non-conflicting written`;
-  $("#la").textContent = labels.a;
-  $("#lb").textContent = labels.b;
+  $("#editlog").textContent = `(edited entries are listed in ${r.edit_log})`;
+  showTally(r);
+  $("#la").textContent = "Version 1";
+  $("#lb").textContent = "Version 2";
   show("#summary", false);
   render();
 }
@@ -186,7 +213,7 @@ function chip(item, h, side, sug) {
   b.classList.toggle("sel", item.pick[h.id] === side);
   b.classList.toggle("sug", sug.pick === side);
   const k = document.createElement("small");
-  k.textContent = side.toUpperCase();
+  k.textContent = NUM[side];
   const form = h[side].join(" ");
   const other = h[side === "a" ? "b" : "a"].join(" ");
   b.append(k);
@@ -344,7 +371,8 @@ function render() {
     $("#done-title").textContent = s.queue.length ? "All conflicts resolved" : "Nothing to resolve";
     $("#done-text").textContent = s.queue.length
       ? `${s.queue.length} conflict${s.queue.length === 1 ? "" : "s"} resolved this session ` +
-        `(${tally.merge} merged by differences, ${tally.a} all ${labels.a}, ${tally.b} all ${labels.b}, ${tally.manual} edited, ${tally.expert} raised to expert). ` +
+        `(${tally.a + tally.b} picked one version as-is, ${tally.merge} merged by differences, ${tally.manual} edited, ${tally.expert} raised to expert). ` +
+        `${s.expert} entr${s.expert === 1 ? "y is" : "ies are"} flagged for the expert in total, and ${s.edited} edited beyond picking (listed in ${s.editLog}). ` +
         `Everything is in ${s.outName}.`
       : `${s.written} non-conflicting entr${s.written === 1 ? "y was" : "ies were"} written to ${s.outName}` +
         (s.alreadyDone ? `; the ${s.alreadyDone} conflict${s.alreadyDone === 1 ? "" : "s"} were already resolved there.` : ". There were no conflicts.");
@@ -383,7 +411,7 @@ async function save(choice) {
     if (!item.custom) {
       const left = undecided(item).length;
       if (left) {
-        setError($("#msg"), `${left} difference${left === 1 ? " is" : "s are"} still undecided. Pick A or B for ${left === 1 ? "it" : "each"} (Alt+S applies suggestions), or edit the text box by hand.`);
+        setError($("#msg"), `${left} difference${left === 1 ? " is" : "s are"} still undecided. Pick version 1 or 2 for ${left === 1 ? "it" : "each"} (Alt+S applies suggestions), or edit the text box by hand.`);
         return;
       }
       choice = "merge";
@@ -392,7 +420,10 @@ async function save(choice) {
   s.busy = true;
   for (const id of ["#save", "#use-a", "#use-b", "#expert"]) $(id).disabled = true;
   try {
-    await api("/api/compare/save", { key: item.key, choice, text: choice === "a" || choice === "b" ? null : text });
+    // `choice` is what the page shows (version 1/2); the server knows the real files, so undo the swap
+    const sent = item.swap ? flip(choice) : choice;
+    const r = await api("/api/compare/save", { key: item.key, choice: sent, text: choice === "a" || choice === "b" ? null : text });
+    showTally(r);
     item.saved = { choice, text: choice === "a" ? item.a : choice === "b" ? item.b : text };
     if (choice === "manual") item.custom = true;
     delete item.draft;

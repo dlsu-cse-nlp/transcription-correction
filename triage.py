@@ -57,13 +57,14 @@ def suggest(xa: list[str], ya: list[str], lex: Counter) -> tuple[str | None, str
     if len(va) != len(vb):
         pick = "a" if len(va) < len(vb) else "b"
         picks.append(pick)
-        why.append(f"{'B' if pick == 'a' else 'A'}: {(vb if pick == 'a' else va)[0]}")
+        # {A}/{B} are placeholders; the page swaps in whatever labels it shows (blind mode)
+        why.append(f"{'{B}' if pick == 'a' else '{A}'}: {(vb if pick == 'a' else va)[0]}")
     ok_a = bool(xa) and all(w in lex for w in xa)
     ok_b = bool(ya) and all(w in lex for w in ya)
     if ok_a != ok_b:
         pick = "a" if ok_a else "b"
         picks.append(pick)
-        why.append(f"only {pick.upper()}'s spelling appears in words you both agree on")
+        why.append(f"only {'{A}' if pick == 'a' else '{B}'}'s spelling appears in words you both agree on")
     if len(set(picks)) == 1:
         return picks[0], "; ".join(why)
     return None, ("signals disagree" if picks else "")

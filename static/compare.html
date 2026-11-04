@@ -77,6 +77,11 @@
           <div class="bar">
             <span class="count" id="count"></span>
             (<span class="hint" id="meta"></span>)
+            <div class="tally" id="tally">
+              <span title="Entries currently flagged for the expert (counts re-decisions too)">Sent to expert: <b id="expcount">0</b></span>
+              <span title="Entries where you edited beyond picking one version or the other; their audio_filepath is written to the edit log">Edited beyond picking: <b id="editcount">0</b></span>
+              <span class="hint" id="editlog"></span>
+            </div>
           </div>
           <progress id="prog" value="0" max="1"></progress>
         </div>
@@ -105,19 +110,19 @@
         <div class="card">
           <div class="versions">
             <div class="version" id="va">
-              <div class="vhead"><b id="la">A</b> <span class="hint">(<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd> = all A)</span></div>
+              <div class="vhead"><b id="la">Version 1</b> <span class="hint">(<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd> = use all)</span></div>
               <div class="vtext" id="ta"></div>
               <div class="row">
-                <button id="use-a">Use all A</button>
-                <button id="edit-a" title="Copy A into the box below to edit it">Edit A…</button>
+                <button id="use-a">Use version 1</button>
+                <button id="edit-a" title="Copy version 1 into the box below to edit it">Edit version 1…</button>
               </div>
             </div>
             <div class="version" id="vb">
-              <div class="vhead"><b id="lb">B</b> <span class="hint">(<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>2</kbd> = all B)</span></div>
+              <div class="vhead"><b id="lb">Version 2</b> <span class="hint">(<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>2</kbd> = use all)</span></div>
               <div class="vtext" id="tb"></div>
               <div class="row">
-                <button id="use-b">Use all B</button>
-                <button id="edit-b" title="Copy B into the box below to edit it">Edit B…</button>
+                <button id="use-b">Use version 2</button>
+                <button id="edit-b" title="Copy version 2 into the box below to edit it">Edit version 2…</button>
               </div>
             </div>
           </div>
@@ -161,12 +166,12 @@
           </div>
           <hr />
           <p class="hint keys">
-            <kbd>Alt</kbd>+<kbd>1</kbd>/<kbd>2</kbd> pick A / B for the current difference &nbsp;
+            <kbd>Alt</kbd>+<kbd>1</kbd>/<kbd>2</kbd> pick version 1 / 2 for the current difference &nbsp;
             <kbd>Alt</kbd>+<kbd>J</kbd>/<kbd>K</kbd> next / previous difference &nbsp;
             <kbd>Alt</kbd>+<kbd>S</kbd> apply suggestions &nbsp;
             <kbd>Alt</kbd>+<kbd>A</kbd> accept suggestions &amp; save &nbsp;
             <kbd>Enter</kbd> save the result &nbsp;
-            <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd>/<kbd>2</kbd> use all A / all B &nbsp;
+            <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd>/<kbd>2</kbd> use all of version 1 / 2 &nbsp;
             <kbd>Alt</kbd>+<kbd>E</kbd> raise to expert &nbsp;
             <kbd>Alt</kbd>+<kbd>P</kbd> play / pause &nbsp;
             <kbd>Alt</kbd>+<kbd>R</kbd> replay (<kbd>Shift</kbd> = from start) &nbsp;
