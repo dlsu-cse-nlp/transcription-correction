@@ -201,3 +201,1116 @@
 {"audio_filepath": "data/fsc/parquet/train-00055-of-00139.parquet/sample_001984.wav", "text": "su 'jon ʔi'saŋ bu'ʔoŋ 'ʔaɾaw na napakasa'ja na hin'di ko tala'ɡa makakali'mutan ʔa'no pa ba", "duration": 8.59}
 {"audio_filepath": "data/fsc/parquet/train-00081-of-00139.parquet/sample_001974.wav", "text": "mapala'pit 'dun sa ka'laban mo", "duration": 1.416}
 {"audio_filepath": "data/fsc/parquet/train-00106-of-00139.parquet/sample_001427.wav", "text": "maɡan'daʔ ʔaŋ kala'ɡajan ko sa kani'la", "duration": 2.19}
+{"audio_filepath": "data/fsc/parquet/train-00039-of-00139.parquet/sample_001658.wav", "text": "si 'd͡ʒefɾi pa'ti si 'd͡ʒak ʔaj naɡpun'ta sa pi ʔel 'di 'ti 'fejɾvju", "duration": 4.057}
+{"audio_filepath": "data/fsc/parquet/train-00058-of-00139.parquet/sample_001777.wav", "text": "'juŋ 'kuja ko na'man ʔaj naɡ ʔa'ʔaɾal", "duration": 2.276}
+{"audio_filepath": "data/fsc/parquet/train-00096-of-00139.parquet/sample_001845.wav", "text": "'juŋ ma'ŋa ʔi'baŋ kapa'tid nja na'ɡiŋ ʔistu'd͡ʒante pa nja", "duration": 2.132}
+{"audio_filepath": "data/fsc/parquet/train-00067-of-00139.parquet/sample_001131.wav", "text": "naŋ kasawi'ʔan", "duration": 0.972}
+{"audio_filepath": "data/fsc/parquet/train-00085-of-00139.parquet/sample_001982.wav", "text": "ʔat ʔaŋ ma'ŋa sumu'nod ʔaj ma'ŋa", "duration": 3.108}
+{"audio_filepath": "data/fsc/parquet/train-00041-of-00139.parquet/sample_001951.wav", "text": "luma'bas ʃa 'sabi nja", "duration": 1.097}
+{"audio_filepath": "data/fsc/parquet/train-00126-of-00139.parquet/sample_000969.wav", "text": "di ba 'helen", "duration": 0.88}
+{"audio_filepath": "data/fsc/parquet/train-00066-of-00139.parquet/sample_001885.wav", "text": "jun ba 'juŋ ka'laban", "duration": 0.739}
+{"audio_filepath": "data/fsc/parquet/train-00135-of-00139.parquet/sample_001973.wav", "text": "maj ʔek'sam 'din ʔa'ko nun t͡sa'ka maj 'pasok ʔa'ko 'non", "duration": 2.776}
+{"audio_filepath": "data/fsc/parquet/train-00015-of-00139.parquet/sample_001201.wav", "text": "peɾo aŋ 'tawaɡ sa kan'ja naŋ bu'ʔoŋ baɾaŋ'ɡaj ʔaj 'doj", "duration": 2.95}
+{"audio_filepath": "data/fsc/parquet/train-00041-of-00139.parquet/sample_000429.wav", "text": "ma'ɾamiŋ hinaha'ɾap na pɾob'lema", "duration": 2.61}
+{"audio_filepath": "data/fsc/parquet/train-00133-of-00139.parquet/sample_001102.wav", "text": "pa'ki 'ʔiwan", "duration": 0.825}
+{"audio_filepath": "data/fsc/parquet/train-00121-of-00139.parquet/sample_000691.wav", "text": "nama'ʔos na si 'lina sa kawaka'waɾniŋ 'peɾo wa'laŋ ɡumaɡa'law 'paɾa sun'din ʔaŋ kaʔu'tusan njaʔ", "duration": 5.425}
+{"audio_filepath": "data/fsc/parquet/train-00076-of-00139.parquet/sample_001896.wav", "text": "na kuŋ sa'ʔan 'dun na'man", "duration": 1.642}
+{"audio_filepath": "data/fsc/parquet/train-00052-of-00139.parquet/sample_001533.wav", "text": "'sinoŋ ma'ŋa kaʔi'biɡan", "duration": 1.428}
+{"audio_filepath": "data/fsc/parquet/train-00087-of-00139.parquet/sample_000565.wav", "text": "sa ʔi'saŋ ma'lajoŋ lu'ɡaɾ sa 'ʔamin", "duration": 2.04}
+{"audio_filepath": "data/fsc/parquet/train-00030-of-00139.parquet/sample_001983.wav", "text": "'ʔoɾ paɡ 'kɾismas pinapadal'han ka'mi naŋ ɾe'ɡalo", "duration": 3.046}
+{"audio_filepath": "data/fsc/parquet/train-00081-of-00139.parquet/sample_001685.wav", "text": "'kahet ʔa'noŋ 'baɡaj", "duration": 0.962}
+{"audio_filepath": "data/fsc/parquet/train-00004-of-00139.parquet/sample_000176.wav", "text": "kanta'han mo ka'mi", "duration": 1.075}
+{"audio_filepath": "data/fsc/parquet/train-00092-of-00139.parquet/sample_001884.wav", "text": "pa 'koŋ", "duration": 0.34}
+{"audio_filepath": "data/fsc/parquet/train-00114-of-00139.parquet/sample_000345.wav", "text": "'laban sa na'ʔaɾestoŋ 'puʃeɾ sa kolehi'jo sa 'san jo'se del 'monte", "duration": 3.5}
+{"audio_filepath": "data/fsc/parquet/train-00010-of-00139.parquet/sample_001297.wav", "text": "ʔaŋ 'hiɾap na'man ni'to", "duration": 1.106}
+{"audio_filepath": "data/fsc/parquet/train-00017-of-00139.parquet/sample_000651.wav", "text": "ʔa'lam ko 'juŋ", "duration": 0.679}
+{"audio_filepath": "data/fsc/parquet/train-00050-of-00139.parquet/sample_001717.wav", "text": "maj tent 'tas da'mit 'namin paɡ'kaʔen", "duration": 3.582}
+{"audio_filepath": "data/fsc/parquet/train-00073-of-00139.parquet/sample_000630.wav", "text": "sa ʔi'saŋ ma'lajoŋ lu'ɡaɾ sa 'ʔamin", "duration": 1.975}
+{"audio_filepath": "data/fsc/parquet/train-00046-of-00139.parquet/sample_000707.wav", "text": "mali'ɡajaŋ pas'ko", "duration": 1.15}
+{"audio_filepath": "data/fsc/parquet/train-00028-of-00139.parquet/sample_001864.wav", "text": "ʔaŋ 'vajs 'pɾesident ʔaj pumun'ta", "duration": 2.091}
+{"audio_filepath": "data/fsc/parquet/train-00102-of-00139.parquet/sample_000315.wav", "text": "ɡu'misiŋ ka na", "duration": 0.925}
+{"audio_filepath": "data/fsc/parquet/train-00018-of-00139.parquet/sample_000701.wav", "text": "'tulad naŋ ʔi'saŋ maɡa'liŋ na ma'kataʔ", "duration": 2.15}
+{"audio_filepath": "data/fsc/parquet/train-00041-of-00139.parquet/sample_001952.wav", "text": "'ʔe ka'ja 'laŋ ma'pilit ʔa'ko 'sabi ko ɡus'to ko 'dito ka'se hin'di na'man ʔa'ko", "duration": 5.87}
+{"audio_filepath": "data/fsc/parquet/train-00027-of-00139.parquet/sample_000767.wav", "text": "'ŋunit naɡdidi'lim na ʔaŋ", "duration": 1.525}
+{"audio_filepath": "data/fsc/parquet/train-00116-of-00139.parquet/sample_000136.wav", "text": "nawa'wala 'man mu'la pa 'ɾiŋ bumaba'lik", "duration": 3.1}
+{"audio_filepath": "data/fsc/parquet/train-00103-of-00139.parquet/sample_001620.wav", "text": "'saɾi 'saɾiŋ", "duration": 0.875}
+{"audio_filepath": "data/fsc/parquet/train-00047-of-00139.parquet/sample_000393.wav", "text": "panu'kalaŋ ba'tas ʔaj ʔaŋ paɡtata'taɡ naŋ 'speʃal dɾaɡ koɾt", "duration": 3.35}
+{"audio_filepath": "data/fsc/parquet/train-00126-of-00139.parquet/sample_001231.wav", "text": "'ʔusap 'tajo", "duration": 0.9}
+{"audio_filepath": "data/fsc/parquet/train-00005-of-00139.parquet/sample_001238.wav", "text": "ŋa'jon ʔaŋ 'dahoŋ 'huɡis 'pusoʔ ʔaj ʔila'laɡaj nin'jo sa 'basoŋ maj 'tubiɡ", "duration": 4.675}
+{"audio_filepath": "data/fsc/parquet/train-00084-of-00139.parquet/sample_001944.wav", "text": "'foɾm 'fajv ʔej ko", "duration": 0.869}
+{"audio_filepath": "data/fsc/parquet/train-00086-of-00139.parquet/sample_001124.wav", "text": "sa ma'ŋa kaʔi'biɡan", "duration": 1.236}
+{"audio_filepath": "data/fsc/parquet/train-00071-of-00139.parquet/sample_001570.wav", "text": "wa'la 'paŋ ʔa'sawa 'ŋunit ɡus'to na maɡkapa'milja", "duration": 2.75}
+{"audio_filepath": "data/fsc/parquet/train-00136-of-00139.parquet/sample_001162.wav", "text": "punta'han mo na'man 'juŋ kapa'tid mo", "duration": 1.575}
+{"audio_filepath": "data/fsc/parquet/train-00103-of-00139.parquet/sample_001828.wav", "text": "sa paɡkabiɡ'laʔ ʔat 'takot naŋ la'laki pinatak'bo nja naŋ mabi'lis ʔaŋ ka'bajoʔ", "duration": 6.15}
+{"audio_filepath": "data/fsc/parquet/train-00033-of-00139.parquet/sample_001949.wav", "text": "sa 'tamaŋ pupunta'han", "duration": 1.416}
+{"audio_filepath": "data/fsc/parquet/train-00005-of-00139.parquet/sample_001506.wav", "text": "sa ʔi'saŋ ma'lajoŋ 'bajan", "duration": 1.425}
+{"audio_filepath": "data/fsc/parquet/train-00033-of-00139.parquet/sample_001102.wav", "text": "'halos maɡ'hapon 'din na'man ʔaŋ paɡsab'mit", "duration": 2.45}
+{"audio_filepath": "data/fsc/parquet/train-00089-of-00139.parquet/sample_001131.wav", "text": "'juŋ ʔa'no", "duration": 0.678}
+{"audio_filepath": "data/fsc/parquet/train-00123-of-00139.parquet/sample_000927.wav", "text": "naŋ 'paɾaŋ bi'nihaɡ", "duration": 1.681}
+{"audio_filepath": "data/fsc/parquet/train-00132-of-00139.parquet/sample_001964.wav", "text": "nuŋ tina'noŋ ko", "duration": 1.283}
+{"audio_filepath": "data/fsc/parquet/train-00053-of-00139.parquet/sample_000643.wav", "text": "paŋ'ʔapat si", "duration": 1.323}
+{"audio_filepath": "data/fsc/parquet/train-00133-of-00139.parquet/sample_001975.wav", "text": "ʔa'lam na'man 'natiŋ la'hat", "duration": 1.005}
+{"audio_filepath": "data/fsc/parquet/train-00026-of-00139.parquet/sample_001510.wav", "text": "na'maʔos na si 'lina", "duration": 1.35}
+{"audio_filepath": "data/fsc/parquet/train-00117-of-00139.parquet/sample_001611.wav", "text": "'sobɾaŋ nakaka'hilo tala'ɡa 'juŋ ʔa'moj", "duration": 1.54}
+{"audio_filepath": "data/fsc/parquet/train-00133-of-00139.parquet/sample_001017.wav", "text": "maɡhintajhin'taj daw ʔa'ko ʔat maɡka'ka", "duration": 2.175}
+{"audio_filepath": "data/fsc/parquet/train-00065-of-00139.parquet/sample_001666.wav", "text": "'tulad naŋ ʔi'saŋ maɡa'liŋ", "duration": 1.54}
+{"audio_filepath": "data/fsc/parquet/train-00118-of-00139.parquet/sample_001412.wav", "text": "sa'lamat 'poʔ", "duration": 0.825}
+{"audio_filepath": "data/fsc/parquet/train-00030-of-00139.parquet/sample_001964.wav", "text": "naɡsupoɾ'tahan naɡtutulu'ŋan", "duration": 1.957}
+{"audio_filepath": "data/fsc/parquet/train-00031-of-00139.parquet/sample_001803.wav", "text": "ʔiʔi'sa 'lamaŋ ʔaŋ kapa'tid 'njaŋ la'laki", "duration": 1.925}
+{"audio_filepath": "data/fsc/parquet/train-00118-of-00139.parquet/sample_000488.wav", "text": "'mas 'bata sa 'jo", "duration": 1.05}
+{"audio_filepath": "data/fsc/parquet/train-00052-of-00139.parquet/sample_001628.wav", "text": "nakali'mutan ko 'laŋ 'tajtel 'non", "duration": 1.843}
+{"audio_filepath": "data/fsc/parquet/train-00131-of-00139.parquet/sample_000966.wav", "text": "naɡʔaʔa'laɡa naŋ ma'ɾamiŋ 'hajop", "duration": 2.1}
+{"audio_filepath": "data/fsc/parquet/train-00007-of-00139.parquet/sample_001035.wav", "text": "na ma'ʔaɾiŋ duma'tiŋ pa", "duration": 1.725}
+{"audio_filepath": "data/fsc/parquet/train-00023-of-00139.parquet/sample_001784.wav", "text": "naŋ mada'ʔanan nja", "duration": 1.075}
+{"audio_filepath": "data/fsc/parquet/train-00046-of-00139.parquet/sample_000901.wav", "text": "kali'mutan na 'natin ʔi'to", "duration": 1.9}
+{"audio_filepath": "data/fsc/parquet/train-00064-of-00139.parquet/sample_000188.wav", "text": "maɡpipi'toŋ ta'ʔoŋ 'ɡulaŋ na", "duration": 1.8}
+{"audio_filepath": "data/fsc/parquet/train-00002-of-00139.parquet/sample_000628.wav", "text": "ʔpinaŋa'nak ʔa'ko sa", "duration": 1.448}
+{"audio_filepath": "data/fsc/parquet/train-00027-of-00139.parquet/sample_001577.wav", "text": "ma'ɾamiŋ paɡkakata'ʔoŋ ma'nalo", "duration": 1.55}
+{"audio_filepath": "data/fsc/parquet/train-00003-of-00139.parquet/sample_000032.wav", "text": "'dito mama'sukan naŋ tɾa'baho", "duration": 1.919}
+{"audio_filepath": "data/fsc/parquet/train-00118-of-00139.parquet/sample_001964.wav", "text": "'juŋ maɡan'daŋ 'daɡat", "duration": 1.16}
+{"audio_filepath": "data/fsc/parquet/train-00020-of-00139.parquet/sample_000259.wav", "text": "naŋ 'paɾaŋ", "duration": 0.9}
+{"audio_filepath": "data/fsc/parquet/train-00070-of-00139.parquet/sample_001984.wav", "text": "ʔend ka'ja napun'ta 'din ʔa'ko sa ka'ja na naɡdesis'jon din ʔa'koŋ ʔitu'loj na 'ɾin naŋ 'masteɾs", "duration": 7.715}
+{"audio_filepath": "data/fsc/parquet/train-00079-of-00139.parquet/sample_001590.wav", "text": "'paɾa maba'jaɾan ʔaŋ kani'laŋ 'ʔutaŋ", "duration": 2.0}
+{"audio_filepath": "data/fsc/parquet/train-00105-of-00139.parquet/sample_000965.wav", "text": "ʔi'baŋ ban'saʔ", "duration": 0.785}
+{"audio_filepath": "data/fsc/parquet/train-00060-of-00139.parquet/sample_001976.wav", "text": "'tapos pu'masok na'man ʔa sa ʔi'saŋ", "duration": 1.463}
+{"audio_filepath": "data/fsc/parquet/train-00090-of-00139.parquet/sample_000852.wav", "text": "ta'ɡa ʔi'baŋ mun'do", "duration": 1.198}
+{"audio_filepath": "data/fsc/parquet/train-00025-of-00139.parquet/sample_000253.wav", "text": "ʔat di na mu'liŋ maʔibaba'lik", "duration": 1.525}
+{"audio_filepath": "data/fsc/parquet/train-00029-of-00139.parquet/sample_001488.wav", "text": "kuŋ tala'ɡaŋ 'ʔakin", "duration": 1.999}
+{"audio_filepath": "data/fsc/parquet/train-00101-of-00139.parquet/sample_001778.wav", "text": "paɡhanda'ʔan ʔaŋ ʔanu'maŋ paɡ'subok", "duration": 3.025}
+{"audio_filepath": "data/fsc/parquet/train-00074-of-00139.parquet/sample_001166.wav", "text": "'ʔo komposi'toɾ", "duration": 1.074}
+{"audio_filepath": "data/fsc/parquet/train-00023-of-00139.parquet/sample_000873.wav", "text": "no'ʔoŋ 'ʔunaŋ pana'hon maj ʔi'saŋ maɡsasa'ka na lu'misan", "duration": 2.59}
+{"audio_filepath": "data/fsc/parquet/train-00129-of-00139.parquet/sample_001975.wav", "text": "na'ko naɡta'noŋ 'laŋ ʔa'koŋ ba'bae sa pɾom binuhu'san nja 'koŋ 'tub", "duration": 2.46}
+{"audio_filepath": "data/fsc/parquet/train-00066-of-00139.parquet/sample_001977.wav", "text": "ʔe maɡʔi'nom 'din", "duration": 1.088}
+{"audio_filepath": "data/fsc/parquet/train-00107-of-00139.parquet/sample_001947.wav", "text": "kuŋ ʔa'no 'man 'juŋ ma'ŋa pinapa'ŋako nja", "duration": 1.861}
+{"audio_filepath": "data/fsc/parquet/train-00027-of-00139.parquet/sample_001897.wav", "text": "sa tu 'minit͡s na 'jon ʔaj hin'di ʔa'ko kakan'ta maɡsasali'ta pa 'ɾin ʔa'ko", "duration": 9.391}
+{"audio_filepath": "data/fsc/parquet/train-00112-of-00139.parquet/sample_000143.wav", "text": "na 'pawaŋ maj kaʔuɡ'najan 'lamaŋ sa 'dɾoɡa", "duration": 2.325}
+{"audio_filepath": "data/fsc/parquet/train-00078-of-00139.parquet/sample_001750.wav", "text": "ha'lika 'ɾito", "duration": 0.9}
+{"audio_filepath": "data/fsc/parquet/train-00037-of-00139.parquet/sample_001593.wav", "text": "bumi'li ka'mi naŋ 't͡ʃiken 'dun sa 'sinjoɾ 'pedɾo", "duration": 2.219}
+{"audio_filepath": "data/fsc/parquet/train-00053-of-00139.parquet/sample_001858.wav", "text": "a'noŋ pana'hon aŋ tinu'tukoj sa tu'laʔ", "duration": 1.69}
+{"audio_filepath": "data/fsc/parquet/train-00081-of-00139.parquet/sample_000418.wav", "text": "ʔaj ʔaŋ paɡta'taɡ paɡtata'taɡ naŋ 'speʃal dɾaɡ koɾt na 'pawaŋ maj kaʔuɡ'najan 'lamaŋ sa 'dɾoɡa", "duration": 7.269}
+{"audio_filepath": "data/fsc/parquet/train-00067-of-00139.parquet/sample_001624.wav", "text": "'ʃempɾe 'kase la'hat naŋ ma'ŋa 'klase mo 'jun 'juŋ ɡus'to", "duration": 2.375}
+{"audio_filepath": "data/fsc/parquet/train-00053-of-00139.parquet/sample_000509.wav", "text": "'baɡo pa 'lamaŋ ma'kuha ʔaŋ hinihi'liŋ moŋ doku'mento", "duration": 3.15}
+{"audio_filepath": "data/fsc/parquet/train-00015-of-00139.parquet/sample_000195.wav", "text": "'tapos 'jon ŋa'jon", "duration": 1.658}
+{"audio_filepath": "data/fsc/parquet/train-00044-of-00139.parquet/sample_001950.wav", "text": "ɡɾejd tɾi", "duration": 1.174}
+{"audio_filepath": "data/fsc/parquet/train-00078-of-00139.parquet/sample_001978.wav", "text": "ka'se 'juŋ", "duration": 0.511}
+{"audio_filepath": "data/fsc/parquet/train-00115-of-00139.parquet/sample_001496.wav", "text": "dalam'puŋ 'ɡulaŋ ʔat", "duration": 1.475}
+{"audio_filepath": "data/fsc/parquet/train-00116-of-00139.parquet/sample_001891.wav", "text": "paɡhaha'ɾapin ka'joŋ maɡʔa'sawa 'ʔupaŋ ʔa'jusin ʔaŋ ʔin'joŋ pɾob'lema", "duration": 3.625}
+{"audio_filepath": "data/fsc/parquet/train-00136-of-00139.parquet/sample_000655.wav", "text": "ʔi'toj sa'pat naŋ dahi'lan 'paɾa ma'ɡiŋ masa'ja ʃa", "duration": 2.45}
+{"audio_filepath": "data/fsc/parquet/train-00136-of-00139.parquet/sample_000744.wav", "text": "'sino ka'sama mo luma'bas", "duration": 2.142}
+{"audio_filepath": "data/fsc/parquet/train-00034-of-00139.parquet/sample_001949.wav", "text": "sina'sabi ni he'sus kaj 'pedɾo kuŋ pa'ʔano nja paŋanala'ɡaʔan ʔaŋ 'kawa ni he'sus", "duration": 4.4}
+{"audio_filepath": "data/fsc/parquet/train-00127-of-00139.parquet/sample_001052.wav", "text": "na si'la ʔat ʔi'kaw ʔaj wa'laʔ", "duration": 1.7}
+{"audio_filepath": "data/fsc/parquet/train-00094-of-00139.parquet/sample_001800.wav", "text": "ka'ʔinin mo ʔi'toŋ 'hopja", "duration": 1.4}
+{"audio_filepath": "data/fsc/parquet/train-00091-of-00139.parquet/sample_001941.wav", "text": "si ne'nita", "duration": 0.65}
+{"audio_filepath": "data/fsc/parquet/train-00112-of-00139.parquet/sample_001089.wav", "text": "'tapos ʔaŋ 'koɾs ko", "duration": 1.255}
+{"audio_filepath": "data/fsc/parquet/train-00081-of-00139.parquet/sample_001730.wav", "text": "sa'ɾili 'namin ʔaŋ 'ʔamiŋ 'buhaj", "duration": 2.084}
+{"audio_filepath": "data/fsc/parquet/train-00089-of-00139.parquet/sample_001973.wav", "text": "napun'ta 'nako sa 'sekʃon 'wan", "duration": 1.547}
+{"audio_filepath": "data/fsc/parquet/train-00122-of-00139.parquet/sample_001971.wav", "text": "ke'laŋan njaŋ ɡwen", "duration": 0.655}
+{"audio_filepath": "data/fsc/parquet/train-00116-of-00139.parquet/sample_001322.wav", "text": "ma'ʔis ʔat 'palaj", "duration": 1.264}
+{"audio_filepath": "data/fsc/parquet/train-00045-of-00139.parquet/sample_000786.wav", "text": "'pet͡ʃa la'biŋ tat'lo ŋa'jon", "duration": 1.5}
+{"audio_filepath": "data/fsc/parquet/train-00105-of-00139.parquet/sample_001048.wav", "text": "'tapos 'sobɾaŋ", "duration": 1.269}
+{"audio_filepath": "data/fsc/parquet/train-00033-of-00139.parquet/sample_000602.wav", "text": "ba'halaʔ ka", "duration": 0.81}
+{"audio_filepath": "data/fsc/parquet/train-00058-of-00139.parquet/sample_000406.wav", "text": "na naʔa'sajn", "duration": 0.925}
+{"audio_filepath": "data/fsc/parquet/train-00007-of-00139.parquet/sample_001228.wav", "text": "ʔi'sa ko 'laŋ fɾom", "duration": 1.286}
+{"audio_filepath": "data/fsc/parquet/train-00067-of-00139.parquet/sample_001411.wav", "text": "biɡ'jan mo ʔa'ko njaŋ kina'kaʔin mo", "duration": 2.175}
+{"audio_filepath": "data/fsc/parquet/train-00014-of-00139.parquet/sample_000895.wav", "text": "punta'han mo na'man 'juŋ kapa'tid mo", "duration": 1.716}
+{"audio_filepath": "data/fsc/parquet/train-00004-of-00139.parquet/sample_001839.wav", "text": "'ʔamiŋ ɡa'nap na kali'kasan", "duration": 1.748}
+{"audio_filepath": "data/fsc/parquet/train-00127-of-00139.parquet/sample_000604.wav", "text": "simu'lan sa d͡ʒi ʔem ʔej 'seven aŋ ti vi 'ʃow na da boj ʔend da ɡeɾl", "duration": 4.036}
+{"audio_filepath": "data/fsc/parquet/train-00061-of-00139.parquet/sample_001726.wav", "text": "haŋ'ɡaŋ sa maka'tuloɡ", "duration": 1.45}
+{"audio_filepath": "data/fsc/parquet/train-00021-of-00139.parquet/sample_000770.wav", "text": "sa'mahan mo na'man ʔa'ko mama'jaʔ", "duration": 1.6}
+{"audio_filepath": "data/fsc/parquet/train-00099-of-00139.parquet/sample_000259.wav", "text": "sa 'masteɾ 'ʃowman ni 'kuja 'dʒeɾms", "duration": 2.125}
+{"audio_filepath": "data/fsc/parquet/train-00027-of-00139.parquet/sample_000871.wav", "text": "'paɾa bu'maŋon ʔult", "duration": 0.802}
+{"audio_filepath": "data/fsc/parquet/train-00115-of-00139.parquet/sample_000501.wav", "text": "naŋ 'paɾaŋ bi'nihaɡ naŋ ʔi'saŋ maɡan'daŋ di'wataʔ naŋ kalaŋi'tan", "duration": 3.35}
+{"audio_filepath": "data/fsc/parquet/train-00054-of-00139.parquet/sample_000724.wav", "text": "konstɾuk'ʃon naŋ ma'ŋa 'kalje", "duration": 1.605}
+{"audio_filepath": "data/fsc/parquet/train-00114-of-00139.parquet/sample_000546.wav", "text": "biɡ'jan mo ʔa'ko njaŋ kina'kaʔin mo", "duration": 2.375}
+{"audio_filepath": "data/fsc/parquet/train-00031-of-00139.parquet/sample_001805.wav", "text": "hini'ŋan 'ŋaʔ ʔa'ko naŋ mala'kiŋ hala'ɡa", "duration": 2.325}
+{"audio_filepath": "data/fsc/parquet/train-00030-of-00139.parquet/sample_000039.wav", "text": "sa'ʔan ka'jo pupun'ta", "duration": 1.175}
+{"audio_filepath": "data/fsc/parquet/train-00009-of-00139.parquet/sample_000753.wav", "text": "naɡʔi'ba ʔaŋ ʔi'mahe naŋ ma'ŋa si'ɾena", "duration": 2.15}
+{"audio_filepath": "data/fsc/parquet/train-00020-of-00139.parquet/sample_000341.wav", "text": "nakaki'lala ʔa'ko naŋ ma'ŋa baɾ'kada ko", "duration": 1.64}
+{"audio_filepath": "data/fsc/parquet/train-00010-of-00139.parquet/sample_000185.wav", "text": "mapapati'ŋin ka sa 'laŋit", "duration": 1.725}
+{"audio_filepath": "data/fsc/parquet/train-00130-of-00139.parquet/sample_000967.wav", "text": "ʔaŋ naɡlili'wanaɡ na ɡin'toŋ 'kulaŋ 'kulaj ʔaj naɡsa'saboɡ naŋ kaɡan'dahan saj daʔiɡ'diɡ", "duration": 6.85}
+{"audio_filepath": "data/fsc/parquet/train-00051-of-00139.parquet/sample_000830.wav", "text": "punta'han mo na'man 'juŋ kapa'tid mo", "duration": 1.637}
+{"audio_filepath": "data/fsc/parquet/train-00083-of-00139.parquet/sample_000717.wav", "text": "pa'ti 'juŋ ma'ŋa ba'baʔe 'koŋ ka'klase 'dati na hin'di ko ka'klows nuŋ 'hajskul na'ɡiŋ kabaɾ'kada ko na 'ɾin", "duration": 5.672}
+{"audio_filepath": "data/fsc/parquet/train-00111-of-00139.parquet/sample_001425.wav", "text": "ʔaŋ pɾoɡ'ɾama sa ti vi na 'nalid͡ʒ 'paweɾ ʔaj", "duration": 2.325}
+{"audio_filepath": "data/fsc/parquet/train-00101-of-00139.parquet/sample_001630.wav", "text": "ʔa'juŋ ma'ŋa ʔa'no feɾst ʔejd", "duration": 1.816}
+{"audio_filepath": "data/fsc/parquet/train-00135-of-00139.parquet/sample_001318.wav", "text": "staɾ tok sinimu'lan njaʔ", "duration": 1.577}
+{"audio_filepath": "data/fsc/parquet/train-00107-of-00139.parquet/sample_000110.wav", "text": "paŋli'ma ʃa sa sam'puŋ maɡkakapa'tid", "duration": 2.05}
+{"audio_filepath": "data/fsc/parquet/train-00053-of-00139.parquet/sample_001492.wav", "text": "ʔaŋ 'sabi maɡhintajhin'taj daw ʔa'ko", "duration": 2.075}
+{"audio_filepath": "data/fsc/parquet/train-00014-of-00139.parquet/sample_001667.wav", "text": "'level sa ko'lehio", "duration": 2.239}
+{"audio_filepath": "data/fsc/parquet/train-00047-of-00139.parquet/sample_001537.wav", "text": "kun'di 'taʔo 'mismo", "duration": 1.425}
+{"audio_filepath": "data/fsc/parquet/train-00038-of-00139.parquet/sample_000168.wav", "text": "paki'ʔiwan na 'laŋ d͡ʒan", "duration": 1.525}
+{"audio_filepath": "data/fsc/parquet/train-00016-of-00139.parquet/sample_000259.wav", "text": "ʔaj naɡta'ka din", "duration": 1.01}
+{"audio_filepath": "data/fsc/parquet/train-00137-of-00139.parquet/sample_001558.wav", "text": "ma'ʔaɾiŋ makada'ma ka naŋ saɡ'lit na ɡin'hawa", "duration": 2.35}
+{"audio_filepath": "data/fsc/parquet/train-00050-of-00139.parquet/sample_001531.wav", "text": "nakahu'li 'ɾin naŋ ʔi'saŋ 'ʔaɾaw", "duration": 1.75}
+{"audio_filepath": "data/fsc/parquet/train-00079-of-00139.parquet/sample_001331.wav", "text": "ʔat 'minsan ʔaj tuma'tawaɡ 'din ʔa'ko sa kani'la", "duration": 2.575}
+{"audio_filepath": "data/fsc/parquet/train-00113-of-00139.parquet/sample_000033.wav", "text": "maj 'ʔiloɡ", "duration": 0.81}
+{"audio_filepath": "data/fsc/parquet/train-00083-of-00139.parquet/sample_001971.wav", "text": "na'ɡulat ʔaŋ 'ʔamiŋ 'ɡuɾoʔ 'dahil ʔa'kala nja maj mul'to ka'jaʔ ma'ʔaɡa ka'miŋ pina'tapos ʔat sa'ka 'laŋ luma'bas ʔaŋ 'ʔamiŋ ka'klaseŋ lokolo'ko", "duration": 21.093}
+{"audio_filepath": "data/fsc/parquet/train-00136-of-00139.parquet/sample_001961.wav", "text": "tumambliŋ'tambliŋ ʃa", "duration": 1.163}
+{"audio_filepath": "data/fsc/parquet/train-00013-of-00139.parquet/sample_001574.wav", "text": "sa ʔi'saŋ ma'lajoŋ lu'ɡaɾ sa 'ʔamin", "duration": 1.81}
+{"audio_filepath": "data/fsc/parquet/train-00035-of-00139.parquet/sample_001602.wav", "text": "na paʔ mo na mapakikina'baŋan naŋ ban'saʔ", "duration": 2.2}
+{"audio_filepath": "data/fsc/parquet/train-00036-of-00139.parquet/sample_001108.wav", "text": "ʔat wa'la 'kahit sa sa 'ʔatin ʔaŋ makapaɡsa'sabiŋ hin'di 'tajo kaʔilan'man maʔa'ʔaɾiŋ da'lawin naŋ kapahama'kan", "duration": 6.525}
+{"audio_filepath": "data/fsc/parquet/train-00059-of-00139.parquet/sample_000165.wav", "text": "pa'ʔano 'njo masisiɡu'ɾado na maki'kita nin'jo ʃa 'ɾito", "duration": 2.61}
+{"audio_filepath": "data/fsc/parquet/train-00033-of-00139.parquet/sample_000574.wav", "text": "paɡ 'tapak mo naŋ ʔaksele'ɾejʃon", "duration": 2.122}
+{"audio_filepath": "data/fsc/parquet/train-00086-of-00139.parquet/sample_001969.wav", "text": "'halos hin'di 'ɾin si'la tala'ɡa 'kajaŋ", "duration": 1.72}
+{"audio_filepath": "data/fsc/parquet/train-00086-of-00139.parquet/sample_001569.wav", "text": "sa'ʔan pa'la ʔaŋ li'biŋ", "duration": 1.57}
+{"audio_filepath": "data/fsc/parquet/train-00024-of-00139.parquet/sample_001387.wav", "text": "ma'ŋa 'puno", "duration": 0.92}
+{"audio_filepath": "data/fsc/parquet/train-00014-of-00139.parquet/sample_001756.wav", "text": "'paɾa maɡtaɡum'paj", "duration": 1.038}
+{"audio_filepath": "data/fsc/parquet/train-00035-of-00139.parquet/sample_001876.wav", "text": "kumus'ta na ka'ja ʃa", "duration": 1.496}
+{"audio_filepath": "data/fsc/parquet/train-00034-of-00139.parquet/sample_001016.wav", "text": "ma'ɾami sa ʔin'jo ʔaŋ 'ʔalam kuŋ ʔa'no ʔaŋ duma'ʔan sa paɡ'suboks du'mad duma'ʔan sa paɡ'subok naŋ kali'kasan", "duration": 7.179}
+{"audio_filepath": "data/fsc/parquet/train-00063-of-00139.parquet/sample_001922.wav", "text": "paki'ʔajos na'man 'juŋ 'kwaɾto mo", "duration": 1.975}
+{"audio_filepath": "data/fsc/parquet/train-00109-of-00139.parquet/sample_001738.wav", "text": "sa pamama'ɡitan naŋ ma'ŋa 'kwento", "duration": 2.143}
+{"audio_filepath": "data/fsc/parquet/train-00078-of-00139.parquet/sample_001959.wav", "text": "hiʔ tiʔ", "duration": 1.396}
+{"audio_filepath": "data/fsc/parquet/train-00015-of-00139.parquet/sample_001404.wav", "text": "ʔiʔi'sa 'lamaŋ ʔaŋ kapa'tid njaŋ la'laki", "duration": 2.14}
+{"audio_filepath": "data/fsc/parquet/train-00016-of-00139.parquet/sample_001584.wav", "text": "naɡbubuŋ'kal ʔa'ko naŋ 'lupaʔ ʔat naɡkaka'ʔiŋin", "duration": 2.629}
+{"audio_filepath": "data/fsc/parquet/train-00026-of-00139.parquet/sample_001944.wav", "text": "si'la na naɡ ʔa'laɡa 'samin haŋ'ɡaŋ buma'lik na 'juŋ 'nanaj ko nuŋ", "duration": 3.821}
+{"audio_filepath": "data/fsc/parquet/train-00041-of-00139.parquet/sample_000527.wav", "text": "'bilaŋ ka'tuloŋ sa ʔi'saŋ kaɾpin'teɾo", "duration": 2.325}
+{"audio_filepath": "data/fsc/parquet/train-00119-of-00139.parquet/sample_001145.wav", "text": "ma'ʔis ʔat", "duration": 0.575}
+{"audio_filepath": "data/fsc/parquet/train-00077-of-00139.parquet/sample_000056.wav", "text": "ʔemple'jado ka 'laŋ 'dito", "duration": 1.575}
+{"audio_filepath": "data/fsc/parquet/train-00113-of-00139.parquet/sample_001503.wav", "text": "'t͡ʃaka 'sobɾaŋ ɡu'lo", "duration": 1.381}
+{"audio_filepath": "data/fsc/parquet/train-00122-of-00139.parquet/sample_001447.wav", "text": "ʔaŋ kapa'laɾan mo ʔaj hin'di mo 'man ha'napin", "duration": 2.575}
+{"audio_filepath": "data/fsc/parquet/train-00013-of-00139.parquet/sample_000273.wav", "text": "'sana ɡa'nun 'laŋ 'juŋ 'mat", "duration": 0.988}
+{"audio_filepath": "data/fsc/parquet/train-00079-of-00139.parquet/sample_001589.wav", "text": "'pɾesident ʔaj pumun'ta sa minda'naw 'zown", "duration": 2.569}
+{"audio_filepath": "data/fsc/parquet/train-00106-of-00139.parquet/sample_000645.wav", "text": "'peɾo nakikipaɡ'ʔusap ʃa sa 'ʔakin", "duration": 2.4}
+{"audio_filepath": "data/fsc/parquet/train-00094-of-00139.parquet/sample_001975.wav", "text": "saŋ'ʔajon sa paɡkapa'nalo ni 'ɡloɾja makapa'ɡal ʔa'ɾojo sa nakaɾa'ʔaŋ ʔelek'ʃon", "duration": 3.305}
+{"audio_filepath": "data/fsc/parquet/train-00133-of-00139.parquet/sample_001811.wav", "text": "'sana ɡa'nun ʔaŋ 'buhaj 'no", "duration": 1.407}
+{"audio_filepath": "data/fsc/parquet/train-00005-of-00139.parquet/sample_000377.wav", "text": "ʔa'ko ʔaj mahi'liɡ", "duration": 0.635}
+{"audio_filepath": "data/fsc/parquet/train-00029-of-00139.parquet/sample_001939.wav", "text": "mama'ja 'meɾon ka'miŋ 'tɾipol 'ʔi 'θeɾti tɾi", "duration": 2.211}
+{"audio_filepath": "data/fsc/parquet/train-00049-of-00139.parquet/sample_000040.wav", "text": "paki'lutoʔ i'toŋ ʔis'daʔ", "duration": 1.266}
+{"audio_filepath": "data/fsc/parquet/train-00080-of-00139.parquet/sample_001531.wav", "text": "maʔa'ɾiŋ da'lawin naŋ kapahama'kan", "duration": 2.325}
+{"audio_filepath": "data/fsc/parquet/train-00065-of-00139.parquet/sample_001663.wav", "text": "sa ʔaj si tat'lo 'laŋ 'juŋ ɡumaɡa'waʔ", "duration": 1.807}
+{"audio_filepath": "data/fsc/parquet/train-00064-of-00139.parquet/sample_001396.wav", "text": "maɡ 'ʔaɾal ka na", "duration": 0.9}
+{"audio_filepath": "data/fsc/parquet/train-00047-of-00139.parquet/sample_000648.wav", "text": "maɡ'ʔusap 'tajo", "duration": 0.975}
+{"audio_filepath": "data/fsc/parquet/train-00111-of-00139.parquet/sample_000957.wav", "text": "ʔat ʔidi'kit ʔi'to sa ʔi'saŋ pa'deɾ", "duration": 1.999}
+{"audio_filepath": "data/fsc/parquet/train-00026-of-00139.parquet/sample_000364.wav", "text": "maɡ'lutoʔ ka mama'jaʔ", "duration": 1.01}
+{"audio_filepath": "data/fsc/parquet/train-00011-of-00139.parquet/sample_001724.wav", "text": "ʔi'saŋ 'bataŋ ba'baʔe ʔaŋ biɡ'laŋ ʔuma'bot sa ka'maj naŋ la'laki ʔat naɡ'sabi 'taj hin'di nawa'laʔ ʔaŋ la'hat", "duration": 6.664}
+{"audio_filepath": "data/fsc/parquet/train-00077-of-00139.parquet/sample_001212.wav", "text": "naɡ ʔaʔa'lis", "duration": 0.95}
+{"audio_filepath": "data/fsc/parquet/train-00027-of-00139.parquet/sample_001040.wav", "text": "'helo 'edsel", "duration": 1.05}
+{"audio_filepath": "data/fsc/parquet/train-00125-of-00139.parquet/sample_001933.wav", "text": "ka'ja hin'di ʔa'ko naka'paɡ ʔate'nejo", "duration": 1.716}
+{"audio_filepath": "data/fsc/parquet/train-00051-of-00139.parquet/sample_000216.wav", "text": "si'na 'lowi ʔat", "duration": 0.875}
+{"audio_filepath": "data/fsc/parquet/train-00133-of-00139.parquet/sample_001224.wav", "text": "naŋ saɾi'saɾiŋ 'ɡulaj", "duration": 1.263}
+{"audio_filepath": "data/fsc/parquet/train-00051-of-00139.parquet/sample_000104.wav", "text": "'sina 'luwi ʔat d͡ʒej ʔem", "duration": 1.75}
+{"audio_filepath": "data/fsc/parquet/train-00073-of-00139.parquet/sample_000754.wav", "text": "pan'dak si 'doj 'ʔapat na talam'pakan ʔat sam'puŋ pul'ɡada ʔaŋ ta'ʔas maʔi'tim mati'punoʔ ʔaŋ kata'wan nakaʔus'liʔ ʔaŋ ma'ŋa bu'to sa mu'kaʔ mala'ɡoʔ ʔaŋ 'kilaj madi'dilat ʔaŋ ma'ŋa ma'taŋ maj kakat'waŋ niŋ'niŋ maka'pal ʔaŋ ma'ŋa 'labiŋ na pinaɡlalaɡ'jan naŋ patoŋ'patoŋ malala'ki at madidi'law na 'ŋipin may 'piɾad ʃa sa dala'waŋ kali'waŋ taɡi'liɾan", "duration": 25.275}
+{"audio_filepath": "data/fsc/parquet/train-00041-of-00139.parquet/sample_001907.wav", "text": "sa ma'ŋa", "duration": 0.727}
+{"audio_filepath": "data/fsc/parquet/train-00091-of-00139.parquet/sample_001977.wav", "text": "'juŋ kapa'tid kuŋ ʔi'saŋ la'lake", "duration": 1.707}
+{"audio_filepath": "data/fsc/parquet/train-00020-of-00139.parquet/sample_000895.wav", "text": "'ʔed kustama'kin 'ʔi ma'kin di ko 'ŋa matanda'ʔan", "duration": 3.186}
+{"audio_filepath": "data/fsc/parquet/train-00073-of-00139.parquet/sample_001788.wav", "text": "maki'kita ko 'juŋ 'stajl ko", "duration": 1.94}
+{"audio_filepath": "data/fsc/parquet/train-00125-of-00139.parquet/sample_000459.wav", "text": "ʔat 'dito maɡkapa'milja", "duration": 1.567}
+{"audio_filepath": "data/fsc/parquet/train-00090-of-00139.parquet/sample_000757.wav", "text": "ʔaŋ la'lakiŋ maɡkakaɾo'ʔon naŋ kaʔuɡ'najan sa ʔin'joŋ 'buhaj ʔat paɡ'ʔibiɡ", "duration": 3.61}
+{"audio_filepath": "data/fsc/parquet/train-00062-of-00139.parquet/sample_001960.wav", "text": "jun na'punta na'man ʔa'ko ju pi", "duration": 1.572}
+{"audio_filepath": "data/fsc/parquet/train-00007-of-00139.parquet/sample_000757.wav", "text": "'dapat na ma't͡ʃek", "duration": 1.05}
+{"audio_filepath": "data/fsc/parquet/train-00002-of-00139.parquet/sample_000456.wav", "text": "wan na'ɡiŋ maɡkakaʔi'biɡan ʔat maɡkaka'sama", "duration": 2.234}
+{"audio_filepath": "data/fsc/parquet/train-00056-of-00139.parquet/sample_001961.wav", "text": "ʔaŋ ka'klase 'koŋ ʔi'jon ʔaj naɡ ʔiʔi'ŋaj 'habaŋ ka'mi ʔaj naɡka'klase maj ma'ŋa 'kahoj sal sa 'kisame ʔat kan'jan binabali'baɡ ʔi'to", "duration": 18.0}
+{"audio_filepath": "data/fsc/parquet/train-00070-of-00139.parquet/sample_001560.wav", "text": "'pɾesko 'juŋ ma'ŋa", "duration": 1.097}
+{"audio_filepath": "data/fsc/parquet/train-00124-of-00139.parquet/sample_001579.wav", "text": "'ʔem ʔaj ʔel ʔef", "duration": 1.125}
+{"audio_filepath": "data/fsc/parquet/train-00049-of-00139.parquet/sample_001437.wav", "text": "ʔaŋ 'baso na'man ʔaj ʔila'ɡaj nin'jo sa ʔi'lalim naŋ ʔin'joŋ hiɡa'ʔan", "duration": 3.825}
+{"audio_filepath": "data/fsc/parquet/train-00066-of-00139.parquet/sample_001942.wav", "text": "'bat͡ʃeloɾs di'ɡɾi sa", "duration": 1.394}
+{"audio_filepath": "data/fsc/parquet/train-00101-of-00139.parquet/sample_001959.wav", "text": "naŋi'babaw na ʔaŋ ma'ŋa kom'pjuteɾ ʔat", "duration": 2.463}
+{"audio_filepath": "data/fsc/parquet/train-00082-of-00139.parquet/sample_000756.wav", "text": "'baɡo pa 'lamaŋ ma'kuha ʔaŋ hinihi'liŋ moŋ doku'mento", "duration": 4.442}
+{"audio_filepath": "data/fsc/parquet/train-00074-of-00139.parquet/sample_001968.wav", "text": "ɡus'to ko 'ɾiŋ maɡ'stej 'dito haʔ", "duration": 1.203}
+{"audio_filepath": "data/fsc/parquet/train-00123-of-00139.parquet/sample_001035.wav", "text": "ʔa'juŋ", "duration": 1.023}
+{"audio_filepath": "data/fsc/parquet/train-00112-of-00139.parquet/sample_001566.wav", "text": "naɡʔiʔi'ɡib naŋ 'tubiɡ ni'la", "duration": 1.921}
+{"audio_filepath": "data/fsc/parquet/train-00004-of-00139.parquet/sample_000950.wav", "text": "'buti na 'laŋ maj 'jahu 'mesend͡ʒeɾ na 'kahit na'ka 'linuks ʔaŋ ma'ŋa kom'pjuteɾ 'dito sa 'ʔamiŋ laboɾa'toɾjo", "duration": 7.453}
+{"audio_filepath": "data/fsc/parquet/train-00098-of-00139.parquet/sample_001590.wav", "text": "ma'ŋa ɾi'kwajɾments sa pli'kejʃons", "duration": 2.166}
+{"audio_filepath": "data/fsc/parquet/train-00023-of-00139.parquet/sample_001950.wav", "text": "mada'las ni'laŋ katja'wan", "duration": 1.53}
+{"audio_filepath": "data/fsc/parquet/train-00092-of-00139.parquet/sample_000290.wav", "text": "'sana 'ɾen maj pam'bajad na naŋ 'bahaj", "duration": 1.857}
+{"audio_filepath": "data/fsc/parquet/train-00134-of-00139.parquet/sample_001178.wav", "text": "ʃa ʔaj 'ʔisaŋ ʔi'mahe naŋ da'laɡaŋ pili'pina", "duration": 2.832}
+{"audio_filepath": "data/fsc/parquet/train-00011-of-00139.parquet/sample_000912.wav", "text": "'pinaɡ ʔaʔa'ɾalan 'dito", "duration": 1.791}
+{"audio_filepath": "data/fsc/parquet/train-00069-of-00139.parquet/sample_001415.wav", "text": "ʔat tumatan'da ka na ʔat napaɡʔiʔi'wanan ka na naŋ 'mas 'bata sa ʔi'jo", "duration": 4.578}
+{"audio_filepath": "data/fsc/parquet/train-00070-of-00139.parquet/sample_001354.wav", "text": "pakiʔu'sapan ʔaŋ ma'ŋa dok'toɾ ʔat 'naɾs", "duration": 2.5}
+{"audio_filepath": "data/fsc/parquet/train-00083-of-00139.parquet/sample_001980.wav", "text": "ʔa'ko si ɾafa'ʔel poli'kaɾpjo", "duration": 2.477}
+{"audio_filepath": "data/fsc/parquet/train-00135-of-00139.parquet/sample_000240.wav", "text": "'wejt 'laŋ 'hjaʔ", "duration": 0.54}
+{"audio_filepath": "data/fsc/parquet/train-00051-of-00139.parquet/sample_001921.wav", "text": "ma'ŋa fud 'sajans ʔat kemis'tɾi mat ʔat 'fisiks", "duration": 3.806}
+{"audio_filepath": "data/fsc/parquet/train-00071-of-00139.parquet/sample_000653.wav", "text": "paɡ 'ʔibiɡ", "duration": 1.15}
+{"audio_filepath": "data/fsc/parquet/train-00101-of-00139.parquet/sample_001656.wav", "text": "'dito nakata'nim ʔaŋ 'ʔakiŋ ma'ŋa pa'ŋaɾap", "duration": 2.503}
+{"audio_filepath": "data/fsc/parquet/train-00004-of-00139.parquet/sample_000677.wav", "text": "nakaka'bad 'tɾip 'ŋaʔ 'laŋ 'kasi na'basa ka'mi 'peɾo masa'ja", "duration": 2.925}
+{"audio_filepath": "data/fsc/parquet/train-00001-of-00139.parquet/sample_001307.wav", "text": "naʔiʔintindi'han mo ko", "duration": 1.099}
+{"audio_filepath": "data/fsc/parquet/train-00080-of-00139.parquet/sample_001858.wav", "text": "mada'las ni'laŋ kant͡ʃa'wan si ʔand͡ʒe'lik na ʃa pa'laŋ nanini'ɾahan sa 'bukid", "duration": 5.899}
+{"audio_filepath": "data/fsc/parquet/train-00017-of-00139.parquet/sample_001192.wav", "text": "sa'ʔan ʔaŋ taɡ'puʔan naŋ tu'laʔ", "duration": 1.625}
+{"audio_filepath": "data/fsc/parquet/train-00030-of-00139.parquet/sample_000485.wav", "text": "'sino na'man ʔaŋ la'lakiŋ 'nasa 'djip", "duration": 2.275}
+{"audio_filepath": "data/fsc/parquet/train-00118-of-00139.parquet/sample_001715.wav", "text": "nasaɡa'saʔan 'juŋ 'ʔaso", "duration": 1.203}
+{"audio_filepath": "data/fsc/parquet/train-00091-of-00139.parquet/sample_001930.wav", "text": "'taʔo na naɡmu'laʔ", "duration": 1.101}
+{"audio_filepath": "data/fsc/parquet/train-00041-of-00139.parquet/sample_000492.wav", "text": "sa 'ʔamiŋ 'bajan pina'lawak ʔaŋ ma'ŋa kal'sada du'mami ʔaŋ ma'ŋa 'baɡoŋ ɡu'saliʔ ʔat 'tunaj na ʔumun'lad ʔaŋ kabu'hajan", "duration": 6.725}
+{"audio_filepath": "data/fsc/parquet/train-00063-of-00139.parquet/sample_001965.wav", "text": "ʔaŋ ʔiku'kwento ko t͡ʃa'ka ʔila'lalaʔ", "duration": 1.826}
+{"audio_filepath": "data/fsc/parquet/train-00021-of-00139.parquet/sample_000431.wav", "text": "ni'ɾejd naŋ mili'taɾ", "duration": 1.4}
+{"audio_filepath": "data/fsc/parquet/train-00074-of-00139.parquet/sample_000778.wav", "text": "maj 'ʃampu ʔat 'fejs 'tawel sa la'babo", "duration": 2.325}
+{"audio_filepath": "data/fsc/parquet/train-00038-of-00139.parquet/sample_000526.wav", "text": "d͡ʒa d͡ʒe d͡ʒi d͡ʒo d͡ʒu", "duration": 1.646}
+{"audio_filepath": "data/fsc/parquet/train-00118-of-00139.parquet/sample_001663.wav", "text": "dalawam'puŋ ta'ʔoŋ 'ɡulaŋ ʔat da'laɡa", "duration": 1.98}
+{"audio_filepath": "data/fsc/parquet/train-00101-of-00139.parquet/sample_001856.wav", "text": "na kaʔi'biɡan naʔ", "duration": 0.829}
+{"audio_filepath": "data/fsc/parquet/train-00127-of-00139.parquet/sample_001133.wav", "text": "tinataŋ'kilik ʔat sa ha'ɾap", "duration": 1.318}
+{"audio_filepath": "data/fsc/parquet/train-00018-of-00139.parquet/sample_001593.wav", "text": "na 'haŋin", "duration": 0.725}
+{"audio_filepath": "data/fsc/parquet/train-00119-of-00139.parquet/sample_000159.wav", "text": "ma'leʔ", "duration": 0.3}
+{"audio_filepath": "data/fsc/parquet/train-00002-of-00139.parquet/sample_000306.wav", "text": "tinata'noŋ ʔa'ko naŋ ma'ŋa 'taʔo 'dito sa sa ju pi", "duration": 3.335}
+{"audio_filepath": "data/fsc/parquet/train-00048-of-00139.parquet/sample_001974.wav", "text": "paɡtata'pos ɡɾad͡ʒ'wejʃon kuŋ ba'ɡa", "duration": 2.031}
+{"audio_filepath": "data/fsc/parquet/train-00033-of-00139.parquet/sample_001976.wav", "text": "kej'sa sa kabi'laŋ", "duration": 1.168}
+{"audio_filepath": "data/fsc/parquet/train-00116-of-00139.parquet/sample_001946.wav", "text": "ʔisanli'bo ʃam na 'ɾaʔan walum'put tat'lo", "duration": 2.687}
+{"audio_filepath": "data/fsc/parquet/train-00082-of-00139.parquet/sample_000364.wav", "text": "'ʔokej na'man 'so", "duration": 0.808}
+{"audio_filepath": "data/fsc/parquet/train-00065-of-00139.parquet/sample_001169.wav", "text": "ʔanta'jin njo na'man ʔa'ko", "duration": 1.45}
+{"audio_filepath": "data/fsc/parquet/train-00046-of-00139.parquet/sample_001559.wav", "text": "ʔaj bumi'taw sa paɡkaka'hawak sa ʔenta'blado", "duration": 2.575}
+{"audio_filepath": "data/fsc/parquet/train-00096-of-00139.parquet/sample_001944.wav", "text": "maj ʔa'no maj 'bjuti 'paɾloɾ sa lo'ʔob he he he", "duration": 4.291}
+{"audio_filepath": "data/fsc/parquet/train-00055-of-00139.parquet/sample_000733.wav", "text": "maɡ'bas", "duration": 0.582}
+{"audio_filepath": "data/fsc/parquet/train-00076-of-00139.parquet/sample_000710.wav", "text": "ka'ja ʔa'ko 'lamaŋ ʔaŋ nakapaɡ'tapos naŋ 'hajskul ʔat ʔaŋ ʔi'ba 'koŋ kapa'tid ʔaj ʔelemen'taɾja 'laŋ", "duration": 5.35}
+{"audio_filepath": "data/fsc/parquet/train-00102-of-00139.parquet/sample_000681.wav", "text": "ɡu'muhit naŋ ba'liw na ʔuŋ'ɡoj sa 'vajolet na pin'toʔ", "duration": 2.9}
+{"audio_filepath": "data/fsc/parquet/train-00036-of-00139.parquet/sample_001931.wav", "text": "ʔe 'klows kuŋ 'tita 'jon", "duration": 1.137}
+{"audio_filepath": "data/fsc/parquet/train-00113-of-00139.parquet/sample_001878.wav", "text": "'tajo naŋ", "duration": 0.484}
+{"audio_filepath": "data/fsc/parquet/train-00072-of-00139.parquet/sample_000347.wav", "text": "'peɾo 'laɡi 'natiŋ", "duration": 1.219}
+{"audio_filepath": "data/fsc/parquet/train-00067-of-00139.parquet/sample_001045.wav", "text": "ʔa 'jon", "duration": 0.639}
+{"audio_filepath": "data/fsc/parquet/train-00027-of-00139.parquet/sample_000490.wav", "text": "wa'la 'paŋ ʔa'sawa 'ŋunit ɡus'to ko naŋ maɡkapa'milja", "duration": 2.24}
+{"audio_filepath": "data/fsc/parquet/train-00065-of-00139.parquet/sample_001436.wav", "text": "hin'di nawa'laʔ ʔaŋ la'hat", "duration": 1.15}
+{"audio_filepath": "data/fsc/parquet/train-00120-of-00139.parquet/sample_000092.wav", "text": "nasaɡʔa'saʔan 'juŋ 'ʔaso", "duration": 1.775}
+{"audio_filepath": "data/fsc/parquet/train-00114-of-00139.parquet/sample_001924.wav", "text": "'peɾo pinaka'ɡusto 'koŋ ɡa'win ku'maʔen", "duration": 2.873}
+{"audio_filepath": "data/fsc/parquet/train-00056-of-00139.parquet/sample_001649.wav", "text": "naŋ ma'ŋa sanda'liŋ jon", "duration": 1.304}
+{"audio_filepath": "data/fsc/parquet/train-00127-of-00139.parquet/sample_001512.wav", "text": "ʔat ʔipaɡpa'tuloj ʔaŋ paɡɡa'wa naŋ ma'buti", "duration": 2.375}
+{"audio_filepath": "data/fsc/parquet/train-00054-of-00139.parquet/sample_000649.wav", "text": "ta'hanan sa ita'ʔas naŋ ɡu'lod", "duration": 1.79}
+{"audio_filepath": "data/fsc/parquet/train-00002-of-00139.parquet/sample_001117.wav", "text": "di'nas dina'sal", "duration": 1.53}
+{"audio_filepath": "data/fsc/parquet/train-00063-of-00139.parquet/sample_000589.wav", "text": "kaj'lan ʔaŋ 'lakad njo", "duration": 1.15}
+{"audio_filepath": "data/fsc/parquet/train-00074-of-00139.parquet/sample_000992.wav", "text": "ʔat maj paɡkakata'ʔoŋ 'malas", "duration": 1.994}
+{"audio_filepath": "data/fsc/parquet/train-00041-of-00139.parquet/sample_001016.wav", "text": "'paɾaŋ wa'laʔ 'paɾaŋ ɡus'to ko naŋ lu'mipat", "duration": 3.06}
+{"audio_filepath": "data/fsc/parquet/train-00013-of-00139.parquet/sample_000768.wav", "text": "d͡ʒi ʔem ʔej 'seben", "duration": 1.225}
+{"audio_filepath": "data/fsc/parquet/train-00021-of-00139.parquet/sample_001585.wav", "text": "biɡ'jan mo ʔa'ko njaŋ kina'kaʔin mo", "duration": 2.04}
+{"audio_filepath": "data/fsc/parquet/train-00039-of-00139.parquet/sample_000195.wav", "text": "ta'pos ʔaŋ ma'hal pa nuŋ bina'jaɾan", "duration": 1.744}
+{"audio_filepath": "data/fsc/parquet/train-00027-of-00139.parquet/sample_001609.wav", "text": "sa paɡkawa'la naŋ la'hat ni'laŋ tinataŋ'kilik", "duration": 2.692}
+{"audio_filepath": "data/fsc/parquet/train-00000-of-00139.parquet/sample_001177.wav", "text": "tuma'lon 'kamo ʔaŋ ʔi'joŋ 'pusoʔ", "duration": 1.429}
+{"audio_filepath": "data/fsc/parquet/train-00034-of-00139.parquet/sample_001246.wav", "text": "'bilaŋ ka'tuloŋ sa ʔi'saŋ kaɾpin'teɾo", "duration": 2.775}
+{"audio_filepath": "data/fsc/parquet/train-00072-of-00139.parquet/sample_000103.wav", "text": "'sino ʔaŋ naɡbi'ɡaj sa'jo naŋ 'hulaʔ", "duration": 1.65}
+{"audio_filepath": "data/fsc/parquet/train-00003-of-00139.parquet/sample_000370.wav", "text": "'pwede 'moŋ paniwa'laʔan", "duration": 1.435}
+{"audio_filepath": "data/fsc/parquet/train-00047-of-00139.parquet/sample_001871.wav", "text": "sa paɡʔus'boŋ naŋ kɾist͡ʃani'dad", "duration": 1.9}
+{"audio_filepath": "data/fsc/parquet/train-00116-of-00139.parquet/sample_000712.wav", "text": "ʔaʔa'lis 'tajo 'bukas", "duration": 1.45}
+{"audio_filepath": "data/fsc/parquet/train-00074-of-00139.parquet/sample_000166.wav", "text": "'bakit 'ŋa ba", "duration": 1.493}
+{"audio_filepath": "data/fsc/parquet/train-00120-of-00139.parquet/sample_001458.wav", "text": "ba'hala na", "duration": 0.8}
+{"audio_filepath": "data/fsc/parquet/train-00096-of-00139.parquet/sample_001480.wav", "text": "'so pa'ti sa ma'ŋa", "duration": 1.463}
+{"audio_filepath": "data/fsc/parquet/train-00085-of-00139.parquet/sample_001922.wav", "text": "kuŋ ʔa'no 'juŋ", "duration": 0.794}
+{"audio_filepath": "data/fsc/parquet/train-00129-of-00139.parquet/sample_000195.wav", "text": "pi'naɡ ʔi'ba", "duration": 0.7}
+{"audio_filepath": "data/fsc/parquet/train-00128-of-00139.parquet/sample_000626.wav", "text": "ja je ji jo ju", "duration": 1.54}
+{"audio_filepath": "data/fsc/parquet/train-00102-of-00139.parquet/sample_001812.wav", "text": "kuŋ ʔa'no 'juŋ", "duration": 0.789}
+{"audio_filepath": "data/fsc/parquet/train-00105-of-00139.parquet/sample_001568.wav", "text": "hin'di 'naten 'dapat", "duration": 1.425}
+{"audio_filepath": "data/fsc/parquet/train-00090-of-00139.parquet/sample_001661.wav", "text": "ʔipaɡ'laʔ ʔipaɡ'laʔ 'soɾi", "duration": 1.44}
+{"audio_filepath": "data/fsc/parquet/train-00116-of-00139.parquet/sample_000956.wav", "text": "maɡan'da ʃa di ba", "duration": 1.4}
+{"audio_filepath": "data/fsc/parquet/train-00109-of-00139.parquet/sample_000291.wav", "text": "ba'hala na", "duration": 0.892}
+{"audio_filepath": "data/fsc/parquet/train-00086-of-00139.parquet/sample_000452.wav", "text": "'ʔaj naɡta'ka", "duration": 0.75}
+{"audio_filepath": "data/fsc/parquet/train-00017-of-00139.parquet/sample_000201.wav", "text": "'baɡo ʔaŋ kɾi'men naɡ'talo ʔaŋ maɡʔa'sawa 'dahil sa pa'ɡiɡiŋ la'seŋɡo naŋ 'biktima", "duration": 4.678}
+{"audio_filepath": "data/fsc/parquet/train-00009-of-00139.parquet/sample_000990.wav", "text": "'ʔe 'dahil hin'di ko pa 'ɾin ma'kita 'juŋ da'ʔan ko", "duration": 1.968}
+{"audio_filepath": "data/fsc/parquet/train-00009-of-00139.parquet/sample_001799.wav", "text": "kuŋ nalu'luɡi ʔaŋ ne'ɡoʃo mo", "duration": 1.625}
+{"audio_filepath": "data/fsc/parquet/train-00098-of-00139.parquet/sample_000144.wav", "text": "no'ʔoŋ 'nasa pɾo'binʃa pa ʃa", "duration": 1.75}
+{"audio_filepath": "data/fsc/parquet/train-00027-of-00139.parquet/sample_001622.wav", "text": "majama'jaʔ ʔaj biɡ'laŋ tumu'noɡ ʔaŋ te'lepono", "duration": 2.45}
+{"audio_filepath": "data/fsc/parquet/train-00111-of-00139.parquet/sample_001592.wav", "text": "hin'di nin'jo maʔa'ʔaɾiŋ", "duration": 1.6}
+{"audio_filepath": "data/fsc/parquet/train-00071-of-00139.parquet/sample_000261.wav", "text": "ʔa'no ba na'man ʔaŋ 'ʔunaŋ dadal'hin nun ka'paɡ fild 'tɾip", "duration": 2.403}
+{"audio_filepath": "data/fsc/parquet/train-00061-of-00139.parquet/sample_001068.wav", "text": "na 'to", "duration": 0.344}
+{"audio_filepath": "data/fsc/parquet/train-00097-of-00139.parquet/sample_000608.wav", "text": "ta'waɡan mo ʔa'ko", "duration": 1.2}
+{"audio_filepath": "data/fsc/parquet/train-00018-of-00139.parquet/sample_001474.wav", "text": "ma'ɾamiŋ ʔiniʔin'tindi sa 'buhaj", "duration": 1.668}
+{"audio_filepath": "data/fsc/parquet/train-00133-of-00139.parquet/sample_001984.wav", "text": "ʔi'ba 'paŋ ma'ŋa 'plejeɾ 'don", "duration": 1.219}
+{"audio_filepath": "data/fsc/parquet/train-00052-of-00139.parquet/sample_001982.wav", "text": "paɡsa'sabiŋ ʃa 'juŋ pinakamasa'maʔ 'peɾo 'meɾon 'din 'poŋ", "duration": 3.114}
+{"audio_filepath": "data/fsc/parquet/train-00026-of-00139.parquet/sample_001986.wav", "text": "di paw puma'pasok 'laɡi", "duration": 1.754}
+{"audio_filepath": "data/fsc/parquet/train-00125-of-00139.parquet/sample_001714.wav", "text": "naŋ si'laŋaŋ ba'haɡiʔ", "duration": 1.347}
+{"audio_filepath": "data/fsc/parquet/train-00114-of-00139.parquet/sample_000942.wav", "text": "si'ja 'ɾin ʔaŋ 'nasa ko'meɾʃal naŋ 'd͡ʒaɡ", "duration": 2.15}
+{"audio_filepath": "data/fsc/parquet/train-00041-of-00139.parquet/sample_000828.wav", "text": "siɡuɾa'duhin na 'paɾa sa ʔi'jo ʔaŋ ɡa'mot", "duration": 2.155}
+{"audio_filepath": "data/fsc/parquet/train-00103-of-00139.parquet/sample_000668.wav", "text": "ʔi'jon ʔaŋ", "duration": 0.7}
+{"audio_filepath": "data/fsc/parquet/train-00039-of-00139.parquet/sample_001807.wav", "text": "'saktoŋ 'sakto nuŋ tina'noŋ ko 'jon", "duration": 2.228}
+{"audio_filepath": "data/fsc/parquet/train-00105-of-00139.parquet/sample_001076.wav", "text": "sa ʔi'joŋ 'buhaj ʔat paɡ'ʔibiɡ", "duration": 1.789}
+{"audio_filepath": "data/fsc/parquet/train-00098-of-00139.parquet/sample_000047.wav", "text": "ʔat sa hu'liŋ 'bola ʔaj maj sam'pu na'maŋ 'pɾemjo", "duration": 2.286}
+{"audio_filepath": "data/fsc/parquet/train-00082-of-00139.parquet/sample_000416.wav", "text": "du'mami 'ɾin ʔaŋ ma'ŋa 'punoŋ wa'laŋ 'ʔawaŋ pinaɡpupu'tol", "duration": 3.166}
+{"audio_filepath": "data/fsc/parquet/train-00027-of-00139.parquet/sample_001978.wav", "text": "juŋ di ʔo ʔes ti", "duration": 1.302}
+{"audio_filepath": "data/fsc/parquet/train-00048-of-00139.parquet/sample_001966.wav", "text": "ʔa'koj naɡʔa'ʔaɾal sa ʔunibeɾsi'dad naŋ pili'pinas", "duration": 3.021}
+{"audio_filepath": "data/fsc/parquet/train-00129-of-00139.parquet/sample_000216.wav", "text": "'kulaj 'ɾed ʔaŋ 'd͡ʒapanis vejs naŋ 'boj skawt na si 'ɾiko", "duration": 3.6}
+{"audio_filepath": "data/fsc/parquet/train-00081-of-00139.parquet/sample_001657.wav", "text": "'ɡimik naŋ 'ɡimik", "duration": 1.118}
+{"audio_filepath": "data/fsc/parquet/train-00007-of-00139.parquet/sample_000267.wav", "text": "n ʔat ʔam mada'las ʔaj maj ma'ŋa 'kwento 'ɾiŋ lumala'bas 'habaŋ naɡla'laɾoʔ ka'jo", "duration": 12.484}
+{"audio_filepath": "data/fsc/parquet/train-00037-of-00139.parquet/sample_001834.wav", "text": "'ʔajun 'ʔevɾi 'wensdej ʔen sa'teɾdej ʔaŋ 'tɾejniŋ", "duration": 3.134}
+{"audio_filepath": "data/fsc/parquet/train-00076-of-00139.parquet/sample_001594.wav", "text": "tanu'ŋin ki'ta kuŋ sa'kaliŋ ʔi'kaw ʔaj saŋ ma'jaman", "duration": 2.441}
+{"audio_filepath": "data/fsc/parquet/train-00106-of-00139.parquet/sample_001518.wav", "text": "ma'tuloɡ ka na", "duration": 0.936}
+{"audio_filepath": "data/fsc/parquet/train-00110-of-00139.parquet/sample_001943.wav", "text": "'pwedeŋ makiʔaŋ'kas haŋ'ɡaŋ 'bajan", "duration": 1.946}
+{"audio_filepath": "data/fsc/parquet/train-00050-of-00139.parquet/sample_001658.wav", "text": "'kaja 'ŋa 'jon nuŋ pu'masok ʔa'ko sa 'naɾa", "duration": 2.438}
+{"audio_filepath": "data/fsc/parquet/train-00006-of-00139.parquet/sample_000035.wav", "text": "sasa'mahan mo ʔa'ko mama'jaʔ di'ba", "duration": 2.475}
+{"audio_filepath": "data/fsc/parquet/train-00117-of-00139.parquet/sample_000620.wav", "text": "'ʔokej na", "duration": 0.533}
+{"audio_filepath": "data/fsc/parquet/train-00061-of-00139.parquet/sample_001576.wav", "text": "naɡ'talo ʔaŋ maɡʔa'sawa 'dahil sa pa'ɡiɡiŋ laseŋ'ɡo naŋ 'biktima", "duration": 3.575}
+{"audio_filepath": "data/fsc/parquet/train-00062-of-00139.parquet/sample_000614.wav", "text": "'paŋ dahi'lan", "duration": 0.916}
+{"audio_filepath": "data/fsc/parquet/train-00079-of-00139.parquet/sample_000097.wav", "text": "dala'wa sa kani'laŋ ma'ŋa ma'ta", "duration": 1.575}
+{"audio_filepath": "data/fsc/parquet/train-00099-of-00139.parquet/sample_000974.wav", "text": "si'ɡe 'ŋaʔ", "duration": 0.578}
+{"audio_filepath": "data/fsc/parquet/train-00072-of-00139.parquet/sample_001629.wav", "text": "ɡo'ɾilja 'juŋ 'ʔajkon nja 'don", "duration": 1.613}
+{"audio_filepath": "data/fsc/parquet/train-00006-of-00139.parquet/sample_001419.wav", "text": "'neveɾ ʔi'toŋ tumi'ɾa naŋ 'najon", "duration": 1.975}
+{"audio_filepath": "data/fsc/parquet/train-00065-of-00139.parquet/sample_001761.wav", "text": "si'na 'lowi ʔat d͡ʒej ʔem", "duration": 1.8}
+{"audio_filepath": "data/fsc/parquet/train-00045-of-00139.parquet/sample_000419.wav", "text": "ʔaŋ kaʔunla'ɾan", "duration": 0.766}
+{"audio_filepath": "data/fsc/parquet/train-00059-of-00139.parquet/sample_001315.wav", "text": "namumuŋa 'man ʔo hin'deʔ", "duration": 1.175}
+{"audio_filepath": "data/fsc/parquet/train-00124-of-00139.parquet/sample_001589.wav", "text": "ʔto ʔaj 'ʔupaŋ hin'di mali'to ʔaŋ ma'ŋa 'naɾs", "duration": 2.8}
+{"audio_filepath": "data/fsc/parquet/train-00094-of-00139.parquet/sample_001057.wav", "text": "naŋ ma'sunoɡ ʔaŋ kata'wan naŋ la'laki", "duration": 2.074}
+{"audio_filepath": "data/fsc/parquet/train-00027-of-00139.parquet/sample_001089.wav", "text": "ʔaj maluŋ'kot na", "duration": 1.0}
+{"audio_filepath": "data/fsc/parquet/train-00013-of-00139.parquet/sample_001565.wav", "text": "'ʔam 'bale ma'ŋa ɡina'ɡawa ko na'man ŋa'jon", "duration": 2.404}
+{"audio_filepath": "data/fsc/parquet/train-00123-of-00139.parquet/sample_001959.wav", "text": "ɡina'wa njaŋ ɡani'to", "duration": 0.988}
+{"audio_filepath": "data/fsc/parquet/train-00077-of-00139.parquet/sample_001357.wav", "text": "da'laɡa dalawam'puŋ dali'daliŋ", "duration": 2.15}
+{"audio_filepath": "data/fsc/parquet/train-00060-of-00139.parquet/sample_000832.wav", "text": "kaɾa'niwaŋ nila'laɾu naŋ ma'ŋa ʔestu'd͡ʒante ʔaj 'valibol 'juŋ ʔi'ba na'man naɡpi'piŋpoŋ 'don sa 'd͡ʒim", "duration": 6.82}
+{"audio_filepath": "data/fsc/parquet/train-00038-of-00139.parquet/sample_000859.wav", "text": "'medjo 'mej", "duration": 1.065}
+{"audio_filepath": "data/fsc/parquet/train-00102-of-00139.parquet/sample_001691.wav", "text": "'jon ɡus'to 'ko mano'ʔod naŋ 'muvis", "duration": 3.484}
+{"audio_filepath": "data/fsc/parquet/train-00134-of-00139.parquet/sample_001596.wav", "text": "ʔaŋ bu'ʔoŋ pa'ŋalan nja ʔaj 'sant͡ʃo 'pant͡ʃo", "duration": 2.55}
+{"audio_filepath": "data/fsc/parquet/train-00056-of-00139.parquet/sample_000755.wav", "text": "naɡ'hiɾap ʔaŋ 'ʔisaŋ 'dati ʔaj masa'ɡanaŋ 'bajan", "duration": 4.768}
+{"audio_filepath": "data/fsc/parquet/train-00056-of-00139.parquet/sample_001958.wav", "text": "naŋ 'haj 'skul sa la ʔimaku'lada konsep'ʃon 'skul", "duration": 2.352}
+{"audio_filepath": "data/fsc/parquet/train-00059-of-00139.parquet/sample_001781.wav", "text": "kuŋ 'fan", "duration": 0.467}
+{"audio_filepath": "data/fsc/parquet/train-00109-of-00139.parquet/sample_001980.wav", "text": "sa ʔi'saŋ 'baɾjo", "duration": 1.137}
+{"audio_filepath": "data/fsc/parquet/train-00094-of-00139.parquet/sample_001592.wav", "text": "na ma'lapit pa ʔaŋ kani'laŋ 'bahaj sa 'ʔamin", "duration": 3.4}
+{"audio_filepath": "data/fsc/parquet/train-00128-of-00139.parquet/sample_001207.wav", "text": "maj 'ʃampu ʔat 'fejs 'tawel sa la'babo", "duration": 2.65}
+{"audio_filepath": "data/fsc/parquet/train-00075-of-00139.parquet/sample_000788.wav", "text": "ʔa'len ba ka'jo", "duration": 0.85}
+{"audio_filepath": "data/fsc/parquet/train-00113-of-00139.parquet/sample_001110.wav", "text": "hin'di na ʔiʔi'jak ʔaŋ 'ʔaɾaw ka'paɡ hin'di naŋʔa'laska", "duration": 3.335}
+{"audio_filepath": "data/fsc/parquet/train-00076-of-00139.parquet/sample_001340.wav", "text": "sa ʔi'saŋ pi bi ʔej 'plejeɾ", "duration": 1.5}
+{"audio_filepath": "data/fsc/parquet/train-00015-of-00139.parquet/sample_001851.wav", "text": "ʔaj lala'ɡaj 'njo sa 'basoŋ maj 'tubiɡ", "duration": 2.1}
+{"audio_filepath": "data/fsc/parquet/train-00123-of-00139.parquet/sample_001925.wav", "text": "kun'di 'juŋ sa'ɾili mo 'laŋ", "duration": 2.053}
+{"audio_filepath": "data/fsc/parquet/train-00100-of-00139.parquet/sample_001683.wav", "text": "nasaɡa'saʔan 'juŋ 'ʔaso", "duration": 1.4}
+{"audio_filepath": "data/fsc/parquet/train-00109-of-00139.parquet/sample_001914.wav", "text": "'ɡuɾoʔ ʔat", "duration": 0.916}
+{"audio_filepath": "data/fsc/parquet/train-00039-of-00139.parquet/sample_000092.wav", "text": "ni'lusob naŋ ma'ŋa 'balaŋ ʔaŋ ma'ŋa pana'nim sa 'bukid", "duration": 2.726}
+{"audio_filepath": "data/fsc/parquet/train-00054-of-00139.parquet/sample_001157.wav", "text": "pan'dak si 'doj", "duration": 0.925}
+{"audio_filepath": "data/fsc/parquet/train-00113-of-00139.parquet/sample_000032.wav", "text": "ʔa'no mali'ʔit pa ko 'nun ʔe", "duration": 1.095}
+{"audio_filepath": "data/fsc/parquet/train-00122-of-00139.parquet/sample_001667.wav", "text": "ha'ŋaŋ mama'taj", "duration": 0.815}
+{"audio_filepath": "data/fsc/parquet/train-00049-of-00139.parquet/sample_001949.wav", "text": "ku'muwaʔ na na'man naŋ paɡkaʔabo'ɡaʃa", "duration": 2.246}
+{"audio_filepath": "data/fsc/parquet/train-00093-of-00139.parquet/sample_000207.wav", "text": "ʔaj maluŋ'kot na pinano'ʔod naŋ ʔi'saŋ pa'milja aŋ kani'laŋ 'bahaj na tinu'tupok naŋ ʔa'poj", "duration": 4.304}
+{"audio_filepath": "data/fsc/parquet/train-00054-of-00139.parquet/sample_000723.wav", "text": "'ʔa 'date ma'hiliɡ ʔa'koŋ maɡla'ɾoʔ naŋ 'leɡo ŋa'jon ʔaj ma'hiliɡ pa 'ɾen", "duration": 11.068}
+{"audio_filepath": "data/fsc/parquet/train-00116-of-00139.parquet/sample_000866.wav", "text": "ʔat na'holdap sa sam'bwaŋɡa naŋ 'ʔadik sa ʃa'bu", "duration": 2.8}
+{"audio_filepath": "data/fsc/parquet/train-00010-of-00139.parquet/sample_001122.wav", "text": "kaj'laŋan ta'pusin na 'natin ʔi'to di ba", "duration": 2.375}
+{"audio_filepath": "data/fsc/parquet/train-00050-of-00139.parquet/sample_000239.wav", "text": "'kulaj ɾed ʔaŋ d͡ʒapa'nis vejs naŋ 'boj skawt na si 'ɾiko bini'li sa zu", "duration": 3.75}
+{"audio_filepath": "data/fsc/parquet/train-00065-of-00139.parquet/sample_000915.wav", "text": "maj 'stajl 'pojnts", "duration": 1.141}
+{"audio_filepath": "data/fsc/parquet/train-00036-of-00139.parquet/sample_001992.wav", "text": "ʔa di ʔa'ko naka'sali ka'se di na'man ʔa'ko 'laɡiŋ nan'dito foɾ da past fju dejs", "duration": 7.025}
+{"audio_filepath": "data/fsc/parquet/train-00087-of-00139.parquet/sample_001933.wav", "text": "ʔaŋ pabo'ɾito ko 'poŋ pala'bas sa sine'han ʔaj juv ɡot mejl", "duration": 3.598}
+{"audio_filepath": "data/fsc/parquet/train-00080-of-00139.parquet/sample_001273.wav", "text": "ʔa'ko 'laŋ naɡ ʔiʔi'saŋ la'lake ta'pos hin'di ko pa ka'klows 'juŋ ma'ŋa ba'baʔe 'so", "duration": 4.067}
+{"audio_filepath": "data/fsc/parquet/train-00096-of-00139.parquet/sample_001494.wav", "text": "kaɡan'dahan sa daʔiɡ'diɡ", "duration": 1.254}
+{"audio_filepath": "data/fsc/parquet/train-00074-of-00139.parquet/sample_000578.wav", "text": "'ʔisaŋ maj 'peɾaŋ ba'diŋ ʔaŋ naba'liw sa ʔi'saŋ pi bi ʔej 'plejeɾ", "duration": 3.05}
+{"audio_filepath": "data/fsc/parquet/train-00128-of-00139.parquet/sample_001338.wav", "text": "paɡka'tapos naŋ 'fɾeʃmen 'jiɾ", "duration": 2.313}
+{"audio_filepath": "data/fsc/parquet/train-00130-of-00139.parquet/sample_000376.wav", "text": "sa'ɾili 'namin", "duration": 0.825}
+{"audio_filepath": "data/fsc/parquet/train-00072-of-00139.parquet/sample_001683.wav", "text": "sa ʔoka'ʃon", "duration": 1.05}
+{"audio_filepath": "data/fsc/parquet/train-00084-of-00139.parquet/sample_001981.wav", "text": "di ko 'ŋa ʔa'lam", "duration": 0.963}
+{"audio_filepath": "data/fsc/parquet/train-00026-of-00139.parquet/sample_001885.wav", "text": "ma'ŋa 'ɾum 'mejt͡s ko ʔaj si'na", "duration": 2.612}
+{"audio_filepath": "data/fsc/parquet/train-00116-of-00139.parquet/sample_001556.wav", "text": "sa sal", "duration": 0.803}
+{"audio_filepath": "data/fsc/parquet/train-00071-of-00139.parquet/sample_000940.wav", "text": "na hin'di paɡ'ʔibiɡ ʔaŋ sumi'siɾa sa 'taʔo kun'diʔ 'taʔo 'mismo", "duration": 3.6}
+{"audio_filepath": "data/fsc/parquet/train-00085-of-00139.parquet/sample_001977.wav", "text": "nuŋ ɡɾejd tɾi", "duration": 1.001}
+{"audio_filepath": "data/fsc/parquet/train-00079-of-00139.parquet/sample_000014.wav", "text": "'paɾa maka'kuha ka naŋ 'numeɾo", "duration": 1.6}
+{"audio_filepath": "data/fsc/parquet/train-00022-of-00139.parquet/sample_000846.wav", "text": "si saku'ɾaɡi", "duration": 0.927}
+{"audio_filepath": "data/fsc/parquet/train-00137-of-00139.parquet/sample_001053.wav", "text": "na ki'lala sa maɡaɡan'daŋ", "duration": 1.494}
+{"audio_filepath": "data/fsc/parquet/train-00097-of-00139.parquet/sample_000656.wav", "text": "pe'ɾo ʔat ʔat na'soli ko na so si'ɡuɾo makakahi'ɾam ʔa'ko ʔu'let 'sana maɡpapahi'ɾam pa ʃa", "duration": 6.839}
+{"audio_filepath": "data/fsc/parquet/train-00011-of-00139.parquet/sample_000367.wav", "text": "humu'huli sa ma'ŋa buma'baboj sa kali'kasan", "duration": 2.104}
+{"audio_filepath": "data/fsc/parquet/train-00064-of-00139.parquet/sample_000762.wav", "text": "maɡkalimu'tan na 'tajo", "duration": 1.4}
+{"audio_filepath": "data/fsc/parquet/train-00135-of-00139.parquet/sample_001883.wav", "text": "ka'se ba'ka ʔi'sipin ni'la na", "duration": 1.719}
+{"audio_filepath": "data/fsc/parquet/train-00059-of-00139.parquet/sample_000927.wav", "text": "ʔi'saŋ 'ʔaɾaw", "duration": 0.8}
+{"audio_filepath": "data/fsc/parquet/train-00007-of-00139.parquet/sample_000040.wav", "text": "ma'ɾamiŋ paɡkakata'ʔoŋ ma'nalo", "duration": 1.639}
+{"audio_filepath": "data/fsc/parquet/train-00126-of-00139.parquet/sample_000163.wav", "text": "paki'ʔajos na'man 'juŋ 'kwaɾto mo", "duration": 1.8}
+{"audio_filepath": "data/fsc/parquet/train-00011-of-00139.parquet/sample_000151.wav", "text": "nilak'baj nja", "duration": 0.975}
+{"audio_filepath": "data/fsc/parquet/train-00034-of-00139.parquet/sample_000161.wav", "text": "pa ʔaŋ kani'laŋ 'bahaj sa 'ʔamin", "duration": 1.725}
+{"audio_filepath": "data/fsc/parquet/train-00104-of-00139.parquet/sample_001908.wav", "text": "sa 'ʔamiŋ maɡkakapa'tid ʔa'ko 'juŋ 'tunaj na ʔi'ka 'ŋaʔ ka'pisnon 'dahil do'ʔon ʔa'ko ʔpina'ŋanak", "duration": 5.057}
+{"audio_filepath": "data/fsc/parquet/train-00080-of-00139.parquet/sample_000780.wav", "text": "ka'ʔinin mo ʔi'toŋ 'hopja", "duration": 1.3}
+{"audio_filepath": "data/fsc/parquet/train-00119-of-00139.parquet/sample_000318.wav", "text": "nakatu'luɡ ʔaŋ da'laɡa", "duration": 1.325}
+{"audio_filepath": "data/fsc/parquet/train-00041-of-00139.parquet/sample_001374.wav", "text": "'meɾon si'laŋ mali'ʔit na 'lupaʔ na natatani'man naŋ saɾi'saɾiŋ 'ɡulaj", "duration": 4.075}
+{"audio_filepath": "data/fsc/parquet/train-00088-of-00139.parquet/sample_001068.wav", "text": "naŋ 'paɾaŋ bi'nihaɡ naŋ ʔi'saŋ maɡan'daŋ di'wataʔ", "duration": 2.375}
+{"audio_filepath": "data/fsc/parquet/train-00129-of-00139.parquet/sample_001246.wav", "text": "lu'makad ʃaŋ ma'tuwid", "duration": 1.45}
+{"audio_filepath": "data/fsc/parquet/train-00019-of-00139.parquet/sample_000932.wav", "text": "naɡbubuŋ'kal ʔa'ko naŋ 'lupaʔ ʔat naɡkakaʔi'ŋin", "duration": 2.2}
+{"audio_filepath": "data/fsc/parquet/train-00108-of-00139.parquet/sample_000664.wav", "text": "paki'ʔiwan na 'laŋ d͡ʒan", "duration": 1.3}
+{"audio_filepath": "data/fsc/parquet/train-00018-of-00139.parquet/sample_000042.wav", "text": "ʔat sa'kap", "duration": 0.708}
+{"audio_filepath": "data/fsc/parquet/train-00026-of-00139.parquet/sample_001650.wav", "text": "'tas ŋa'jon nuŋ", "duration": 1.215}
+{"audio_filepath": "data/fsc/parquet/train-00123-of-00139.parquet/sample_001971.wav", "text": "ʔat maɡka'ɾon naŋ ʔi'saŋ", "duration": 1.332}
+{"audio_filepath": "data/fsc/parquet/train-00101-of-00139.parquet/sample_001864.wav", "text": "'ʔisaŋ 'bataŋ ba'baʔe ʔaŋ biɡ'laŋ ʔu'mabot", "duration": 2.025}
+{"audio_filepath": "data/fsc/parquet/train-00116-of-00139.parquet/sample_001292.wav", "text": "tuma'lon ka sa ɡu'saliʔ", "duration": 1.193}
+{"audio_filepath": "data/fsc/parquet/train-00128-of-00139.parquet/sample_000208.wav", "text": "pakibu'kas na'man naŋ pin'toʔ", "duration": 1.375}
+{"audio_filepath": "data/fsc/parquet/train-00004-of-00139.parquet/sample_000838.wav", "text": "ʔaŋ nalalaŋ'hap 'na 'haŋin", "duration": 1.575}
+{"audio_filepath": "data/fsc/parquet/train-00092-of-00139.parquet/sample_001340.wav", "text": "ʔaŋ makapaɡsa'sabiŋ", "duration": 1.2}
+{"audio_filepath": "data/fsc/parquet/train-00129-of-00139.parquet/sample_000675.wav", "text": "hi 'him", "duration": 0.8}
+{"audio_filepath": "data/fsc/parquet/train-00044-of-00139.parquet/sample_001980.wav", "text": "'juŋ ma'ŋa ka'klase ko 'date na ba'baʔe na ʔa'kala ni'la", "duration": 3.582}
+{"audio_filepath": "data/fsc/parquet/train-00094-of-00139.parquet/sample_000556.wav", "text": "ʔat saʔan'man 'tajo nanini'ɾahan", "duration": 1.95}
+{"audio_filepath": "data/fsc/parquet/train-00080-of-00139.parquet/sample_001219.wav", "text": "naŋ maɡaɡan'daŋ 'baɡaj", "duration": 1.325}
+{"audio_filepath": "data/fsc/parquet/train-00126-of-00139.parquet/sample_000952.wav", "text": "sa paɡbi'biɡaj naŋ li'mos", "duration": 1.536}
+{"audio_filepath": "data/fsc/parquet/train-00023-of-00139.parquet/sample_001455.wav", "text": "ma'lapit 'din 'samen 'juŋ 'jon ki'na 'maɾkos 'bahaj ni'la 'maɾkos", "duration": 4.509}
+{"audio_filepath": "data/fsc/parquet/train-00106-of-00139.parquet/sample_001932.wav", "text": "paɾa'ʔan na laŋ", "duration": 0.557}
+{"audio_filepath": "data/fsc/parquet/train-00130-of-00139.parquet/sample_001203.wav", "text": "'sobɾaŋ ma'ʔinit 'dito sa lo'ʔob naŋ 'ɾejd͡ʒo lab", "duration": 2.911}
+{"audio_filepath": "data/fsc/parquet/train-00088-of-00139.parquet/sample_001913.wav", "text": "nasu'ɡatan ʔa'ko", "duration": 0.925}
+{"audio_filepath": "data/fsc/parquet/train-00003-of-00139.parquet/sample_000469.wav", "text": "masa'maŋ kapa'laɾaŋ hin'di nin'jo maʔa'ʔaɾiŋ mapi'ɡilan", "duration": 3.175}
+{"audio_filepath": "data/fsc/parquet/train-00003-of-00139.parquet/sample_000558.wav", "text": "ma'ɾami pa 'koŋ ɡaɡa'win maj ɾi'poɾt pa ko 'nun kinabu'kasan", "duration": 2.909}
+{"audio_filepath": "data/fsc/parquet/train-00037-of-00139.parquet/sample_000733.wav", "text": "na ba'wasin sa 'sahod ʔaŋ sus'tento 'paɾa sa ʔin'jo", "duration": 3.279}
+{"audio_filepath": "data/fsc/parquet/train-00116-of-00139.parquet/sample_001605.wav", "text": "na 'pawaŋ maj kaʔuɡ'najan 'lamaŋ sa 'dɾoɡa", "duration": 2.3}
+{"audio_filepath": "data/fsc/parquet/train-00135-of-00139.parquet/sample_000430.wav", "text": "ʔaŋ ma'ŋa pa'ŋaɾap", "duration": 0.825}
+{"audio_filepath": "data/fsc/parquet/train-00016-of-00139.parquet/sample_001634.wav", "text": "ʔaŋ 'sabi", "duration": 0.65}
+{"audio_filepath": "data/fsc/parquet/train-00116-of-00139.parquet/sample_001956.wav", "text": "na makaʔi'sa si'la", "duration": 1.307}
+{"audio_filepath": "data/fsc/parquet/train-00085-of-00139.parquet/sample_000644.wav", "text": "'ʔa ʔa'ko ʔaj maj dala'waŋ kapa'tid na la'lake", "duration": 2.627}
+{"audio_filepath": "data/fsc/parquet/train-00037-of-00139.parquet/sample_000690.wav", "text": "ʔat ma'ɾamiŋ paŋu'ŋusap", "duration": 1.177}
+{"audio_filepath": "data/fsc/parquet/train-00062-of-00139.parquet/sample_000224.wav", "text": "ʔa'noŋ pana'hon ʔaŋ", "duration": 1.05}
+{"audio_filepath": "data/fsc/parquet/train-00070-of-00139.parquet/sample_001904.wav", "text": "kaj'lan ka'jo ʔaʔa'lis", "duration": 1.418}
+{"audio_filepath": "data/fsc/parquet/train-00062-of-00139.parquet/sample_001092.wav", "text": "ka'jaʔ naɡ'ʃift ʔa'ko sa viʔ ʔej", "duration": 1.919}
+{"audio_filepath": "data/fsc/parquet/train-00051-of-00139.parquet/sample_001664.wav", "text": "kuŋ hin'di makaʔa'bot ʔaŋ 'kita mo sa ma'ŋa bu'haj", "duration": 2.85}
+{"audio_filepath": "data/fsc/parquet/train-00018-of-00139.parquet/sample_000892.wav", "text": "ʔa'no ka'jaʔ ʔaŋ la'kas na ʔi'to na mapakikina'baŋan naŋ ban'saʔ", "duration": 4.275}
+{"audio_filepath": "data/fsc/parquet/train-00042-of-00139.parquet/sample_000438.wav", "text": "'pano kuŋ ʔi'ba ʔaŋ duma'ʔitŋ na ʔi'to", "duration": 2.615}
+{"audio_filepath": "data/fsc/parquet/train-00100-of-00139.parquet/sample_001382.wav", "text": "'halos wa'laŋ nati'ɾa ma'ɡiŋ ʔaŋ ma'ŋa maŋiŋis'daʔ", "duration": 2.45}
+{"audio_filepath": "data/fsc/parquet/train-00129-of-00139.parquet/sample_001982.wav", "text": "kada'lasan ʔaj maɡsasama'sama ka'jo ʔat maɡlala'ɾu naŋ kuŋ ʔanu'maŋ 'pwede nin'joŋ laɾu'ʔen", "duration": 5.366}
+{"audio_filepath": "data/fsc/parquet/train-00004-of-00139.parquet/sample_000123.wav", "text": "ʔaŋ sus'tento 'paɾa sa ʔin'jo", "duration": 1.95}
+{"audio_filepath": "data/fsc/parquet/train-00072-of-00139.parquet/sample_000141.wav", "text": "ma'ɡiŋ ʔaŋ ma'ŋa maŋiŋis'daʔ ʔaj naɡta'ka 'ɾin", "duration": 2.191}
+{"audio_filepath": "data/fsc/parquet/train-00086-of-00139.parquet/sample_001844.wav", "text": "'tapos 'sobɾaŋ ka'bado ka'me 'sus ʔa'kala 'namen paɡka'hiɾap 'hiɾap", "duration": 4.403}
+{"audio_filepath": "data/fsc/parquet/train-00109-of-00139.parquet/sample_001970.wav", "text": "sa 'bahaj 'namin", "duration": 1.018}
+{"audio_filepath": "data/fsc/parquet/train-00019-of-00139.parquet/sample_001729.wav", "text": "ma'ɡiŋ ʔaŋ maŋiŋis'daʔ", "duration": 1.425}
+{"audio_filepath": "data/fsc/parquet/train-00120-of-00139.parquet/sample_001952.wav", "text": "nakakata'waʔ ʔaŋ pe'likula ʔat masa'jaŋ panoʔo'ɾen", "duration": 6.447}
+{"audio_filepath": "data/fsc/parquet/train-00114-of-00139.parquet/sample_001923.wav", "text": "paɡ paɡ naka'liɡu ka na ʔa maɡbi'bihis ka naŋ 'junifoɾm mo", "duration": 6.112}
+{"audio_filepath": "data/fsc/parquet/train-00061-of-00139.parquet/sample_001857.wav", "text": "sa mun'do", "duration": 1.219}
+{"audio_filepath": "data/fsc/parquet/train-00001-of-00139.parquet/sample_000776.wav", "text": "si'saŋ ma'lajoŋ lu'ɡaɾ sa 'ʔamin", "duration": 1.9}
+{"audio_filepath": "data/fsc/parquet/train-00042-of-00139.parquet/sample_000257.wav", "text": "sa ka'maj naŋ la'lake", "duration": 1.675}
+{"audio_filepath": "data/fsc/parquet/train-00048-of-00139.parquet/sample_001975.wav", "text": "ʔat 'mas lal mas ma'ɾamiŋ 'baɡaj ka'jo", "duration": 2.665}
+{"audio_filepath": "data/fsc/parquet/train-00008-of-00139.parquet/sample_001077.wav", "text": "'sino ka'sama mo luma'bas", "duration": 1.868}
+{"audio_filepath": "data/fsc/parquet/train-00059-of-00139.parquet/sample_000896.wav", "text": "ma'tapos ʔaŋ tat'loŋ bwan ʔaj ʔini'lipat ʔa'ko sa ʔa'nak ni'toŋ nanini'ɾahan sa 'naɡa", "duration": 4.936}
+{"audio_filepath": "data/fsc/parquet/train-00019-of-00139.parquet/sample_001514.wav", "text": "ʔem ʔen ʔel ʔef sa 'zu", "duration": 1.1}
+{"audio_filepath": "data/fsc/parquet/train-00073-of-00139.parquet/sample_001187.wav", "text": "'kalat naŋ du'mi", "duration": 0.875}
+{"audio_filepath": "data/fsc/parquet/train-00084-of-00139.parquet/sample_000968.wav", "text": "ŋa'jon so ʔaŋ", "duration": 1.201}
+{"audio_filepath": "data/fsc/parquet/train-00063-of-00139.parquet/sample_001076.wav", "text": "'pet͡ʃa naŋ bola'han hin'di impo'sibleŋ maʔa'bot aŋ ma'ŋa pa'ŋaɾap kuŋ ma'ɡiɡiŋ maʔa'beʔ", "duration": 5.03}
+{"audio_filepath": "data/fsc/parquet/train-00030-of-00139.parquet/sample_001085.wav", "text": "sa'ɾili 'namin ʔaŋ nalalaŋ'hap na 'haŋin", "duration": 2.566}
+{"audio_filepath": "data/fsc/parquet/train-00032-of-00139.parquet/sample_001472.wav", "text": "'sobɾaŋ 'hiɾap pa'la", "duration": 1.143}
+{"audio_filepath": "data/fsc/parquet/train-00070-of-00139.parquet/sample_000384.wav", "text": "mi mo mu", "duration": 1.125}
+{"audio_filepath": "data/fsc/parquet/train-00001-of-00139.parquet/sample_000592.wav", "text": "binaj'baj ʔaŋ 'ɡilid naŋ ma'habaŋ 'ʔiloɡ", "duration": 2.261}
+{"audio_filepath": "data/fsc/parquet/train-00112-of-00139.parquet/sample_001586.wav", "text": "", "duration": 0.335}
+{"audio_filepath": "data/fsc/parquet/train-00057-of-00139.parquet/sample_001209.wav", "text": "nan'dun pa 'ɾin 'juŋ", "duration": 1.437}
+{"audio_filepath": "data/fsc/parquet/train-00062-of-00139.parquet/sample_000841.wav", "text": "'dahil sa 'hiɾap naŋ 'buhaj", "duration": 1.345}
+{"audio_filepath": "data/fsc/parquet/train-00084-of-00139.parquet/sample_001490.wav", "text": "ʔat paɡhanda'ʔan ʔaŋ ʔanu'maŋ paɡ'subok", "duration": 2.125}
+{"audio_filepath": "data/fsc/parquet/train-00008-of-00139.parquet/sample_000546.wav", "text": "ɡus'to ko 'laŋ na ʔi't͡ʃalend͡ʒ 'juŋ sa'ɾili ko na", "duration": 2.498}
+{"audio_filepath": "data/fsc/parquet/train-00071-of-00139.parquet/sample_001274.wav", "text": "nabaŋ'ɡaʔ 'tajo", "duration": 1.125}
+{"audio_filepath": "data/fsc/parquet/train-00037-of-00139.parquet/sample_001098.wav", "text": "nakaʔajte'majz pa pa 'minsan sinu'sulat ko pa tala'ɡa la'hat naŋ 'ɡastos", "duration": 3.967}
+{"audio_filepath": "data/fsc/parquet/train-00000-of-00139.parquet/sample_000602.wav", "text": "maɡ'sikap ka", "duration": 0.8}
+{"audio_filepath": "data/fsc/parquet/train-00092-of-00139.parquet/sample_000737.wav", "text": "maɡ'kita na'man 'tajo mama'jaʔ", "duration": 1.65}
+{"audio_filepath": "data/fsc/parquet/train-00124-of-00139.parquet/sample_000914.wav", "text": "wa'laŋ li'ŋon ʔi'niwan ni'ja", "duration": 1.489}
+{"audio_filepath": "data/fsc/parquet/train-00115-of-00139.parquet/sample_000434.wav", "text": "ʔaj ʃa 'paŋ dahi'lan naŋ kasawi'ʔan", "duration": 1.9}
+{"audio_filepath": "data/fsc/parquet/train-00108-of-00139.parquet/sample_001967.wav", "text": "pɾob'lema ŋa laŋ kaʔi'biɡan ni'la si ʔa'no", "duration": 1.926}
+{"audio_filepath": "data/fsc/parquet/train-00045-of-00139.parquet/sample_000095.wav", "text": "kej'lan ka pupun'ta", "duration": 1.249}
+{"audio_filepath": "data/fsc/parquet/train-00075-of-00139.parquet/sample_001960.wav", "text": "na 'laŋ pɾob'lema laŋ 'kase", "duration": 1.925}
+{"audio_filepath": "data/fsc/parquet/train-00124-of-00139.parquet/sample_001842.wav", "text": "ka'jaʔ mej ʔaŋ pa'ŋalan ko 'dahil", "duration": 2.388}
+{"audio_filepath": "data/fsc/parquet/train-00023-of-00139.parquet/sample_001911.wav", "text": "tɾi dejs 'ʔafteɾ luma'bas 'juŋ ɾi'solt", "duration": 3.209}
+{"audio_filepath": "data/fsc/parquet/train-00068-of-00139.parquet/sample_001101.wav", "text": "ʔa'no ʔaŋ ʔi'joŋ mejpa'pajo", "duration": 1.48}
+{"audio_filepath": "data/fsc/parquet/train-00074-of-00139.parquet/sample_000752.wav", "text": "biɡ'jan mo ʔa'ko njaŋ kina'kaʔin mo", "duration": 2.347}
+{"audio_filepath": "data/fsc/parquet/train-00134-of-00139.parquet/sample_000373.wav", "text": "'bale pu'masa ʔa'ko naŋ ʔi si ʔi 'tapos 'juŋ kinopja'han ko", "duration": 3.433}
+{"audio_filepath": "data/fsc/parquet/train-00062-of-00139.parquet/sample_001251.wav", "text": "'sobɾaŋ nakakaʔa'saɾ wa'laʔ pina'kita 'ŋa 'namin sa kani'la na", "duration": 4.142}
+{"audio_filepath": "data/fsc/parquet/train-00118-of-00139.parquet/sample_001925.wav", "text": "ʔaŋ 'laboʔ", "duration": 0.875}
+{"audio_filepath": "data/fsc/parquet/train-00015-of-00139.parquet/sample_000142.wav", "text": "ʔat 'dahil ʔinteɾe'sado ʔa'ko", "duration": 1.58}
+{"audio_filepath": "data/fsc/parquet/train-00108-of-00139.parquet/sample_001957.wav", "text": "'paɾa hin'di si'la map", "duration": 0.951}
+{"audio_filepath": "data/fsc/parquet/train-00072-of-00139.parquet/sample_000310.wav", "text": "ʔa'ko ʔaj ʔi'saŋ maɡbubu'kid", "duration": 2.0}
+{"audio_filepath": "data/fsc/parquet/train-00109-of-00139.parquet/sample_001591.wav", "text": "haŋ'ɡaŋ sa makaɾa'tiŋ si'ja sa ʔikapi'toŋ bun'dok", "duration": 2.43}
+{"audio_filepath": "data/fsc/parquet/train-00037-of-00139.parquet/sample_001980.wav", "text": "simu'la ŋa'jon", "duration": 1.056}
+{"audio_filepath": "data/fsc/parquet/train-00001-of-00139.parquet/sample_000031.wav", "text": "maɡda'sal 'baɡo ma'tuloɡ", "duration": 1.4}
+{"audio_filepath": "data/fsc/parquet/train-00081-of-00139.parquet/sample_001639.wav", "text": "kant͡ʃa'wan siʔ", "duration": 1.075}
+{"audio_filepath": "data/fsc/parquet/train-00001-of-00139.parquet/sample_001191.wav", "text": "sa 'ʔabsens nja sa staɾ tok", "duration": 2.1}
+{"audio_filepath": "data/fsc/parquet/train-00060-of-00139.parquet/sample_001906.wav", "text": "'baɡo ʔi'to ʔipaʔi'nom", "duration": 1.375}
+{"audio_filepath": "data/fsc/parquet/train-00031-of-00139.parquet/sample_001195.wav", "text": "paki'lutoʔ i'toŋ ʔis'daʔ", "duration": 1.443}
+{"audio_filepath": "data/fsc/parquet/train-00083-of-00139.parquet/sample_001977.wav", "text": "ʔam maɡan'daŋ ʔu'maɡa", "duration": 7.64}
+{"audio_filepath": "data/fsc/parquet/train-00135-of-00139.parquet/sample_000721.wav", "text": "majama'jaʔ ʔaj biɡ'laŋ tumu'noɡ ʔaŋ te'lepono", "duration": 2.725}
+{"audio_filepath": "data/fsc/parquet/train-00119-of-00139.parquet/sample_001202.wav", "text": "'ʔisaŋ 'bataŋ ba'baʔe ʔaŋ biɡ'laŋ ʔuma'bot sa ka'maj naŋ la'lake ʔat naɡ'sabi", "duration": 3.375}
+{"audio_filepath": "data/fsc/parquet/train-00110-of-00139.parquet/sample_001599.wav", "text": "ʔaŋ ʔuŋ'ɡoj ʔaj na'kita no'ʔoŋ 'fɾajdej", "duration": 2.6}
+{"audio_filepath": "data/fsc/parquet/train-00136-of-00139.parquet/sample_001249.wav", "text": "pi'pila ka na na'man kuŋ sa'ʔan ʔibibi'ɡaj mo pa 'lamaŋ", "duration": 2.84}
+{"audio_filepath": "data/fsc/parquet/train-00114-of-00139.parquet/sample_001727.wav", "text": "'kult͡ʃuɾ naŋ", "duration": 0.896}
+{"audio_filepath": "data/fsc/parquet/train-00039-of-00139.parquet/sample_000124.wav", "text": "sa 'vajolet", "duration": 0.875}
+{"audio_filepath": "data/fsc/parquet/train-00086-of-00139.parquet/sample_000171.wav", "text": "naŋ kani'laŋ tiniɾ'han", "duration": 1.375}
+{"audio_filepath": "data/fsc/parquet/train-00099-of-00139.parquet/sample_001936.wav", "text": "na ʔaŋ 'tapik ʔaj ʔaŋ woɾk 'eneɾd͡ʒi 'pɾinsipol", "duration": 7.53}
+{"audio_filepath": "data/fsc/parquet/train-00015-of-00139.parquet/sample_000425.wav", "text": "noɾ'mal maɡla'kad tas 'juŋ ʔeksekju'tiv", "duration": 2.799}
+{"audio_filepath": "data/fsc/parquet/train-00086-of-00139.parquet/sample_001189.wav", "text": "sa'jaw 'tajo naŋ t͡ʃa't͡ʃa", "duration": 1.45}
+{"audio_filepath": "data/fsc/parquet/train-00046-of-00139.parquet/sample_001635.wav", "text": "ʔi'saŋ 'bataŋ ba'baʔi", "duration": 1.2}
+{"audio_filepath": "data/fsc/parquet/train-00052-of-00139.parquet/sample_001230.wav", "text": "'tunaj na ʔumun'lad", "duration": 1.15}
+{"audio_filepath": "data/fsc/parquet/train-00077-of-00139.parquet/sample_001060.wav", "text": "paɡ na'kita ka naŋ ma'ŋa 'taʔo ʔat", "duration": 1.793}
+{"audio_filepath": "data/fsc/parquet/train-00040-of-00139.parquet/sample_001523.wav", "text": "ʔaŋ 'bahaj 'namin ʔaj ʔi'saŋ mun'tiŋ ta'hanan sa ʔita'ʔas naŋ ɡu'lod", "duration": 3.05}
+{"audio_filepath": "data/fsc/parquet/train-00034-of-00139.parquet/sample_001987.wav", "text": "na ju'maman 'din", "duration": 0.95}
+{"audio_filepath": "data/fsc/parquet/train-00045-of-00139.parquet/sample_000842.wav", "text": "'tama na'man ʃa di'ba", "duration": 1.4}
+{"audio_filepath": "data/fsc/parquet/train-00019-of-00139.parquet/sample_000603.wav", "text": "'paɾa sa 'pɾomo naŋ 'konseɾt", "duration": 1.475}
+{"audio_filepath": "data/fsc/parquet/train-00061-of-00139.parquet/sample_000190.wav", "text": "ei'pila ka na na'man kuŋ sa'ʔan ʔibibi'ɡaj mo pa 'lamaŋ ʔaŋ ʔaplika'ʃon mo", "duration": 5.125}
+{"audio_filepath": "data/fsc/parquet/train-00040-of-00139.parquet/sample_000196.wav", "text": "bil'han mo na'man ʔa'ko naŋ maka'kaʔin", "duration": 2.175}
+{"audio_filepath": "data/fsc/parquet/train-00124-of-00139.parquet/sample_000629.wav", "text": "'sabi sa ʔef ʔem ʔat ti vi", "duration": 1.875}
+{"audio_filepath": "data/fsc/parquet/train-00062-of-00139.parquet/sample_001093.wav", "text": "naɡkaɾo'ʔon ka'mi naŋ 'konseɾt", "duration": 1.882}
+{"audio_filepath": "data/fsc/parquet/train-00084-of-00139.parquet/sample_001715.wav", "text": "'juŋ ʔinte'ɾes ko", "duration": 1.343}
+{"audio_filepath": "data/fsc/parquet/train-00131-of-00139.parquet/sample_001073.wav", "text": "pakiɡa'wa na nin'jo ʔaŋ da'ʔan", "duration": 2.2}
+{"audio_filepath": "data/fsc/parquet/train-00117-of-00139.parquet/sample_001943.wav", "text": "si pa'ŋuloŋ 'ɡloɾja makapa'ɡal ʔa'ɾojoʔ", "duration": 3.058}
+{"audio_filepath": "data/fsc/parquet/train-00124-of-00139.parquet/sample_001499.wav", "text": "'juŋ ma'ŋa 'klus na 'dapat 'namiŋ ku'kunen", "duration": 2.087}
+{"audio_filepath": "data/fsc/parquet/train-00101-of-00139.parquet/sample_001891.wav", "text": "kuŋ ʔa'no ʔaŋ duma'ʔan sa paɡ'subok naŋ kali'kasan", "duration": 2.925}
+{"audio_filepath": "data/fsc/parquet/train-00120-of-00139.parquet/sample_001538.wav", "text": "tuma'lon ka sa ɡu'saliʔ", "duration": 1.5}
+{"audio_filepath": "data/fsc/parquet/train-00029-of-00139.parquet/sample_000418.wav", "text": "naŋ ma'tapos", "duration": 0.925}
+{"audio_filepath": "data/fsc/parquet/train-00061-of-00139.parquet/sample_001059.wav", "text": "naɡʔaʔa'laɡa naŋ ma'ɾamiŋ 'hajop", "duration": 1.8}
+{"audio_filepath": "data/fsc/parquet/train-00050-of-00139.parquet/sample_000929.wav", "text": "maɡʔa'sawa", "duration": 0.9}
+{"audio_filepath": "data/fsc/parquet/train-00101-of-00139.parquet/sample_001600.wav", "text": "ʔe 'juŋ ʔa'no", "duration": 0.916}
+{"audio_filepath": "data/fsc/parquet/train-00014-of-00139.parquet/sample_001942.wav", "text": "'amiŋ ɡa'nap na kali'kasan", "duration": 2.22}
+{"audio_filepath": "data/fsc/parquet/train-00049-of-00139.parquet/sample_001961.wav", "text": "'baɡo pa 'lamaŋ maka'kuhaʔ", "duration": 1.315}
+{"audio_filepath": "data/fsc/parquet/train-00010-of-00139.parquet/sample_000059.wav", "text": "kuŋ ʔanuʔa'no", "duration": 0.901}
+{"audio_filepath": "data/fsc/parquet/train-00126-of-00139.parquet/sample_001905.wav", "text": "sa ma'babaŋ paʔaɾa'lan naŋ 'bambaŋ 'sentɾal", "duration": 4.628}
+{"audio_filepath": "data/fsc/parquet/train-00060-of-00139.parquet/sample_001270.wav", "text": "daw 'jon", "duration": 0.65}
+{"audio_filepath": "data/fsc/parquet/train-00101-of-00139.parquet/sample_000694.wav", "text": "kuŋ 'pano tuma'ba 'jun ʔe 'seksi 'jun 'dati nuŋ", "duration": 2.517}
+{"audio_filepath": "data/fsc/parquet/train-00122-of-00139.parquet/sample_001972.wav", "text": "na'salo nuŋ ka'kampi mo", "duration": 1.277}
+{"audio_filepath": "data/fsc/parquet/train-00040-of-00139.parquet/sample_000517.wav", "text": "ʔaj ma'lapit sa sam'bales", "duration": 1.577}
+{"audio_filepath": "data/fsc/parquet/train-00017-of-00139.parquet/sample_000406.wav", "text": "'najntin 'ʔejti tɾi", "duration": 0.986}
+{"audio_filepath": "data/fsc/parquet/train-00083-of-00139.parquet/sample_000233.wav", "text": "ka'ja hin'di ko na ʃa maʔaʔa'butan 'dun 'samen", "duration": 2.478}
+{"audio_filepath": "data/fsc/parquet/train-00017-of-00139.parquet/sample_001232.wav", "text": "'juŋ kapa'tid ko", "duration": 1.223}
+{"audio_filepath": "data/fsc/parquet/train-00011-of-00139.parquet/sample_000775.wav", "text": "ʔa'no pa ba", "duration": 0.876}
+{"audio_filepath": "data/fsc/parquet/train-00067-of-00139.parquet/sample_000701.wav", "text": "ka'se maj ma'ŋa 'tube ɡan'jan", "duration": 2.164}
+{"audio_filepath": "data/fsc/parquet/train-00029-of-00139.parquet/sample_001978.wav", "text": "ɾajs 'wejfeɾ naŋ 'kezon", "duration": 1.747}
+{"audio_filepath": "data/fsc/parquet/train-00071-of-00139.parquet/sample_000532.wav", "text": "t͡ʃi'nelas daw", "duration": 1.125}
+{"audio_filepath": "data/fsc/parquet/train-00073-of-00139.parquet/sample_001310.wav", "text": "ʔuʔun'lad ka 'din", "duration": 0.85}
+{"audio_filepath": "data/fsc/parquet/train-00021-of-00139.parquet/sample_000823.wav", "text": "'buti na 'laŋ ʔat 'ɡɾad͡ʒwejt na ʔa'ko ʔat di na ʔa'ko maɡa'ʔaɾal ʔu'let 'jehej foɾ 'minit͡s na ʔaŋ duma'ʔan ka'ja wan 'minit na 'laŋ", "duration": 10.211}
+{"audio_filepath": "data/fsc/parquet/train-00121-of-00139.parquet/sample_001945.wav", "text": "'kahit 'sekʃon tu wan ʔa'ko 'nun 'ʔe", "duration": 1.882}
+{"audio_filepath": "data/fsc/parquet/train-00013-of-00139.parquet/sample_000278.wav", "text": "'tas ʔaŋ pɾob'lema pa", "duration": 1.257}
+{"audio_filepath": "data/fsc/parquet/train-00112-of-00139.parquet/sample_001973.wav", "text": "si ɾo'hani 'poʔ ʔaj", "duration": 1.108}
+{"audio_filepath": "data/fsc/parquet/train-00133-of-00139.parquet/sample_001723.wav", "text": "ba'hala na", "duration": 0.85}
+{"audio_filepath": "data/fsc/parquet/train-00057-of-00139.parquet/sample_000288.wav", "text": "sa paɡkakaki'lala ko sa kan'ja", "duration": 2.35}
+{"audio_filepath": "data/fsc/parquet/train-00050-of-00139.parquet/sample_001971.wav", "text": "susu'nod na bwan", "duration": 0.751}
+{"audio_filepath": "data/fsc/parquet/train-00040-of-00139.parquet/sample_001664.wav", "text": "bun'so na kapapaŋa'nak 'laŋ", "duration": 1.507}
+{"audio_filepath": "data/fsc/parquet/train-00107-of-00139.parquet/sample_001172.wav", "text": "'kulaŋ pa ba", "duration": 0.726}
+{"audio_filepath": "data/fsc/parquet/train-00075-of-00139.parquet/sample_001062.wav", "text": "ʔat ʔi'ba 'paŋ paɡbo'bɾodkast na ma'ŋa 'baɡaj", "duration": 3.072}
+{"audio_filepath": "data/fsc/parquet/train-00108-of-00139.parquet/sample_001382.wav", "text": "ʔaŋ ɡaɡa'mitiŋ ʔebi'denʃa", "duration": 1.65}
+{"audio_filepath": "data/fsc/parquet/train-00121-of-00139.parquet/sample_000797.wav", "text": "naɡ'talo ʔaŋ maɡ ʔa'sawa", "duration": 1.6}
+{"audio_filepath": "data/fsc/parquet/train-00093-of-00139.parquet/sample_001173.wav", "text": "ʔat dok'toɾ", "duration": 0.65}
+{"audio_filepath": "data/fsc/parquet/train-00034-of-00139.parquet/sample_000978.wav", "text": "ʔu'busin mo 'jan", "duration": 1.025}
+{"audio_filepath": "data/fsc/parquet/train-00109-of-00139.parquet/sample_001966.wav", "text": "mada'las hin'di naɡkakapaɾepa'ɾeho sa ma'ŋa ʔopin'jon am 'despajt 'ʔov 'θat 'ʔam", "duration": 13.23}
+{"audio_filepath": "data/fsc/parquet/train-00076-of-00139.parquet/sample_000521.wav", "text": "'jun 'tapos", "duration": 1.174}
+{"audio_filepath": "data/fsc/parquet/train-00038-of-00139.parquet/sample_000847.wav", "text": "ʔaŋ sus'tento 'paɾa sa ʔin'joŋ pa'milja", "duration": 2.525}
+{"audio_filepath": "data/fsc/parquet/train-00061-of-00139.parquet/sample_001770.wav", "text": "ba 'natin ʃa", "duration": 0.925}
+{"audio_filepath": "data/fsc/parquet/train-00026-of-00139.parquet/sample_000736.wav", "text": "ʔaj ʃa 'paŋ dahi'lan naŋ kasa'wiʔan", "duration": 2.08}
+{"audio_filepath": "data/fsc/parquet/train-00125-of-00139.parquet/sample_001434.wav", "text": "'so paɡ 'kahit na nakaka'paɡod", "duration": 2.649}
+{"audio_filepath": "data/fsc/parquet/train-00097-of-00139.parquet/sample_001121.wav", "text": "tu'luŋan mo na'man ka'mi", "duration": 1.618}
+{"audio_filepath": "data/fsc/parquet/train-00051-of-00139.parquet/sample_000582.wav", "text": "ʔaŋ naɡlili'wanaɡ naɡ", "duration": 1.503}
+{"audio_filepath": "data/fsc/parquet/train-00007-of-00139.parquet/sample_000435.wav", "text": "natatani'man naŋ saɾi'saɾiŋ 'ɡulaj", "duration": 2.991}
+{"audio_filepath": "data/fsc/parquet/train-00105-of-00139.parquet/sample_001094.wav", "text": "ma'ɡiŋ ʔaŋ ma'ŋa maŋiŋis'daʔ ʔaj naɡta'ka 'ɾin sa hin'di ma'lamaŋ dahi'lan", "duration": 3.925}
+{"audio_filepath": "data/fsc/parquet/train-00091-of-00139.parquet/sample_000127.wav", "text": "naŋ du'mi", "duration": 0.575}
+{"audio_filepath": "data/fsc/parquet/train-00126-of-00139.parquet/sample_001960.wav", "text": "ta'pos 'ʔafteɾ ʔi'laŋ 'jiɾs", "duration": 1.565}
+{"audio_filepath": "data/fsc/parquet/train-00126-of-00139.parquet/sample_001950.wav", "text": "'juŋ ʔi'saʔ", "duration": 0.522}
+{"audio_filepath": "data/fsc/parquet/train-00086-of-00139.parquet/sample_001981.wav", "text": "ka'ti ʔaŋ sekɾe'taɾja naŋ ʔambasa'doɾ naŋ 'tsek ɾe'pablik", "duration": 4.552}
+{"audio_filepath": "data/fsc/parquet/train-00063-of-00139.parquet/sample_001555.wav", "text": "ʔaŋ ma'ŋa kal'sada", "duration": 0.975}
+{"audio_filepath": "data/fsc/parquet/train-00129-of-00139.parquet/sample_001757.wav", "text": "ʔaŋ bu'ʔoŋ pa'ŋalan nja ʔaj 'sant͡ʃo 'pant͡ʃo", "duration": 2.221}
+{"audio_filepath": "data/fsc/parquet/train-00010-of-00139.parquet/sample_001746.wav", "text": "ʔe 'wan 'mant", "duration": 1.604}
+{"audio_filepath": "data/fsc/parquet/train-00125-of-00139.parquet/sample_001742.wav", "text": "ʔaŋ pa'ŋanaj 'poʔ ʔaj ʔi'saŋ ba'baʔe na ʔaŋ pa'ŋalan ʔaj si ɾo'hani", "duration": 3.144}
+{"audio_filepath": "data/fsc/parquet/train-00092-of-00139.parquet/sample_001966.wav", "text": "ɡus'to 'koŋ maɡ'swimiŋ", "duration": 1.841}
+{"audio_filepath": "data/fsc/parquet/train-00044-of-00139.parquet/sample_000159.wav", "text": "ʔa'no ba sasabi'hin ko hum 'wel", "duration": 3.433}
+{"audio_filepath": "data/fsc/parquet/train-00013-of-00139.parquet/sample_001093.wav", "text": "'paɾa sa", "duration": 0.699}
+{"audio_filepath": "data/fsc/parquet/train-00071-of-00139.parquet/sample_001775.wav", "text": "pani'ŋin ʔaŋ", "duration": 0.975}
+{"audio_filepath": "data/fsc/parquet/train-00081-of-00139.parquet/sample_001496.wav", "text": "'paɾa maba'jaɾan ʔaŋ kani'laŋ 'ʔutaŋ", "duration": 1.65}
+{"audio_filepath": "data/fsc/parquet/train-00059-of-00139.parquet/sample_001121.wav", "text": "sa'mahan mo na'man ʔa'ko mama'jaʔ", "duration": 1.8}
+{"audio_filepath": "data/fsc/parquet/train-00080-of-00139.parquet/sample_001980.wav", "text": "d͡ʒeɾi'majas si 'ʔalfɾed si 'denis", "duration": 2.335}
+{"audio_filepath": "data/fsc/parquet/train-00013-of-00139.parquet/sample_001906.wav", "text": "mo", "duration": 1.575}
+{"audio_filepath": "data/fsc/parquet/train-00034-of-00139.parquet/sample_001912.wav", "text": "namu'muŋa 'din naŋ ma'dami", "duration": 1.425}
+{"audio_filepath": "data/fsc/parquet/train-00093-of-00139.parquet/sample_000828.wav", "text": "ni 'ɾejd", "duration": 0.525}
+{"audio_filepath": "data/fsc/parquet/train-00097-of-00139.parquet/sample_001564.wav", "text": "jon ʔaŋ mada'las na ʔisinasa'ɡot ni 'ʔend͡ʒelik sa ma'ŋa kaʔi'biɡan", "duration": 3.975}
+{"audio_filepath": "data/fsc/parquet/train-00060-of-00139.parquet/sample_001942.wav", "text": "skuldejs maj ɡinaɡa'wa ka'me tas 'ʔevɾi 'wikʔends", "duration": 2.649}
+{"audio_filepath": "data/fsc/parquet/train-00036-of-00139.parquet/sample_001427.wav", "text": "sa ʔi'saŋ ma'lajoŋ lu'ɡaɾ sa 'ʔamin ma'ʔaɡaŋ na'ɡisiŋ", "duration": 2.825}
+{"audio_filepath": "data/fsc/parquet/train-00064-of-00139.parquet/sample_001979.wav", "text": "'paɾa 'jun 'ŋaʔ sinabi'han nja nja ko 'nun na", "duration": 2.069}
+{"audio_filepath": "data/fsc/parquet/train-00017-of-00139.parquet/sample_001242.wav", "text": "ka'sama ɾin sa", "duration": 1.075}
+{"audio_filepath": "data/fsc/parquet/train-00109-of-00139.parquet/sample_001981.wav", "text": "tas na'kita pa nja 'juŋ 'kok sa ta'bi", "duration": 1.767}
+{"audio_filepath": "data/fsc/parquet/train-00110-of-00139.parquet/sample_000366.wav", "text": "tuŋ'kol sa 'dati njaŋ 'buhaj", "duration": 1.745}
+{"audio_filepath": "data/fsc/parquet/train-00007-of-00139.parquet/sample_000322.wav", "text": "punta'han mo na'man 'juŋ kapa'tid mo", "duration": 2.025}
+{"audio_filepath": "data/fsc/parquet/train-00032-of-00139.parquet/sample_001621.wav", "text": "d͡ʒi ʔem ʔej 'seven ʔaŋ ti vi ʃow na da boj ʔand da ɡeɾl", "duration": 3.425}
+{"audio_filepath": "data/fsc/parquet/train-00059-of-00139.parquet/sample_000672.wav", "text": "ta'waɡan mo ʔa'ko", "duration": 0.93}
+{"audio_filepath": "data/fsc/parquet/train-00076-of-00139.parquet/sample_000220.wav", "text": "no'ʔoŋ 'ʔunaŋ pana'hon maj ʔi'saŋ maɡsasa'kaʔ", "duration": 2.95}
+{"audio_filepath": "data/fsc/parquet/train-00074-of-00139.parquet/sample_001975.wav", "text": "nama'naŋ", "duration": 0.719}
+{"audio_filepath": "data/fsc/parquet/train-00067-of-00139.parquet/sample_000333.wav", "text": "ʔaj di'nanas 'din nja ʔat tini'ʔis", "duration": 1.86}
+{"audio_filepath": "data/fsc/parquet/train-00023-of-00139.parquet/sample_000063.wav", "text": "maj naka'ʔusap 'ŋaʔ ʔa'ko", "duration": 1.872}
+{"audio_filepath": "data/fsc/parquet/train-00001-of-00139.parquet/sample_001755.wav", "text": "paɡhahaɾa'pin ka'joŋ maɡʔa'sawa", "duration": 2.45}
+{"audio_filepath": "data/fsc/parquet/train-00059-of-00139.parquet/sample_000827.wav", "text": "sa ʔi'saŋ ma'lajoŋ lu'ɡaɾ sa 'ʔamin", "duration": 1.731}
+{"audio_filepath": "data/fsc/parquet/train-00027-of-00139.parquet/sample_001950.wav", "text": "'sobɾaŋ nakakatu'wa 'juŋ", "duration": 1.529}
+{"audio_filepath": "data/fsc/parquet/train-00020-of-00139.parquet/sample_001369.wav", "text": "sa 'wateɾfan masa'ɾap ma'liɡoʔ", "duration": 2.025}
+{"audio_filepath": "data/fsc/parquet/train-00056-of-00139.parquet/sample_000823.wav", "text": "ʔaŋ sam'puŋ 'bwanaŋ 'bola ʔaj maj 'ʔanim na 'pɾemjo 'bawat 'bolaʔ", "duration": 3.125}
+{"audio_filepath": "data/fsc/parquet/train-00111-of-00139.parquet/sample_000613.wav", "text": "'tapos si 'd͡ʒiŋ pa'la nu'ʔon ʔaj", "duration": 2.516}
+{"audio_filepath": "data/fsc/parquet/train-00073-of-00139.parquet/sample_001693.wav", "text": "na'tapos 'po sa maj sa se'bu", "duration": 1.916}
+{"audio_filepath": "data/fsc/parquet/train-00105-of-00139.parquet/sample_000418.wav", "text": "ma'ŋa pu'noʔ ma'ʔis ʔat 'palaj", "duration": 2.175}
+{"audio_filepath": "data/fsc/parquet/train-00114-of-00139.parquet/sample_001599.wav", "text": "susu'su susu'ɾiʔin", "duration": 1.675}
+{"audio_filepath": "data/fsc/parquet/train-00034-of-00139.parquet/sample_000789.wav", "text": "naɡbubuŋ'kal ʔa'ko naŋ 'lupaʔ ʔat naɡkaka'ʔiŋin", "duration": 2.75}
+{"audio_filepath": "data/fsc/parquet/train-00128-of-00139.parquet/sample_000176.wav", "text": "ba'ka pa 'tajo maʔun'toɡ", "duration": 1.35}
+{"audio_filepath": "data/fsc/parquet/train-00080-of-00139.parquet/sample_000686.wav", "text": "na naʔa'sajn na ma'ɡiŋ", "duration": 1.275}
+{"audio_filepath": "data/fsc/parquet/train-00018-of-00139.parquet/sample_001691.wav", "text": "ʔelemen'taɾja ja 'lamaŋ ʔaŋ na'tapos ni 'ɾalon", "duration": 2.65}
+{"audio_filepath": "data/fsc/parquet/train-00124-of-00139.parquet/sample_001553.wav", "text": "mala'ɡoʔ ʔaŋ 'kilaj", "duration": 1.325}
+{"audio_filepath": "data/fsc/parquet/train-00021-of-00139.parquet/sample_001007.wav", "text": "maɡsawa'laŋ ki'boʔ", "duration": 1.125}
+{"audio_filepath": "data/fsc/parquet/train-00047-of-00139.parquet/sample_000561.wav", "text": "'so lu'mawak na di'ba", "duration": 1.398}
+{"audio_filepath": "data/fsc/parquet/train-00112-of-00139.parquet/sample_000626.wav", "text": "ʔaŋ dumidi'niɡ", "duration": 0.85}
+{"audio_filepath": "data/fsc/parquet/train-00115-of-00139.parquet/sample_000538.wav", "text": "pa'ʔano mo haha'ɾapin ʔaŋ paɡka'talo", "duration": 2.0}
+{"audio_filepath": "data/fsc/parquet/train-00046-of-00139.parquet/sample_001493.wav", "text": "kani'la 'nanaj ʔaŋ 'lakad 'natin di'ba", "duration": 2.062}
+{"audio_filepath": "data/fsc/parquet/train-00068-of-00139.parquet/sample_001829.wav", "text": "ma'hal maha'lan", "duration": 1.3}
+{"audio_filepath": "data/fsc/parquet/train-00039-of-00139.parquet/sample_000212.wav", "text": "'halos buŋ 'ʔaɾaw 'ka pi'pila", "duration": 1.8}
+{"audio_filepath": "data/fsc/parquet/train-00036-of-00139.parquet/sample_000577.wav", "text": "ha'baŋ tina'taɡ aŋ kej", "duration": 1.196}
+{"audio_filepath": "data/fsc/parquet/train-00126-of-00139.parquet/sample_001756.wav", "text": "ʔa'no pa baʔ", "duration": 1.472}
+{"audio_filepath": "data/fsc/parquet/train-00040-of-00139.parquet/sample_000787.wav", "text": "ʔi'saŋ 'bataŋ ba'baʔe ʔaŋ biɡ'laŋ ʔu'maʔ", "duration": 2.4}
+{"audio_filepath": "data/fsc/parquet/train-00075-of-00139.parquet/sample_001149.wav", "text": "na'ʔisip mo", "duration": 0.801}
+{"audio_filepath": "data/fsc/parquet/train-00056-of-00139.parquet/sample_001799.wav", "text": "'dapat ʔaŋ ma'ŋa 'taʔo ʔaj naɡtutulu'ŋan", "duration": 2.325}
+{"audio_filepath": "data/fsc/parquet/train-00008-of-00139.parquet/sample_001745.wav", "text": "'ʔa maɡkaʔi'ba naŋ maɡkaʔi'ba naŋ dada'ʔanan", "duration": 2.776}
+{"audio_filepath": "data/fsc/parquet/train-00135-of-00139.parquet/sample_001374.wav", "text": "ʔe 'ʃempɾe maj buli'han ka'se noɾ'mal 'jun tɾadi'ʃon 'jon 'ʔe ka'sama", "duration": 4.105}
+{"audio_filepath": "data/fsc/parquet/train-00034-of-00139.parquet/sample_001467.wav", "text": "sa 'ʔabsens ni'ja sa ʔi'staɾtok", "duration": 1.731}
+{"audio_filepath": "data/fsc/parquet/train-00020-of-00139.parquet/sample_000845.wav", "text": "ʃa si 'hans 'ʔandeɾsen", "duration": 1.45}
+{"audio_filepath": "data/fsc/parquet/train-00014-of-00139.parquet/sample_000866.wav", "text": "'peɾa ka 'laŋ", "duration": 0.609}
+{"audio_filepath": "data/fsc/parquet/train-00109-of-00139.parquet/sample_000988.wav", "text": "na'fawnd ʃa nuŋ 'najntin 'teɾti 'pajb", "duration": 1.91}
+{"audio_filepath": "data/fsc/parquet/train-00037-of-00139.parquet/sample_000259.wav", "text": "kaʔi'laŋaŋ ta'pusin na 'natin ʔi'to di ba", "duration": 2.225}
+{"audio_filepath": "data/fsc/parquet/train-00066-of-00139.parquet/sample_001228.wav", "text": "ʔat ʔaŋ ʔi'ba 'koŋ kapa'tid ʔaj ʔelemen'taɾja 'laŋ", "duration": 2.475}
+{"audio_filepath": "data/fsc/parquet/train-00099-of-00139.parquet/sample_001981.wav", "text": "'dad͡ʒ 'bol", "duration": 0.779}
+{"audio_filepath": "data/fsc/parquet/train-00112-of-00139.parquet/sample_000423.wav", "text": "ʔaj kan'jaŋ tinutu'luŋan", "duration": 1.394}
+{"audio_filepath": "data/fsc/parquet/train-00045-of-00139.parquet/sample_001975.wav", "text": "sa kasalu'kujan", "duration": 1.062}
+{"audio_filepath": "data/fsc/parquet/train-00051-of-00139.parquet/sample_001677.wav", "text": "maj ma'ŋa ha'limaw", "duration": 0.988}
+{"audio_filepath": "data/fsc/parquet/train-00108-of-00139.parquet/sample_001459.wav", "text": "di na'man ʃa masa'maŋ 'taʔo", "duration": 1.25}
+{"audio_filepath": "data/fsc/parquet/train-00044-of-00139.parquet/sample_001986.wav", "text": "'sabi 'nja ka'se 'pwede 'ɾaw koŋ lu'mipat", "duration": 2.649}
+{"audio_filepath": "data/fsc/parquet/train-00028-of-00139.parquet/sample_001989.wav", "text": "ma'ɾami 'nam ma'ɾami 'maŋ baɡ'joŋ", "duration": 1.957}
+{"audio_filepath": "data/fsc/parquet/train-00038-of-00139.parquet/sample_001979.wav", "text": "ʔaŋ ʔi'sa sa", "duration": 0.72}
+{"audio_filepath": "data/fsc/parquet/train-00068-of-00139.parquet/sample_001341.wav", "text": "mada'las ni'laŋ kan'taw", "duration": 1.2}
+{"audio_filepath": "data/fsc/parquet/train-00090-of-00139.parquet/sample_000940.wav", "text": "kej'laŋan mataŋ'ɡap ʔaŋ ma'ŋa la'hok ʔi'saŋ 'ʔaɾaw 'baɡo ʔaŋ tak'daŋ 'pet͡ʃa", "duration": 3.45}
+{"audio_filepath": "data/fsc/parquet/train-00110-of-00139.parquet/sample_000011.wav", "text": "su'balit lu'makad 'ʃaŋ matu'wid", "duration": 1.725}
+{"audio_filepath": "data/fsc/parquet/train-00138-of-00139.parquet/sample_000365.wav", "text": "za ze zi zo zu", "duration": 2.1}
+{"audio_filepath": "data/fsc/parquet/train-00059-of-00139.parquet/sample_000565.wav", "text": "ka'paɡ kaʔ hin'di mo ʔinala'ɡaʔan 'juŋ sa'ɾili mo", "duration": 2.365}
+{"audio_filepath": "data/fsc/parquet/train-00099-of-00139.parquet/sample_000478.wav", "text": "'paɾaŋ natu'tuto ʔa'ko 'dun na", "duration": 1.402}
+{"audio_filepath": "data/fsc/parquet/train-00078-of-00139.parquet/sample_001544.wav", "text": "'tas maki'kita mo 'juŋ ma'ŋa 'difeɾent", "duration": 1.791}
+{"audio_filepath": "data/fsc/parquet/train-00078-of-00139.parquet/sample_001804.wav", "text": "ɡaɡa'wa ka'miŋ ʔi'saŋ", "duration": 1.019}
+{"audio_filepath": "data/fsc/parquet/train-00110-of-00139.parquet/sample_001647.wav", "text": "buma'baʔ ka 'ɾito", "duration": 1.163}
+{"audio_filepath": "data/fsc/parquet/train-00132-of-00139.parquet/sample_000632.wav", "text": "ʔi'saŋ 'sabado naŋ ʔe'neɾo", "duration": 1.625}
+{"audio_filepath": "data/fsc/parquet/train-00015-of-00139.parquet/sample_000507.wav", "text": "nan'd͡ʒan ba si 'fej vilja'luz", "duration": 1.8}
+{"audio_filepath": "data/fsc/parquet/train-00087-of-00139.parquet/sample_001974.wav", "text": "'paɾaŋ pam'bataŋ ɾa'son 'no", "duration": 1.547}
+{"audio_filepath": "data/fsc/parquet/train-00038-of-00139.parquet/sample_000964.wav", "text": "sa'ɾili 'namin ʔaŋ 'ʔamiŋ 'buhaj", "duration": 1.5}
+{"audio_filepath": "data/fsc/parquet/train-00068-of-00139.parquet/sample_001968.wav", "text": "kumba'ɡa naʔiʔi'nis na sa'kin ka'se pa'ɾati ʔa'koŋ 'baweɾ 'ɾatiŋ ɡa'non", "duration": 3.847}
+{"audio_filepath": "data/fsc/parquet/train-00135-of-00139.parquet/sample_001490.wav", "text": "ʔa'ko si 'melvin 'ko", "duration": 1.247}
+{"audio_filepath": "data/fsc/parquet/train-00114-of-00139.parquet/sample_000869.wav", "text": "sa'ka 'lamaŋ ʔi'to naɡi'siŋ", "duration": 1.61}
+{"audio_filepath": "data/fsc/parquet/train-00076-of-00139.parquet/sample_000891.wav", "text": "ku'kuha ka ba naŋ ʔek'sam", "duration": 1.775}
+{"audio_filepath": "data/fsc/parquet/train-00023-of-00139.parquet/sample_000028.wav", "text": "'teŋk 'ju", "duration": 0.429}
+{"audio_filepath": "data/fsc/parquet/train-00066-of-00139.parquet/sample_001970.wav", "text": "kuŋ ʔanu'man 'juŋ", "duration": 0.897}
+{"audio_filepath": "data/fsc/parquet/train-00011-of-00139.parquet/sample_001426.wav", "text": "'paŋ 'ʔanim", "duration": 0.9}
+{"audio_filepath": "data/fsc/parquet/train-00024-of-00139.parquet/sample_000574.wav", "text": "naɡbi'ɡaj 'din ʔa'ko", "duration": 1.399}
+{"audio_filepath": "data/fsc/parquet/train-00113-of-00139.parquet/sample_001943.wav", "text": "ʔaŋ ma'ŋa 'taʔo sa 'ʔamen ʔaj ma'ŋa bi'sajaʔ", "duration": 2.944}
+{"audio_filepath": "data/fsc/parquet/train-00057-of-00139.parquet/sample_001326.wav", "text": "'kesa wa'laʔ halim'bawaʔ maj naʔaksi'dente", "duration": 2.009}
+{"audio_filepath": "data/fsc/parquet/train-00117-of-00139.parquet/sample_001990.wav", "text": "'dahil 'din sa paɡ'pasok ko sa ʔskwela'haŋ 'jun", "duration": 2.031}
+{"audio_filepath": "data/fsc/parquet/train-00097-of-00139.parquet/sample_000810.wav", "text": "sa 'ʔamiŋ 'bajan", "duration": 0.937}
+{"audio_filepath": "data/fsc/parquet/train-00081-of-00139.parquet/sample_001978.wav", "text": "paɡtu'tuɾo sa ma'ŋa 'bata sa", "duration": 2.239}
+{"audio_filepath": "data/fsc/parquet/train-00030-of-00139.parquet/sample_001950.wav", "text": "buk'san 'juŋ ʔi'sipan mo", "duration": 1.363}
+{"audio_filepath": "data/fsc/parquet/train-00013-of-00139.parquet/sample_001308.wav", "text": "'jun 'so", "duration": 0.665}
+{"audio_filepath": "data/fsc/parquet/train-00090-of-00139.parquet/sample_001969.wav", "text": "ʔa'lam ko daɾa'tiŋ ʔaŋ pana'hon mapapakina'baŋan 'juŋ la'hat naŋ ma'ŋa ɡinaɡa'waʔ 'dito", "duration": 8.255}
+{"audio_filepath": "data/fsc/parquet/train-00084-of-00139.parquet/sample_001961.wav", "text": "ma'ŋa nok'toɾnal ʔi'sa na 'ɾin 'ata ʔa'ko sa ma'ŋa 'taʔo na 'jon", "duration": 2.945}
+{"audio_filepath": "data/fsc/parquet/train-00130-of-00139.parquet/sample_001980.wav", "text": "'laban sa 'dadi ko 'del 'med͡ʒo malu'pit 'juŋ 'dadi ko sa ma'ŋa kapa'tid ko", "duration": 4.491}
+{"audio_filepath": "data/fsc/parquet/train-00093-of-00139.parquet/sample_001184.wav", "text": "'ŋa 'ŋe ŋi 'ŋo 'ŋu", "duration": 2.64}
+{"audio_filepath": "data/fsc/parquet/train-00006-of-00139.parquet/sample_000875.wav", "text": "ʔaŋ kaluŋ'kutan sa mu'ka naŋ 'bataŋ 'bataŋ maɡ ʔa'sawa", "duration": 3.025}
+{"audio_filepath": "data/fsc/parquet/train-00078-of-00139.parquet/sample_000892.wav", "text": "kaj'lan ʔaŋ 'beɾtdej mo", "duration": 1.45}
+{"audio_filepath": "data/fsc/parquet/train-00032-of-00139.parquet/sample_001929.wav", "text": "ʔa 'bilaŋ", "duration": 1.381}
+{"audio_filepath": "data/fsc/parquet/train-00084-of-00139.parquet/sample_000206.wav", "text": "ni'lusob naŋ ma'ŋa ba'laŋ ʔaŋ ma'ŋa pana'nim sa 'bukid", "duration": 3.079}
+{"audio_filepath": "data/fsc/parquet/train-00001-of-00139.parquet/sample_000206.wav", "text": "naŋ da'laɡa ʔaŋ 'baɡaj na jon", "duration": 1.875}
+{"audio_filepath": "data/fsc/parquet/train-00027-of-00139.parquet/sample_001974.wav", "text": "'jun ʔaŋ 'ʔamiŋ", "duration": 0.841}
+{"audio_filepath": "data/fsc/parquet/train-00074-of-00139.parquet/sample_000070.wav", "text": "ʔaj 'doj", "duration": 0.6}
+{"audio_filepath": "data/fsc/parquet/train-00116-of-00139.parquet/sample_000117.wav", "text": "ʔala'ɡaʔan mo 'juŋ 'bataʔ", "duration": 1.2}
+{"audio_filepath": "data/fsc/parquet/train-00112-of-00139.parquet/sample_001953.wav", "text": "'paɾa maɡs ʔa maɡhan'daʔ 'paɾa sa 'klase njo na na'man sa 'hapon", "duration": 5.031}
+{"audio_filepath": "data/fsc/parquet/train-00105-of-00139.parquet/sample_000278.wav", "text": "ʔaŋ 'sabi maɡhin'taj hin'taj 'din daʔ", "duration": 1.91}
+{"audio_filepath": "data/fsc/parquet/train-00025-of-00139.parquet/sample_001939.wav", "text": "'tas 'juŋ ʔi'saŋ 'mamaʔ 'don", "duration": 1.072}
+{"audio_filepath": "data/fsc/parquet/train-00063-of-00139.parquet/sample_000718.wav", "text": "kali'mutan na 'natin ʔi'to", "duration": 1.261}
+{"audio_filepath": "data/fsc/parquet/train-00100-of-00139.parquet/sample_001892.wav", "text": "paɡhahaɾa'pin ka'joŋ maɡʔa'sawa 'ʔupaŋ ʔa'jusin ʔaŋ ʔin'joŋ", "duration": 3.975}
+{"audio_filepath": "data/fsc/parquet/train-00058-of-00139.parquet/sample_000203.wav", "text": "'tapos nuŋ duma'tiŋ na ka'mi sa ʔa'no sa 'pik", "duration": 3.731}
+{"audio_filepath": "data/fsc/parquet/train-00117-of-00139.parquet/sample_001688.wav", "text": "'paɾa 'jun sa 'pɾad͡ʒekt na 'jon", "duration": 1.606}
+{"audio_filepath": "data/fsc/parquet/train-00019-of-00139.parquet/sample_001491.wav", "text": "kuŋ maj suliɾa'nin", "duration": 1.225}
+{"audio_filepath": "data/fsc/parquet/train-00070-of-00139.parquet/sample_001956.wav", "text": "'ʔopʃon kuŋ ba'ɡa", "duration": 1.056}
+{"audio_filepath": "data/fsc/parquet/train-00110-of-00139.parquet/sample_000969.wav", "text": "ta'pos na ʔi'jon ʔat di na mu'liŋ maʔibaba'lik pa", "duration": 2.26}
+{"audio_filepath": "data/fsc/parquet/train-00003-of-00139.parquet/sample_001507.wav", "text": "du'ʔon ʔaj sa'ɾili naŋ 'ʔamiŋ pani'ŋin ʔaŋ kalaŋi'tan", "duration": 2.6}
+{"audio_filepath": "data/fsc/parquet/train-00048-of-00139.parquet/sample_001981.wav", "text": "tas dala'waŋ la'lake tas ʔi'saŋ ba'baʔe", "duration": 2.966}
+{"audio_filepath": "data/fsc/parquet/train-00036-of-00139.parquet/sample_000421.wav", "text": "ku'manta ka na'man", "duration": 1.23}
+{"audio_filepath": "data/fsc/parquet/train-00024-of-00139.parquet/sample_001380.wav", "text": "ʔe 'juŋ 'ʔedsa 'ʃaŋ", "duration": 1.381}
+{"audio_filepath": "data/fsc/parquet/train-00085-of-00139.parquet/sample_000645.wav", "text": "'ʔa ʔipinaŋa'nak ʔa'ko nu'ʔoŋ no'vembeɾ 'twenti wan 'najntin 'ejti wan", "duration": 4.118}
+{"audio_filepath": "data/fsc/parquet/train-00104-of-00139.parquet/sample_001442.wav", "text": "tat'lo 'laŋ ka'mi sa ɾum 'ʔe ma'ŋa 'ten 'θeɾti na 'nun", "duration": 2.311}
+{"audio_filepath": "data/fsc/parquet/train-00031-of-00139.parquet/sample_001400.wav", "text": "'dahil sa pa'ɡiɡiŋ la'seŋɡo", "duration": 1.95}
+{"audio_filepath": "data/fsc/parquet/train-00138-of-00139.parquet/sample_000406.wav", "text": "ʔat maɡsawalaŋki'bo na 'lamaŋ", "duration": 1.905}
+{"audio_filepath": "data/fsc/parquet/train-00051-of-00139.parquet/sample_000504.wav", "text": "hin'di maʔipali'wanaɡ ʔaŋ kaluŋ'kutan sa mu'ka naŋ 'bataŋ 'bataŋ maɡʔa'sawa sa paɡkawa'la naŋ la'hat ni'laŋ tinataŋ'kilik ʔat sa ha'ɾap naŋ masak'lap na paŋja'jaɾi ʔaj maluŋ'kot na'hem hinaɡ'pis ʔaŋ la'laki d͡ʒus ko nawa'la ʔaŋ la'hat", "duration": 14.33}
+{"audio_filepath": "data/fsc/parquet/train-00059-of-00139.parquet/sample_000874.wav", "text": "'lalo na sa ma'ŋa bi'lihin tuma'ʔas", "duration": 2.176}
+{"audio_filepath": "data/fsc/parquet/train-00093-of-00139.parquet/sample_000213.wav", "text": "naɡmamada'liŋ luma'bas ʔaŋ da'laɡa", "duration": 2.025}
+{"audio_filepath": "data/fsc/parquet/train-00051-of-00139.parquet/sample_000049.wav", "text": "ʔunibeɾsi'dad naŋ pili'pinas sa dili'man", "duration": 2.486}
+{"audio_filepath": "data/fsc/parquet/train-00035-of-00139.parquet/sample_000756.wav", "text": "maɡta'noŋ ka sa ʔopi'sina naŋ pi ʔaɾ ʔow bi ʔow ʔes ti 'maɾʃal 'd͡ʒeneɾal", "duration": 4.272}
+{"audio_filepath": "data/fsc/parquet/train-00136-of-00139.parquet/sample_001781.wav", "text": "ta'waɡan", "duration": 0.73}
+{"audio_filepath": "data/fsc/parquet/train-00112-of-00139.parquet/sample_001062.wav", "text": "punta'han mo na'man 'juŋ kapa'tid mo", "duration": 1.767}
+{"audio_filepath": "data/fsc/parquet/train-00103-of-00139.parquet/sample_001597.wav", "text": "ɡan'daŋ ʔu'maɡa", "duration": 0.937}
+{"audio_filepath": "data/fsc/parquet/train-00059-of-00139.parquet/sample_000670.wav", "text": "ʔat hinin'taj ʔaŋ paɡ'hina naŋ ʔu'lan", "duration": 2.0}
+{"audio_filepath": "data/fsc/parquet/train-00094-of-00139.parquet/sample_000095.wav", "text": "maka'pal ʔaŋ ma'ŋa 'labi", "duration": 1.255}
+{"audio_filepath": "data/fsc/parquet/train-00039-of-00139.parquet/sample_001806.wav", "text": "ku'ma ʃa naŋ 'kowk", "duration": 0.609}
+{"audio_filepath": "data/fsc/parquet/train-00067-of-00139.parquet/sample_001977.wav", "text": "so 'med͡ʒo kinakaba'han na ʔa'ko sa 'tisis ko ka'se 'med͡ʒo ma'ɾami pa tala'ɡaŋ kaj'laŋan ɡa'wen", "duration": 5.422}
+{"audio_filepath": "data/fsc/parquet/train-00051-of-00139.parquet/sample_000604.wav", "text": "namu'muŋa 'man ʔo hin'de", "duration": 1.5}
+{"audio_filepath": "data/fsc/parquet/train-00089-of-00139.parquet/sample_001561.wav", "text": "ʔat sa'ɾili na'man", "duration": 1.15}
+{"audio_filepath": "data/fsc/parquet/train-00078-of-00139.parquet/sample_001964.wav", "text": "'jon 'juŋ", "duration": 0.8}
+{"audio_filepath": "data/fsc/parquet/train-00002-of-00139.parquet/sample_000744.wav", "text": "sa paɡakawa'la naŋ la'hat ni'laŋ", "duration": 1.515}
+{"audio_filepath": "data/fsc/parquet/train-00135-of-00139.parquet/sample_000751.wav", "text": "kuŋ tala'ɡaŋ 'ʔakin", "duration": 1.65}
+{"audio_filepath": "data/fsc/parquet/train-00105-of-00139.parquet/sample_001969.wav", "text": "'paɾaŋ ɡa'nun", "duration": 0.781}
+{"audio_filepath": "data/fsc/parquet/train-00109-of-00139.parquet/sample_000446.wav", "text": "na ʔipinatu'pad ʔaŋ kaʔunla'ɾan", "duration": 2.0}
+{"audio_filepath": "data/fsc/parquet/train-00111-of-00139.parquet/sample_001500.wav", "text": "'jun 'laŋ", "duration": 0.784}
+{"audio_filepath": "data/fsc/parquet/train-00009-of-00139.parquet/sample_001346.wav", "text": "ŋa'jon ʔa'ko 'ɾin 'dun", "duration": 1.381}
+{"audio_filepath": "data/fsc/parquet/train-00124-of-00139.parquet/sample_001099.wav", "text": "ʔaj 'sant͡ʃop", "duration": 0.775}
+{"audio_filepath": "data/fsc/parquet/train-00127-of-00139.parquet/sample_000467.wav", "text": "pa'tuŋo na sa ɡejt ʔaŋ ba'baʔe naŋ mada'ʔanan njaʔ", "duration": 2.82}
+{"audio_filepath": "data/fsc/parquet/train-00086-of-00139.parquet/sample_001908.wav", "text": "'ʔa ma'lajo 'juŋ 'boɾdiŋ 'haws ko 'non", "duration": 2.1}
+{"audio_filepath": "data/fsc/parquet/train-00131-of-00139.parquet/sample_001873.wav", "text": "ti'napos ko 'laŋ 'wan 'stej 'ʃat", "duration": 1.472}
+{"audio_filepath": "data/fsc/parquet/train-00045-of-00139.parquet/sample_000056.wav", "text": "nu'ʔoŋ 'ʔunaŋ pana'hon", "duration": 1.33}
+{"audio_filepath": "data/fsc/parquet/train-00083-of-00139.parquet/sample_000374.wav", "text": "kaj'lan ka makaka'tapos sa 'episowd na 'jon", "duration": 2.825}
+{"audio_filepath": "data/fsc/parquet/train-00135-of-00139.parquet/sample_001245.wav", "text": "ʔat naɡtɾa'baho 'bilaŋ ka'tuloŋ sa ʔi'saŋ kaɾpin'teɾo", "duration": 3.35}
+{"audio_filepath": "data/fsc/parquet/train-00016-of-00139.parquet/sample_000135.wav", "text": "maɡan'daŋ ʔu'maɡa 'poʔ", "duration": 1.113}
+{"audio_filepath": "data/fsc/parquet/train-00051-of-00139.parquet/sample_000294.wav", "text": "di ko ʔa'lam 'peɾo mu'kaŋ 'ʔokej na'man 'juŋ ʔeɡ'zam", "duration": 2.993}
+{"audio_filepath": "data/fsc/parquet/train-00121-of-00139.parquet/sample_000010.wav", "text": "ʔaj di'nanas 'din nja", "duration": 1.05}
+{"audio_filepath": "data/fsc/parquet/train-00119-of-00139.parquet/sample_000226.wav", "text": "ʃa ʔaj ʔi'saŋ ʔi'mahe naŋ da'laɡaŋ pili'pina", "duration": 2.9}
+{"audio_filepath": "data/fsc/parquet/train-00055-of-00139.parquet/sample_001535.wav", "text": "maɡan'da sa 'haliwud 'ʃowbiz", "duration": 1.725}
+{"audio_filepath": "data/fsc/parquet/train-00059-of-00139.parquet/sample_001481.wav", "text": "ʔaŋ lan'taɾa ni'toŋ paɡpapaba'jaʔ", "duration": 2.175}
+{"audio_filepath": "data/fsc/parquet/train-00109-of-00139.parquet/sample_001794.wav", "text": "si'na 'luwi ʔat 'd͡ʒej ʔem 'ʔaj", "duration": 2.1}
+{"audio_filepath": "data/fsc/parquet/train-00001-of-00139.parquet/sample_001336.wav", "text": "'meɾon si'laŋ mali'ʔit na 'lupaʔ na natatani'man naŋ 'saɾi 'saɾiŋ 'ɡulaj", "duration": 4.143}
+{"audio_filepath": "data/fsc/parquet/train-00062-of-00139.parquet/sample_001866.wav", "text": "'lat na 'sila", "duration": 0.913}
+{"audio_filepath": "data/fsc/parquet/train-00044-of-00139.parquet/sample_001430.wav", "text": "ʔim'palses 'laŋ 'juŋ ɡina'ɡamet", "duration": 1.431}
+{"audio_filepath": "data/fsc/parquet/train-00080-of-00139.parquet/sample_000518.wav", "text": "maɡsawalaŋki'boʔ", "duration": 1.075}
+{"audio_filepath": "data/fsc/parquet/train-00036-of-00139.parquet/sample_001327.wav", "text": "kaj'lan ʔaŋ 'beɾtdej moʔ", "duration": 1.14}
+{"audio_filepath": "data/fsc/parquet/train-00076-of-00139.parquet/sample_000017.wav", "text": "tuma'lakaj naŋ 'ʔultɾa 'vajolet 'ɾejs", "duration": 2.075}
+{"audio_filepath": "data/fsc/parquet/train-00017-of-00139.parquet/sample_001126.wav", "text": "ʔaŋ kata'wan", "duration": 0.831}
+{"audio_filepath": "data/fsc/parquet/train-00131-of-00139.parquet/sample_001967.wav", "text": "maʔa'ʔaɾiŋ ʔaŋ 'mismoŋ ʔopi'sinaŋ ʔi'to ʔaŋ maɡ'ʔutos sa ʔi'joŋ ʔa'sawa", "duration": 3.74}
+{"audio_filepath": "data/fsc/parquet/train-00087-of-00139.parquet/sample_001814.wav", "text": "maʔa'ʔaɾiʔ moŋ ʔipa'bawas sa 'sweldo naŋ ʔi'joŋ ʔa'sawa", "duration": 3.15}
+{"audio_filepath": "data/fsc/parquet/train-00083-of-00139.parquet/sample_001240.wav", "text": "ʔa'ko 'poʔ ʔaj dalawam'put 'ʔanim na 'ʔanjos", "duration": 2.709}
+{"audio_filepath": "data/fsc/parquet/train-00137-of-00139.parquet/sample_000900.wav", "text": "sa zu ʔat 'd͡ʒaŋɡel naŋ 'waʃiŋton", "duration": 1.925}
+{"audio_filepath": "data/fsc/parquet/train-00029-of-00139.parquet/sample_001963.wav", "text": "aŋ 'ʃaj na'ɡiŋ", "duration": 1.232}
+{"audio_filepath": "data/fsc/parquet/train-00108-of-00139.parquet/sample_000791.wav", "text": "du'ʔon ko na'kita si don sul'weta nuŋ 'fjesta", "duration": 2.744}
+{"audio_filepath": "data/fsc/parquet/train-00010-of-00139.parquet/sample_000494.wav", "text": "sa maɡʔa'ʔaɾal naŋ ju pi ʔi'saŋ maɡ'ʔaɾal naŋ ju pi ŋa'jon", "duration": 2.874}
+{"audio_filepath": "data/fsc/parquet/train-00038-of-00139.parquet/sample_001215.wav", "text": "di'ba", "duration": 0.525}
+{"audio_filepath": "data/fsc/parquet/train-00084-of-00139.parquet/sample_001620.wav", "text": "hwaɡ 'kaŋ makaka'limot", "duration": 1.268}
+{"audio_filepath": "data/fsc/parquet/train-00133-of-00139.parquet/sample_000399.wav", "text": "mas ma'ɾamiŋ paɡkakata'ʔoŋ ma'nalo", "duration": 1.675}
+{"audio_filepath": "data/fsc/parquet/train-00014-of-00139.parquet/sample_001459.wav", "text": "'siɡaʔ", "duration": 0.57}
+{"audio_filepath": "data/fsc/parquet/train-00062-of-00139.parquet/sample_001969.wav", "text": "ʔa ma'hiliɡ 'din ʔa'koŋ maɡba'sa", "duration": 1.381}
+{"audio_filepath": "data/fsc/parquet/train-00043-of-00139.parquet/sample_001976.wav", "text": "ʃin'suwi ka'si", "duration": 0.958}
+{"audio_filepath": "data/fsc/parquet/train-00105-of-00139.parquet/sample_000405.wav", "text": "ʔiʔi'sa 'lamaŋ ʔaŋ kapa'tid njaŋ la'lake", "duration": 1.9}
+{"audio_filepath": "data/fsc/parquet/train-00021-of-00139.parquet/sample_000593.wav", "text": "pala'bas ʔat tuma'lon sa 'ʔiloɡ", "duration": 1.875}
+{"audio_filepath": "data/fsc/parquet/train-00004-of-00139.parquet/sample_001458.wav", "text": "maɡsawa'laŋ ki'boʔ", "duration": 1.025}
+{"audio_filepath": "data/fsc/parquet/train-00137-of-00139.parquet/sample_000353.wav", "text": "naŋ ma'tapos ʔaŋ ʔawa'jan", "duration": 1.875}
+{"audio_filepath": "data/fsc/parquet/train-00121-of-00139.parquet/sample_000530.wav", "text": "maɡ'ʔaɾal ka na", "duration": 1.111}
+{"audio_filepath": "data/fsc/parquet/train-00116-of-00139.parquet/sample_001184.wav", "text": "pambi'hiɾa ʔaŋ ʔu'laŋ bu'muhos", "duration": 1.95}
+{"audio_filepath": "data/fsc/parquet/train-00108-of-00139.parquet/sample_001115.wav", "text": "'peɾo wa'la tala'ɡa ʔa'koŋ i'baŋ ma'kwento ka'se wa'la tala'ɡaŋ 'konti 'laŋ naŋjaja'ɾi sa 'buhaj ko foɾ da past fju mants", "duration": 8.18}
+{"audio_filepath": "data/fsc/parquet/train-00122-of-00139.parquet/sample_001977.wav", "text": "nani'wala ka", "duration": 0.839}
+{"audio_filepath": "data/fsc/parquet/train-00022-of-00139.parquet/sample_000169.wav", "text": "nawa'laʔ ʔaŋ la'hat", "duration": 0.907}
+{"audio_filepath": "data/fsc/parquet/train-00047-of-00139.parquet/sample_001972.wav", "text": "ʔa'no pa ba", "duration": 0.55}
+{"audio_filepath": "data/fsc/parquet/train-00092-of-00139.parquet/sample_001347.wav", "text": "ʔaŋ kabu'hajan", "duration": 0.875}
+{"audio_filepath": "data/fsc/parquet/train-00006-of-00139.parquet/sample_000785.wav", "text": "'ʔo nuŋ ko'lehijo 'laŋ", "duration": 2.425}
+{"audio_filepath": "data/fsc/parquet/train-00013-of-00139.parquet/sample_001253.wav", "text": "maɡ'kita na'man 'tajo mama'jaʔ", "duration": 1.6}
+{"audio_filepath": "data/fsc/parquet/train-00014-of-00139.parquet/sample_000590.wav", "text": "'peɾo ʔa'ko 'juŋ", "duration": 0.888}
+{"audio_filepath": "data/fsc/parquet/train-00116-of-00139.parquet/sample_001899.wav", "text": "ʃa ʔaj nakati'ɾa sa kalo'ʔokan 'siti", "duration": 2.614}
+{"audio_filepath": "data/fsc/parquet/train-00112-of-00139.parquet/sample_001352.wav", "text": "ʔaŋ sam'puŋ bu'wanaŋ 'bola", "duration": 1.875}
+{"audio_filepath": "data/fsc/parquet/train-00043-of-00139.parquet/sample_000412.wav", "text": "paŋli'ma ʃa sa sam'puŋ maɡkakapa'tid", "duration": 2.025}
+{"audio_filepath": "data/fsc/parquet/train-00019-of-00139.parquet/sample_001210.wav", "text": "ʔa'ko ʔaj 'ɡaliŋ saʔ", "duration": 1.231}
+{"audio_filepath": "data/fsc/parquet/train-00087-of-00139.parquet/sample_001949.wav", "text": "di ko pa nakaka'ʔusap", "duration": 1.075}
+{"audio_filepath": "data/fsc/parquet/train-00126-of-00139.parquet/sample_000036.wav", "text": "naɡmamada'liŋ luma'bas ʔaŋ da'laɡa", "duration": 1.938}
+{"audio_filepath": "data/fsc/parquet/train-00022-of-00139.parquet/sample_000348.wav", "text": "wa'lo ka'miŋ maɡkakapa'tid ʔat paŋ'ʔanim ʔa'ko paɡka'tapos naŋ 'hajskul ʔaj ʔa'ɡad ʔa'koŋ pu'munta 'ɾito ʔat naɡtɾa'baho 'bilaŋ ka'tuloŋ sa ʔi'saŋ kaɾpin'teɾo", "duration": 9.175}
+{"audio_filepath": "data/fsc/parquet/train-00042-of-00139.parquet/sample_000446.wav", "text": "'nasa tu'ɡatoɡ na ko naŋ taɡum'paj", "duration": 2.3}
+{"audio_filepath": "data/fsc/parquet/train-00111-of-00139.parquet/sample_000575.wav", "text": "ʔaŋ nalalaŋ'hap na 'haŋin", "duration": 1.45}
+{"audio_filepath": "data/fsc/parquet/train-00007-of-00139.parquet/sample_000867.wav", "text": "pam'publikoŋ paʔaɾa'lan", "duration": 1.286}
+{"audio_filepath": "data/fsc/parquet/train-00074-of-00139.parquet/sample_000314.wav", "text": "si 'd͡ʒak", "duration": 0.425}
+{"audio_filepath": "data/fsc/parquet/train-00080-of-00139.parquet/sample_001983.wav", "text": "si'ɡuɾo haŋ'ɡaŋ 'bukas na laŋ", "duration": 1.292}
+{"audio_filepath": "data/fsc/parquet/train-00090-of-00139.parquet/sample_001986.wav", "text": "ʔa'lam ni'la", "duration": 0.727}
+{"audio_filepath": "data/fsc/parquet/train-00113-of-00139.parquet/sample_001850.wav", "text": "ka'se ʔaŋ 'kjut 'kjut nja", "duration": 1.062}
+{"audio_filepath": "data/fsc/parquet/train-00091-of-00139.parquet/sample_000432.wav", "text": "naŋ 'biktima", "duration": 0.925}
+{"audio_filepath": "data/fsc/parquet/train-00040-of-00139.parquet/sample_001039.wav", "text": "sa paɡus'boŋ naŋ kɾist͡ʃani'dad", "duration": 2.1}
+{"audio_filepath": "data/fsc/parquet/train-00050-of-00139.parquet/sample_001831.wav", "text": "ʔekseɾ'sajs na laŋ", "duration": 0.998}
+{"audio_filepath": "data/fsc/parquet/train-00109-of-00139.parquet/sample_001292.wav", "text": "ʔaŋ 'hiɾap na di'nanas naŋ kan'jaŋ kaʔi'biɡan ʔaj di'nanas 'din nja", "duration": 3.75}
+{"audio_filepath": "data/fsc/parquet/train-00071-of-00139.parquet/sample_001713.wav", "text": "si'ɡuɾo ŋa'joŋ baka'ʃon", "duration": 1.155}
+{"audio_filepath": "data/fsc/parquet/train-00079-of-00139.parquet/sample_001970.wav", "text": "bas'ta maj ma'ŋa ka'sama 'ka naɡhaha'nap dun sa pi'toŋ 'ɡolden 'bols", "duration": 3.862}
+{"audio_filepath": "data/fsc/parquet/train-00115-of-00139.parquet/sample_000274.wav", "text": "'ʔoj 'zeni vilja'ɾama", "duration": 1.425}
+{"audio_filepath": "data/fsc/parquet/train-00138-of-00139.parquet/sample_000110.wav", "text": "sa bu'ʔoŋ 'buhaj ko", "duration": 1.065}
+{"audio_filepath": "data/fsc/parquet/train-00013-of-00139.parquet/sample_000742.wav", "text": "pan'dak si 'doj", "duration": 0.95}
+{"audio_filepath": "data/fsc/parquet/train-00053-of-00139.parquet/sample_000975.wav", "text": "maj 'pilat", "duration": 0.625}
+{"audio_filepath": "data/fsc/parquet/train-00087-of-00139.parquet/sample_001360.wav", "text": "sisimu'lan sa d͡ʒi ʔem ʔej 'seven ʔaŋ ti vi ʃo na da boj 'ʔend da ɡeɾl", "duration": 4.025}
+{"audio_filepath": "data/fsc/parquet/train-00070-of-00139.parquet/sample_001983.wav", "text": "'peɾo ŋa'jon maj papun'taŋ 'tekst ka'si maj naɾiɾi'niɡ na ʔa'koŋ ʔinteɾfe'ɾens", "duration": 8.385}
+{"audio_filepath": "data/fsc/parquet/train-00046-of-00139.parquet/sample_001120.wav", "text": "paki'huɡas ʔaŋ ma'ŋa 'plato", "duration": 1.19}
+{"audio_filepath": "data/fsc/parquet/train-00057-of-00139.parquet/sample_001187.wav", "text": "'bale ʔi'toŋ 'pɾad͡ʒekt", "duration": 1.026}
+{"audio_filepath": "data/fsc/parquet/train-00060-of-00139.parquet/sample_000809.wav", "text": "ka'nino ka'jaʔ ʔi'to", "duration": 1.2}
+{"audio_filepath": "data/fsc/parquet/train-00081-of-00139.parquet/sample_001831.wav", "text": "ʔibibi'ɡaj mo pa 'lamaŋ ʔaŋ ʔaplika'ʃon mo", "duration": 2.14}
+{"audio_filepath": "data/fsc/parquet/train-00076-of-00139.parquet/sample_001189.wav", "text": "hin'di na si'la na'liɡoʔ", "duration": 1.068}
+{"audio_filepath": "data/fsc/parquet/train-00062-of-00139.parquet/sample_001511.wav", "text": "'bakit pa'ti ʃa ʔaj", "duration": 1.632}
+{"audio_filepath": "data/fsc/parquet/train-00067-of-00139.parquet/sample_000631.wav", "text": "naŋ ma'ɡaɡandaŋ 'baɡaj", "duration": 1.425}
+{"audio_filepath": "data/fsc/parquet/train-00090-of-00139.parquet/sample_001944.wav", "text": "sa 'ʔes ʔem 'noɾθ", "duration": 0.891}
+{"audio_filepath": "data/fsc/parquet/train-00004-of-00139.parquet/sample_000811.wav", "text": "ʔi'to ʔaj 'ʔupaŋ hin'di mali'to ʔaŋ ma'ŋa 'naɾs ʔat dok'toɾ kuŋ susu'ɾiʔin ka", "duration": 4.211}
+{"audio_filepath": "data/fsc/parquet/train-00077-of-00139.parquet/sample_000432.wav", "text": "naŋ 'saɾi 'saɾiŋ 'ɡulaj", "duration": 1.175}
+{"audio_filepath": "data/fsc/parquet/train-00093-of-00139.parquet/sample_001987.wav", "text": "ʔa'dolesens 'piɾjod", "duration": 1.375}
+{"audio_filepath": "data/fsc/parquet/train-00054-of-00139.parquet/sample_001582.wav", "text": "kasa'baj naŋ paɡ'dami naŋ konstɾuk'ʃon naŋ ma'ŋaʔ", "duration": 2.325}
+{"audio_filepath": "data/fsc/parquet/train-00117-of-00139.parquet/sample_001215.wav", "text": "ʔaŋ 'dahoŋ 'koɾteŋ 'pusoʔ ʔaj ʔila'laɡaj nin'jo sa 'basoŋ maj 'tubiɡ", "duration": 3.3}
+{"audio_filepath": "data/fsc/parquet/train-00035-of-00139.parquet/sample_000709.wav", "text": "naɡi'siŋ si ne'nita", "duration": 1.25}
+{"audio_filepath": "data/fsc/parquet/train-00064-of-00139.parquet/sample_000651.wav", "text": "pa'ʔano 'njo masisiɡu'ɾado na maki'kita nin'jo ʃa 'ɾito", "duration": 3.069}
+{"audio_filepath": "data/fsc/parquet/train-00133-of-00139.parquet/sample_000176.wav", "text": "naŋ ʔa'poj", "duration": 0.526}
+{"audio_filepath": "data/fsc/parquet/train-00038-of-00139.parquet/sample_000739.wav", "text": "ʔaŋ naba'liw sa ʔi'saŋ pi bi ʔej 'plejeɾ", "duration": 2.225}
+{"audio_filepath": "data/fsc/parquet/train-00003-of-00139.parquet/sample_000687.wav", "text": "'laɡiŋ bu'kas ʔaŋ ka'nilaŋ ma'ŋa 'palad", "duration": 2.299}
+{"audio_filepath": "data/fsc/parquet/train-00084-of-00139.parquet/sample_001705.wav", "text": "ʔaŋ masa'sabi ko 'poʔ", "duration": 1.112}
+{"audio_filepath": "data/fsc/parquet/train-00115-of-00139.parquet/sample_000927.wav", "text": "hin'di nawa'la ʔaŋ la'hat naɾi'to pa ka'mi ni ʔi'naj", "duration": 2.525}
+{"audio_filepath": "data/fsc/parquet/train-00005-of-00139.parquet/sample_001545.wav", "text": "paŋaŋala'ɡaʔan ʔaŋ", "duration": 1.15}
+{"audio_filepath": "data/fsc/parquet/train-00016-of-00139.parquet/sample_000758.wav", "text": "si'na 'luwi ʔat 'd͡ʒej ʔem ʔaj 'dapat biɡ'jan ʔaten'ʃon 'dahil hiwa'laj ʔaŋ ma'ŋa ma'ɡulaŋ", "duration": 4.6}
+{"audio_filepath": "data/fsc/parquet/train-00001-of-00139.parquet/sample_000983.wav", "text": "ka'ja 'jun 'dun puma'pasok 'juŋ 'juŋ 'paɾte si'ɡuɾo na 'ʔaɾt na 'juŋ 'ʔaɾtistɾi si'ɡuɾo", "duration": 9.149}
+{"audio_filepath": "data/fsc/parquet/train-00008-of-00139.parquet/sample_001829.wav", "text": "ʔaŋ naɡlili'wanaɡ na ɡin'toŋ 'kulaj", "duration": 2.0}
+{"audio_filepath": "data/fsc/parquet/train-00071-of-00139.parquet/sample_000550.wav", "text": "'tunaj na wa'laŋ", "duration": 0.8}
+{"audio_filepath": "data/fsc/parquet/train-00126-of-00139.parquet/sample_001469.wav", "text": "naŋ kapa'taɡaŋ paʔak'jat naŋ kabun'dukan", "duration": 2.7}
+{"audio_filepath": "data/fsc/parquet/train-00074-of-00139.parquet/sample_001387.wav", "text": "'bakit hin'di na laŋ 'natin tana'win aŋ 'bukas", "duration": 2.52}
+{"audio_filepath": "data/fsc/parquet/train-00012-of-00139.parquet/sample_000620.wav", "text": "hin'di ʔa'ko ʔi'saŋ moɾa'listaŋ 'taʔo", "duration": 2.217}
+{"audio_filepath": "data/fsc/parquet/train-00047-of-00139.parquet/sample_001526.wav", "text": "'ʔamiŋ ɡa'nap", "duration": 0.625}
+{"audio_filepath": "data/fsc/parquet/train-00127-of-00139.parquet/sample_000754.wav", "text": "kani'la 'nanaj ʔaŋ 'lakad 'natin di 'ba", "duration": 1.939}
+{"audio_filepath": "data/fsc/parquet/train-00026-of-00139.parquet/sample_000404.wav", "text": "na 'ne ni 'no nu", "duration": 1.99}
+{"audio_filepath": "data/fsc/parquet/train-00127-of-00139.parquet/sample_000837.wav", "text": "lu'makad 'ʃaŋ matu'wid", "duration": 1.4}
+{"audio_filepath": "data/fsc/parquet/train-00056-of-00139.parquet/sample_000352.wav", "text": "'bakit pa'ti ʃa ʔaj humihi'ŋi naŋ kapatawa'ɾan sa kan'ja", "duration": 3.775}
+{"audio_filepath": "data/fsc/parquet/train-00039-of-00139.parquet/sample_000616.wav", "text": "ʔaj maj sam'pu na'maŋ 'pɾemjo", "duration": 1.4}
+{"audio_filepath": "data/fsc/parquet/train-00120-of-00139.parquet/sample_001569.wav", "text": "hini'ŋan 'ŋaʔ ʔa'ko naŋ mala'kiŋ hala'ɡa naŋ maŋɡa'ɡamot", "duration": 3.0}
+{"audio_filepath": "data/fsc/parquet/train-00055-of-00139.parquet/sample_001604.wav", "text": "wa'laŋ pakiʔa'lam ʔaŋ ma'ŋa mananalan'ta 'puno 'man ʔo ha'laman", "duration": 3.82}
+{"audio_filepath": "data/fsc/parquet/train-00112-of-00139.parquet/sample_001281.wav", "text": "naɡ 'ʔawaj", "duration": 0.8}
+{"audio_filepath": "data/fsc/parquet/train-00124-of-00139.parquet/sample_001941.wav", "text": "'bataŋ la'ki sa 'hiɾap", "duration": 1.435}
+{"audio_filepath": "data/fsc/parquet/train-00103-of-00139.parquet/sample_000601.wav", "text": "hin'di ʔa'ko nanini'walaŋ", "duration": 1.22}
+{"audio_filepath": "data/fsc/parquet/train-00063-of-00139.parquet/sample_000206.wav", "text": "nakaɡaɡa'wa naŋ maɡan'daŋ 'baɡaj", "duration": 2.35}
+{"audio_filepath": "data/fsc/parquet/train-00022-of-00139.parquet/sample_000479.wav", "text": "", "duration": 1.269}
+{"audio_filepath": "data/fsc/parquet/train-00081-of-00139.parquet/sample_001028.wav", "text": "na lu'misan nilak'baj 'nja ʔaŋ ma'lawak", "duration": 2.55}
+{"audio_filepath": "data/fsc/parquet/train-00051-of-00139.parquet/sample_001678.wav", "text": "'kahit di ʃa 'juŋ pinakamala'kas", "duration": 1.377}
+{"audio_filepath": "data/fsc/parquet/train-00032-of-00139.parquet/sample_000456.wav", "text": "'dun sa doɾmi'toɾjo na'ɡiŋ", "duration": 2.015}
+{"audio_filepath": "data/fsc/parquet/train-00072-of-00139.parquet/sample_001148.wav", "text": "sa ka'maj naŋ la'lake ʔat naɡ'sabi", "duration": 1.725}
+{"audio_filepath": "data/fsc/parquet/train-00027-of-00139.parquet/sample_001956.wav", "text": "ʔat mu'la do'ʔon", "duration": 1.829}
+{"audio_filepath": "data/fsc/parquet/train-00036-of-00139.parquet/sample_001971.wav", "text": "di ko ʔa'lam ni'toŋ ma'ŋa nakaɾa'ʔaŋ 'ʔaɾaw tala'ɡa", "duration": 2.295}
+{"audio_filepath": "data/fsc/parquet/train-00074-of-00139.parquet/sample_001043.wav", "text": "ni'lusob naŋ ma'ŋa 'balaŋ ʔaŋ ma'ŋa pana'nim sa 'bukid", "duration": 2.9}
+{"audio_filepath": "data/fsc/parquet/train-00084-of-00139.parquet/sample_000765.wav", "text": "'paɾaŋ ʔi'nisip mo", "duration": 1.158}
+{"audio_filepath": "data/fsc/parquet/train-00005-of-00139.parquet/sample_001079.wav", "text": "'ʔupaŋ ma'kita ʔa'ɡad ʔaŋ ʔidi'nulot naŋ ʔem ʔen ʔel ʔep", "duration": 2.825}
+{"audio_filepath": "data/fsc/parquet/train-00111-of-00139.parquet/sample_001966.wav", "text": "'minsan naɡd͡ʒa'd͡ʒablo ʔa'ko sa 'kwaɾto", "duration": 1.9}
+{"audio_filepath": "data/fsc/parquet/train-00023-of-00139.parquet/sample_001111.wav", "text": "'peɾo paɡ'lipat ko naŋ 'naɾa pa'laɡi naŋ maj ʔak'ʃun", "duration": 3.172}
+{"audio_filepath": "data/fsc/parquet/train-00064-of-00139.parquet/sample_001502.wav", "text": "wa'lo ka'miŋ maɡkakapa'tid ʔat paŋ'ʔanim ʔa'ko", "duration": 3.151}
+{"audio_filepath": "data/fsc/parquet/train-00111-of-00139.parquet/sample_000507.wav", "text": "kani'la 'nanaj ʔaŋ 'lakad 'natin", "duration": 1.825}
+{"audio_filepath": "data/fsc/parquet/train-00134-of-00139.parquet/sample_001388.wav", "text": "wa'la si'laŋ ʔi'baŋ tɾa'baho kun'di ʔaŋ maɡpali'mos 'ʔaɾaw 'ʔaɾaw", "duration": 2.975}
+{"audio_filepath": "data/fsc/parquet/train-00035-of-00139.parquet/sample_001884.wav", "text": "'paɾa hin'di na'man ma'ʃadoŋ", "duration": 1.716}
+{"audio_filepath": "data/fsc/parquet/train-00049-of-00139.parquet/sample_001953.wav", "text": "kuŋ paɡpapa'laʔin naŋ d͡ʒos", "duration": 1.638}
+{"audio_filepath": "data/fsc/parquet/train-00079-of-00139.parquet/sample_001951.wav", "text": "puma'pasok 'pu 'jan", "duration": 1.317}
+{"audio_filepath": "data/fsc/parquet/train-00124-of-00139.parquet/sample_000133.wav", "text": "to ʔaj ma'daɾama 'moŋ", "duration": 1.3}
+{"audio_filepath": "data/fsc/parquet/train-00126-of-00139.parquet/sample_000979.wav", "text": "pakiki'sama na na'man 'jon", "duration": 1.46}
+{"audio_filepath": "data/fsc/parquet/train-00077-of-00139.parquet/sample_001945.wav", "text": "ʔjuniveɾsi'dad naŋ", "duration": 0.733}
+{"audio_filepath": "data/fsc/parquet/train-00049-of-00139.parquet/sample_001301.wav", "text": "ka'ja nahi'ɡa 'muna ʃa", "duration": 1.525}
+{"audio_filepath": "data/fsc/parquet/train-00073-of-00139.parquet/sample_000158.wav", "text": "hin'di ʔimpo'sibleŋ maʔa'bot", "duration": 1.475}
+{"audio_filepath": "data/fsc/parquet/train-00100-of-00139.parquet/sample_001985.wav", "text": "ma'ɾami ʔa'koŋ kasa'baj na ma'ŋa ta'ɡa ju pi 'den ma'ŋa 'jaŋɡeɾ 'batʃes sa 'ʔaken", "duration": 6.969}
+{"audio_filepath": "data/fsc/parquet/train-00089-of-00139.parquet/sample_001594.wav", "text": "ʔaŋ ʔopi'sinaŋ ʔi'toʔ ʔaŋ dumidi'niɡ sa ma'ŋa pɾob'lema mo", "duration": 3.225}
+{"audio_filepath": "data/fsc/parquet/train-00125-of-00139.parquet/sample_001989.wav", "text": "'juŋ di ka makapaɡpa'ɡana naŋ 'seɾkit", "duration": 1.752}
+{"audio_filepath": "data/fsc/parquet/train-00038-of-00139.parquet/sample_001748.wav", "text": "ʔi'sipin mo", "duration": 0.801}
+{"audio_filepath": "data/fsc/parquet/train-00091-of-00139.parquet/sample_001965.wav", "text": "ta'pos naŋ'jaɾi 'ŋa pa'la 'dun sa ɾi'poɾt ko ka'nina", "duration": 2.186}
+{"audio_filepath": "data/fsc/parquet/train-00081-of-00139.parquet/sample_001871.wav", "text": "ʃa na 'juŋ", "duration": 0.436}
+{"audio_filepath": "data/fsc/parquet/train-00052-of-00139.parquet/sample_000136.wav", "text": "ʔa'noŋ pana'hon ʔaŋ tinu'tukoj sa tu'laʔ", "duration": 2.15}
+{"audio_filepath": "data/fsc/parquet/train-00083-of-00139.parquet/sample_001610.wav", "text": "'sabi naŋ 'ʔeɾpats ko si'ɡe tɾaj mo 'laŋ na ʔa'no", "duration": 2.911}
+{"audio_filepath": "data/fsc/parquet/train-00019-of-00139.parquet/sample_000672.wav", "text": "maɡlala'ɾu 'pala", "duration": 0.978}
+{"audio_filepath": "data/fsc/parquet/train-00069-of-00139.parquet/sample_001915.wav", "text": "wa'la na 'juŋ 'ʔale", "duration": 0.951}
+{"audio_filepath": "data/fsc/parquet/train-00016-of-00139.parquet/sample_001773.wav", "text": "'dahil sa maba'ʔit ʔaŋ ʔa'nak nja", "duration": 1.72}
+{"audio_filepath": "data/fsc/parquet/train-00065-of-00139.parquet/sample_001953.wav", "text": "'bale 'fajv", "duration": 1.23}
+{"audio_filepath": "data/fsc/parquet/train-00029-of-00139.parquet/sample_000170.wav", "text": "pala'jasin mo ʃa", "duration": 1.201}
+{"audio_filepath": "data/fsc/parquet/train-00005-of-00139.parquet/sample_001042.wav", "text": "kuŋ hin'di maka'ʔabot ʔaŋ 'kita mo sa ma'ŋa 'buhaj", "duration": 2.775}
+{"audio_filepath": "data/fsc/parquet/train-00059-of-00139.parquet/sample_001951.wav", "text": "kuŋ sa'ʔan ʔi'sa 'ɾin sa", "duration": 1.944}
+{"audio_filepath": "data/fsc/parquet/train-00065-of-00139.parquet/sample_000000.wav", "text": "'buhaj ma'hiɾap", "duration": 0.839}
+{"audio_filepath": "data/fsc/parquet/train-00039-of-00139.parquet/sample_001679.wav", "text": "ɡan 'ʃap naŋ ʔem ʔaj ʔel ʔef ʔat", "duration": 2.175}
+{"audio_filepath": "data/fsc/parquet/train-00043-of-00139.parquet/sample_001520.wav", "text": "ba'ka ʔumi'nom ɾin ʃa", "duration": 0.96}
+{"audio_filepath": "data/fsc/parquet/train-00013-of-00139.parquet/sample_000210.wav", "text": "ma'ɾamiŋ paɡkakata'ʔoŋ ma'nalo", "duration": 1.906}
+{"audio_filepath": "data/fsc/parquet/train-00093-of-00139.parquet/sample_001984.wav", "text": "papun'ta na'man sa la'waɡ", "duration": 1.277}
+{"audio_filepath": "data/fsc/parquet/train-00031-of-00139.parquet/sample_000372.wav", "text": "sa maj ʔi'babaw naŋ 'ʔulo naŋ 'kama", "duration": 2.05}
+{"audio_filepath": "data/fsc/parquet/train-00117-of-00139.parquet/sample_000011.wav", "text": "noŋ 'ʔunaŋ pana'hon", "duration": 1.125}
+{"audio_filepath": "data/fsc/parquet/train-00058-of-00139.parquet/sample_000890.wav", "text": "'bab 'biɡ 'bot", "duration": 1.025}
+{"audio_filepath": "data/fsc/parquet/train-00115-of-00139.parquet/sample_001761.wav", "text": "hin'di nawa'la ʔaŋ la'hat", "duration": 1.016}
+{"audio_filepath": "data/fsc/parquet/train-00071-of-00139.parquet/sample_000539.wav", "text": "maɡ'ʔaɾal ka na", "duration": 1.0}
+{"audio_filepath": "data/fsc/parquet/train-00035-of-00139.parquet/sample_001970.wav", "text": "maɡan'daŋ tɾa'baho 'juŋ", "duration": 1.278}
+{"audio_filepath": "data/fsc/parquet/train-00024-of-00139.parquet/sample_000942.wav", "text": "ʔi'saŋ maj 'peɾaŋ ba'diŋ ʔaŋ naba'liw sa ʔi'saŋ pi bi ʔej 'plejeɾ", "duration": 3.775}
+{"audio_filepath": "data/fsc/parquet/train-00095-of-00139.parquet/sample_001077.wav", "text": "ʔat na'laman ko natu'tuhan ko ʔaŋ kejba'han naŋ kul'tuɾa naŋ ma'ŋa kaba'taʔan 'don ʔat kaba'taʔan 'dito sa la'ɡuna", "duration": 10.494}
+{"audio_filepath": "data/fsc/parquet/train-00033-of-00139.parquet/sample_001886.wav", "text": "ta'pos 'wan 'wik 'ʔafteɾ ʔo'diʃon nana 'namin sa 'θjeteɾ 'ʔaɾt͡s", "duration": 4.776}
+{"audio_filepath": "data/fsc/parquet/train-00062-of-00139.parquet/sample_001757.wav", "text": "'ɡɾabe ma'ŋa ʔestu'd͡ʒante", "duration": 0.953}
+{"audio_filepath": "data/fsc/parquet/train-00073-of-00139.parquet/sample_001673.wav", "text": "ke'laŋaŋ ʔipaʔa'lam", "duration": 2.015}
+{"audio_filepath": "data/fsc/parquet/train-00029-of-00139.parquet/sample_001213.wav", "text": "pala'jasin mo ʃa", "duration": 1.225}
+{"audio_filepath": "data/fsc/parquet/train-00047-of-00139.parquet/sample_001893.wav", "text": "ʔa'no 'kwento na 'laŋ ʔa'ko ʔa'bawt 'dun sam", "duration": 2.299}
+{"audio_filepath": "data/fsc/parquet/train-00017-of-00139.parquet/sample_001630.wav", "text": "naŋ patuŋ'patoŋ", "duration": 1.225}
+{"audio_filepath": "data/fsc/parquet/train-00011-of-00139.parquet/sample_001492.wav", "text": "si dok'toɾa", "duration": 0.953}
+{"audio_filepath": "data/fsc/parquet/train-00136-of-00139.parquet/sample_000729.wav", "text": "pu'masok ʔa'ko sa 'naɾa", "duration": 1.258}
+{"audio_filepath": "data/fsc/parquet/train-00010-of-00139.parquet/sample_000230.wav", "text": "ma'ɡiŋ disipli'nadok", "duration": 1.207}
+{"audio_filepath": "data/fsc/parquet/train-00120-of-00139.parquet/sample_000205.wav", "text": "ʔaŋ la'lakiŋ maɡkakaɾo'ʔon", "duration": 1.75}
+{"audio_filepath": "data/fsc/parquet/train-00089-of-00139.parquet/sample_001812.wav", "text": "sa fili'pino spit͡ʃ 'koɾpus 'pɾad͡ʒek", "duration": 2.398}
+{"audio_filepath": "data/fsc/parquet/train-00000-of-00139.parquet/sample_001932.wav", "text": "ʔiʔi'sa 'lamaŋ ʔaŋ kapa'tid njaŋ la'laki", "duration": 2.075}
+{"audio_filepath": "data/fsc/parquet/train-00096-of-00139.parquet/sample_001963.wav", "text": "'bale naɡ ɾa'pel ka'me mu'la sa 'teɾd 'floɾ naŋ", "duration": 2.565}
+{"audio_filepath": "data/fsc/parquet/train-00022-of-00139.parquet/sample_001946.wav", "text": "'wel hin'di ʃa ɾi'lejted sa 'ʔakiŋ", "duration": 1.328}
+{"audio_filepath": "data/fsc/parquet/train-00107-of-00139.parquet/sample_001805.wav", "text": "'jun 'laŋ", "duration": 0.466}
+{"audio_filepath": "data/fsc/parquet/train-00027-of-00139.parquet/sample_001447.wav", "text": "waɡ na laŋ", "duration": 0.84}
+{"audio_filepath": "data/fsc/parquet/train-00134-of-00139.parquet/sample_000460.wav", "text": "maɡkakaɾo'ʔon ba ka'jo ŋa'jon", "duration": 1.85}
+{"audio_filepath": "data/fsc/parquet/train-00058-of-00139.parquet/sample_001983.wav", "text": "lim'bawa sep", "duration": 0.502}
+{"audio_filepath": "data/fsc/parquet/train-00020-of-00139.parquet/sample_001157.wav", "text": "nawawa'la 'man", "duration": 1.125}
+{"audio_filepath": "data/fsc/parquet/train-00003-of-00139.parquet/sample_000266.wav", "text": "kasa'baj naŋ paɡ'dami naŋ konstɾuk'ʃon naŋ ma'ŋa 'kalje", "duration": 2.634}
+{"audio_filepath": "data/fsc/parquet/train-00133-of-00139.parquet/sample_001720.wav", "text": "ʔa'nu ba naŋ'jaɾe ʔaŋ pinakame'moɾabol na naŋ'jaɾe 'saken nuŋ 'haj 'skul ʔaj nuŋ", "duration": 4.23}
+{"audio_filepath": "data/fsc/parquet/train-00122-of-00139.parquet/sample_000781.wav", "text": "naɡhinaɡ'pis ʔaŋ la'laki", "duration": 1.375}
+{"audio_filepath": "data/fsc/parquet/train-00079-of-00139.parquet/sample_001985.wav", "text": "kuŋ hin'di 'ŋa 'laŋ ʔa'ko 'sup", "duration": 1.456}
+{"audio_filepath": "data/fsc/parquet/train-00040-of-00139.parquet/sample_001623.wav", "text": "bi ʔes ʔelek'tɾoniks ʔand komjuni'kejʃons ʔend͡ʒi'niɾiŋ", "duration": 3.062}
+{"audio_filepath": "data/fsc/parquet/train-00042-of-00139.parquet/sample_001584.wav", "text": "ka'si 'ŋaʔ", "duration": 0.706}
+{"audio_filepath": "data/fsc/parquet/train-00132-of-00139.parquet/sample_001785.wav", "text": "'so 'jun na 'jon", "duration": 0.913}
+{"audio_filepath": "data/fsc/parquet/train-00113-of-00139.parquet/sample_001967.wav", "text": "tas tina'noŋ ko ʃa", "duration": 0.681}
+{"audio_filepath": "data/fsc/parquet/train-00114-of-00139.parquet/sample_001595.wav", "text": "kali'mutan na 'natin 'to", "duration": 1.325}
+{"audio_filepath": "data/fsc/parquet/train-00112-of-00139.parquet/sample_000164.wav", "text": "ʔebi'denʃa naŋ pi ʔen pi 'laban sa naʔa'ɾestoŋ 'puʃeɾ", "duration": 3.2}
+{"audio_filepath": "data/fsc/parquet/train-00065-of-00139.parquet/sample_000293.wav", "text": "ʔa'ko ka'se", "duration": 1.008}
+{"audio_filepath": "data/fsc/parquet/train-00001-of-00139.parquet/sample_000137.wav", "text": "wa'la 'paŋ ʔa'sawa 'ŋunit ɡus'to naŋ maɡkapa'milja", "duration": 2.493}
+{"audio_filepath": "data/fsc/parquet/train-00077-of-00139.parquet/sample_001637.wav", "text": "ʔat 'ʔoʔoʔ mami'mis ko 'juŋ ma'ŋa kaʔi'biɡan", "duration": 3.209}
+{"audio_filepath": "data/fsc/parquet/train-00085-of-00139.parquet/sample_001705.wav", "text": "maɡka'ɾon naŋ", "duration": 0.876}
+{"audio_filepath": "data/fsc/parquet/train-00050-of-00139.parquet/sample_000582.wav", "text": "maɡan'daʔ ʔaŋ kala'ɡajan ko", "duration": 2.008}
+{"audio_filepath": "data/fsc/parquet/train-00019-of-00139.parquet/sample_000710.wav", "text": "ʔuni'veɾsiti 'ʔof da 'filipins", "duration": 1.976}
+{"audio_filepath": "data/fsc/parquet/train-00105-of-00139.parquet/sample_001681.wav", "text": "naɾi'to pa ka'mi", "duration": 1.034}
+{"audio_filepath": "data/fsc/parquet/train-00017-of-00139.parquet/sample_001297.wav", "text": "'ʔewan hin'di ʔa'ko ma'ʃadoŋ maɡa'liŋ maɡʔad'd͡ʒast", "duration": 2.021}
+{"audio_filepath": "data/fsc/parquet/train-00111-of-00139.parquet/sample_001604.wav", "text": "wa'la pa 'ɾin", "duration": 0.685}
+{"audio_filepath": "data/fsc/parquet/train-00017-of-00139.parquet/sample_001803.wav", "text": "ku'maʔin na 'tajo", "duration": 0.824}
+{"audio_filepath": "data/fsc/parquet/train-00002-of-00139.parquet/sample_000123.wav", "text": "wa'laŋ pakiʔa'lam ʔaŋ ma'ŋa mananalan'taʔ", "duration": 2.249}
+{"audio_filepath": "data/fsc/parquet/train-00007-of-00139.parquet/sample_000661.wav", "text": "sa paɡkakaki'lala ko san kan'ja hin'di na'man ʃa masa'maŋ 'taʔo", "duration": 4.2}
+{"audio_filepath": "data/fsc/parquet/train-00012-of-00139.parquet/sample_000997.wav", "text": "ma'suŋit ʔa'ko 'ʔoʔo ʔa'no", "duration": 1.478}
+{"audio_filepath": "data/fsc/parquet/train-00129-of-00139.parquet/sample_000401.wav", "text": "maʔa'ʔaɾiʔ moŋ ʔipa'bawas sa 'sweldo naŋ ʔi'joŋ ʔa'sawa ʔaŋ sus'tento 'paɾa sa ʔin'joŋ pa'milja", "duration": 6.392}
+{"audio_filepath": "data/fsc/parquet/train-00100-of-00139.parquet/sample_001272.wav", "text": "'peɾo haŋ'ɡaŋ kaj'lan pa 'kako maɡhihin'taj", "duration": 2.325}
+{"audio_filepath": "data/fsc/parquet/train-00090-of-00139.parquet/sample_001443.wav", "text": "naɡkakaʔi'ŋin", "duration": 1.889}
+{"audio_filepath": "data/fsc/parquet/train-00106-of-00139.parquet/sample_001178.wav", "text": "ʔu'busin mo 'jan", "duration": 0.781}
+{"audio_filepath": "data/fsc/parquet/train-00011-of-00139.parquet/sample_000792.wav", "text": "ʔu'mabot pa sa 'pojnt na", "duration": 1.509}
+{"audio_filepath": "data/fsc/parquet/train-00015-of-00139.parquet/sample_001377.wav", "text": "pa 'lamaŋ ʔaŋ ʔaplika'ʃon mo", "duration": 1.7}
+{"audio_filepath": "data/fsc/parquet/train-00031-of-00139.parquet/sample_001877.wav", "text": "ŋa'jon 'blak ʃip tala'ɡa kuŋ ta'waɡin", "duration": 2.036}
+{"audio_filepath": "data/fsc/parquet/train-00039-of-00139.parquet/sample_001823.wav", "text": "ʃa ʔaj maɡpipi'toŋ 'taʔoŋ 'ɡulaŋ na", "duration": 2.186}
+{"audio_filepath": "data/fsc/parquet/train-00105-of-00139.parquet/sample_001608.wav", "text": "'baɡo ʔaŋ kɾi'men", "duration": 0.963}
+{"audio_filepath": "data/fsc/parquet/train-00032-of-00139.parquet/sample_001979.wav", "text": "ti'jaʔ 'ɾeme ʔe", "duration": 1.025}
+{"audio_filepath": "data/fsc/parquet/train-00029-of-00139.parquet/sample_000580.wav", "text": "'baket", "duration": 0.731}
+{"audio_filepath": "data/fsc/parquet/train-00129-of-00139.parquet/sample_000420.wav", "text": "dalawam'puŋ 'ɡulaŋ ʔat da'laɡa", "duration": 1.725}
+{"audio_filepath": "data/fsc/parquet/train-00127-of-00139.parquet/sample_001708.wav", "text": "namu'muŋa 'man ʔo hin'diʔ", "duration": 1.437}
+{"audio_filepath": "data/fsc/parquet/train-00070-of-00139.parquet/sample_001418.wav", "text": "paʔak'jat naŋ kabun'dukan", "duration": 1.575}
+{"audio_filepath": "data/fsc/parquet/train-00114-of-00139.parquet/sample_000731.wav", "text": "dahi'lan naŋ kasa'wiʔan", "duration": 1.65}
+{"audio_filepath": "data/fsc/parquet/train-00040-of-00139.parquet/sample_000876.wav", "text": "kuŋ maj suliɾa'nin", "duration": 1.402}
+{"audio_filepath": "data/fsc/parquet/train-00064-of-00139.parquet/sample_001824.wav", "text": "napaɡʔiʔi'wanan ka na naŋ 'mas 'bata sa'jo", "duration": 2.83}
+{"audio_filepath": "data/fsc/parquet/train-00039-of-00139.parquet/sample_001422.wav", "text": "pu'masok ʔa'ko bi'laŋ", "duration": 1.437}
+{"audio_filepath": "data/fsc/parquet/train-00069-of-00139.parquet/sample_001265.wav", "text": "ma'tuloɡ ka na", "duration": 1.075}
+{"audio_filepath": "data/fsc/parquet/train-00060-of-00139.parquet/sample_001971.wav", "text": "ma'ɡalit 'ʔoɾ maɡtam'po 'saken di ba", "duration": 2.836}
+{"audio_filepath": "data/fsc/parquet/train-00090-of-00139.parquet/sample_001039.wav", "text": "mo ʔaŋ t͡ʃi'nelas", "duration": 1.35}
+{"audio_filepath": "data/fsc/parquet/train-00011-of-00139.parquet/sample_001434.wav", "text": "makakapaɡpahi'ŋa na 'ɾin ʔa'ko", "duration": 1.379}
+{"audio_filepath": "data/fsc/parquet/train-00136-of-00139.parquet/sample_000337.wav", "text": "'ʔo naŋ ʔi'bat", "duration": 0.55}
+{"audio_filepath": "data/fsc/parquet/train-00089-of-00139.parquet/sample_001624.wav", "text": "'daleʔ ʔa'no ba", "duration": 0.768}
+{"audio_filepath": "data/fsc/parquet/train-00111-of-00139.parquet/sample_000855.wav", "text": "'ʔe na'kjuɾjus ʔa'ko tina'noŋ ko 'juŋ 'ʔale", "duration": 1.585}
+{"audio_filepath": "data/fsc/parquet/train-00016-of-00139.parquet/sample_000025.wav", "text": "ʔiha'tid mo 'juŋ kapa'tid mo", "duration": 1.564}
+{"audio_filepath": "data/fsc/parquet/train-00028-of-00139.parquet/sample_001985.wav", "text": "ʔen 'den", "duration": 1.194}
+{"audio_filepath": "data/fsc/parquet/train-00071-of-00139.parquet/sample_000000.wav", "text": "si 'vilma ʔaŋ staɾ 'foɾ 'ʔol 'sison", "duration": 2.549}
+{"audio_filepath": "data/fsc/parquet/train-00035-of-00139.parquet/sample_001820.wav", "text": "ʔat bun'su 'ɾin ʔa'ko 'dahil dala'wa 'laŋ ka'mi", "duration": 2.479}
+{"audio_filepath": "data/fsc/parquet/train-00099-of-00139.parquet/sample_001461.wav", "text": "mem mip miʔ", "duration": 2.3}
+{"audio_filepath": "data/fsc/parquet/train-00132-of-00139.parquet/sample_001925.wav", "text": "na napano'ʔod ko ʔat na'ɡiŋ", "duration": 1.437}
+{"audio_filepath": "data/fsc/parquet/train-00124-of-00139.parquet/sample_000733.wav", "text": "'ʔa kumus'ta na ka'ja si'ja", "duration": 1.26}
+{"audio_filepath": "data/fsc/parquet/train-00004-of-00139.parquet/sample_000601.wav", "text": "ni'lusob naŋ ma'ŋa 'balaŋ", "duration": 1.78}
+{"audio_filepath": "data/fsc/parquet/train-00058-of-00139.parquet/sample_001727.wav", "text": "hini'ŋan 'ŋa ko naŋ mala'kiŋ hala'ɡa nuŋ maŋɡa'ɡamot", "duration": 2.419}
+{"audio_filepath": "data/fsc/parquet/train-00100-of-00139.parquet/sample_000837.wav", "text": "ma'ʔaɡiw 'don", "duration": 1.025}
+{"audio_filepath": "data/fsc/parquet/train-00048-of-00139.parquet/sample_000616.wav", "text": "paɡka'kuha mo naŋ 'numeɾo", "duration": 1.425}
+{"audio_filepath": "data/fsc/parquet/train-00077-of-00139.parquet/sample_000382.wav", "text": "ɡus'to ko tala'ɡaŋ ma'ɡiŋ ʔa'no ma'ɡiŋ 'student a'filjejt naŋ", "duration": 3.073}
+{"audio_filepath": "data/fsc/parquet/train-00012-of-00139.parquet/sample_000031.wav", "text": "ʔat sa'ɾili na'man", "duration": 1.15}
+{"audio_filepath": "data/fsc/parquet/train-00003-of-00139.parquet/sample_000473.wav", "text": "haŋ'ɡaŋ sa natu'to na 'ŋa ʔa'koʔ", "duration": 1.424}
+{"audio_filepath": "data/fsc/parquet/train-00046-of-00139.parquet/sample_000771.wav", "text": "naŋ ʔibibi'ɡaj 'namiŋ pɾoɡ'ɾama ʔat 'tɾibjut 'paɾa sa kani'laŋ maɡtata'pos", "duration": 5.323}
+{"audio_filepath": "data/fsc/parquet/train-00003-of-00139.parquet/sample_001003.wav", "text": "'peɾo hin'di na 'pwede ka'se pa'taj na ʃa", "duration": 3.913}
+{"audio_filepath": "data/fsc/parquet/train-00032-of-00139.parquet/sample_001885.wav", "text": "'bat ka'jaʔ", "duration": 0.764}
+{"audio_filepath": "data/fsc/parquet/train-00083-of-00139.parquet/sample_000344.wav", "text": "ʔaŋ sa'ɾiliŋ", "duration": 0.85}
+{"audio_filepath": "data/fsc/parquet/train-00107-of-00139.parquet/sample_001471.wav", "text": "ma'ɡanda ʃa di ba", "duration": 1.051}
+{"audio_filepath": "data/fsc/parquet/train-00028-of-00139.parquet/sample_001684.wav", "text": "'paɾa sa ʔin'joŋ pa'milja", "duration": 1.575}
+{"audio_filepath": "data/fsc/parquet/train-00106-of-00139.parquet/sample_001984.wav", "text": "ʔa 'jun pinaɡtawa'nan 'laŋ ʃa naŋ ma'ŋa 'taʔo", "duration": 3.037}
+{"audio_filepath": "data/fsc/parquet/train-00034-of-00139.parquet/sample_001942.wav", "text": "bu'ʔoŋ 'jon pinintu'ɾahan", "duration": 2.313}
+{"audio_filepath": "data/fsc/parquet/train-00130-of-00139.parquet/sample_000252.wav", "text": "'ʔisaŋ ta'ʔon sa lu'ɡaɾ na ʔi'to na ki'lala sa maɡaɡan'daŋ dalampa'siɡan ʔat 'sikat naŋ 'ʔaɾaw", "duration": 5.0}
+{"audio_filepath": "data/fsc/parquet/train-00098-of-00139.parquet/sample_001878.wav", "text": "'paɾaŋ 'nuŋ bini'ɡaj sa'kin 'juŋ", "duration": 2.027}
+{"audio_filepath": "data/fsc/parquet/train-00079-of-00139.parquet/sample_001890.wav", "text": "maj 'mas maɡkakakilan'lan pa ka'jo", "duration": 2.627}
+{"audio_filepath": "data/fsc/parquet/train-00052-of-00139.parquet/sample_000692.wav", "text": "ʔi'to ʔaj 'jupaŋ hin'di ma'lito", "duration": 1.598}
+{"audio_filepath": "data/fsc/parquet/train-00021-of-00139.parquet/sample_001475.wav", "text": "pa'tuŋo na sa 'ɡejt ʔaŋ ba'baʔe naŋ mada'ʔanan nja ʔaŋ ka'tuloŋ", "duration": 3.05}
+{"audio_filepath": "data/fsc/parquet/train-00104-of-00139.parquet/sample_000427.wav", "text": "ʔat ʔaŋ ʔi'ba 'koŋ kapa'tid", "duration": 1.275}
+{"audio_filepath": "data/fsc/parquet/train-00106-of-00139.parquet/sample_000790.wav", "text": "ʔaŋ kala'ŋitan", "duration": 0.925}
+{"audio_filepath": "data/fsc/parquet/train-00060-of-00139.parquet/sample_001800.wav", "text": "tuŋ'kol sa 'dati ni'jaŋ 'buhaj", "duration": 2.0}
+{"audio_filepath": "data/fsc/parquet/train-00083-of-00139.parquet/sample_001199.wav", "text": "bi'nihaɡ naŋ ʔi'saŋ maɡan'daŋ di'wata", "duration": 2.5}
+{"audio_filepath": "data/fsc/parquet/train-00031-of-00139.parquet/sample_001923.wav", "text": "ʔaŋ ma'ɡulaŋ ni 'dande ʔaj si'na ʔade'lina ʔat da'nilo saʔa'vedɾa", "duration": 3.969}
+{"audio_filepath": "data/fsc/parquet/train-00057-of-00139.parquet/sample_001293.wav", "text": "nuŋ 'ʔunaŋ pana'hon maj ʔi'saŋ maɡsasa'ka", "duration": 2.139}
+{"audio_filepath": "data/fsc/parquet/train-00022-of-00139.parquet/sample_001320.wav", "text": "'ʔajos na ko sa 'tɾipol ʔi", "duration": 1.978}
+{"audio_filepath": "data/fsc/parquet/train-00002-of-00139.parquet/sample_000627.wav", "text": "pam'publikoŋ paʔaɾa'lan pa ɾin", "duration": 1.621}
+{"audio_filepath": "data/fsc/parquet/train-00062-of-00139.parquet/sample_001979.wav", "text": "masa'ja 'ŋa 'nuŋ 'hajskul", "duration": 1.584}
+{"audio_filepath": "data/fsc/parquet/train-00008-of-00139.parquet/sample_000171.wav", "text": "'tsaka la 'halos na'kuha ko na 'ɾin la'hat naŋ ma'ŋa 'd͡ʒi ʔis ko", "duration": 2.91}
+{"audio_filepath": "data/fsc/parquet/train-00010-of-00139.parquet/sample_001708.wav", "text": "pakikan'ta na'man ʔaŋ pabo'ɾito ko", "duration": 1.675}
+{"audio_filepath": "data/fsc/parquet/train-00060-of-00139.parquet/sample_001261.wav", "text": "maɡta'noŋ ka sa ʔopi'sina naŋ 'pɾobost 'maɾʃal hene'ɾal", "duration": 3.05}
+{"audio_filepath": "data/fsc/parquet/train-00021-of-00139.parquet/sample_001000.wav", "text": "ʔa'jon paɡka'ɡɾadwejt nuŋ ʔa'te ko ʔat t͡ʃa'ka nuŋ 'kuja ko lu'mipat na ka'mi sa ʔi'saŋ", "duration": 3.857}
+{"audio_filepath": "data/fsc/parquet/train-00037-of-00139.parquet/sample_001833.wav", "text": "ʔaŋ 'juɾo ʔaj ʔi'sa", "duration": 1.475}
+{"audio_filepath": "data/fsc/parquet/train-00079-of-00139.parquet/sample_000414.wav", "text": "ʔi'kaw na ʔaŋ ɡaɡa'wa ni'jan", "duration": 2.221}
+{"audio_filepath": "data/fsc/parquet/train-00011-of-00139.parquet/sample_001054.wav", "text": "sa 'ʔamiŋ 'bajan", "duration": 1.3}
+{"audio_filepath": "data/fsc/parquet/train-00091-of-00139.parquet/sample_001948.wav", "text": "maɡdede'sajn ka naŋ ʔa'no", "duration": 1.413}
+{"audio_filepath": "data/fsc/parquet/train-00042-of-00139.parquet/sample_000633.wav", "text": "'paɾa maka'kuha", "duration": 1.125}
+{"audio_filepath": "data/fsc/parquet/train-00133-of-00139.parquet/sample_001963.wav", "text": "'dahil ma'laju tala'ɡa", "duration": 1.255}
+{"audio_filepath": "data/fsc/parquet/train-00083-of-00139.parquet/sample_001755.wav", "text": "'dahil naba'sa 'ŋa ka'mi 'paɾaŋ wa'la nakakapaŋ'hina tas 'lakad 'lakad 'ʔikot 'ʔikot", "duration": 6.093}
+{"audio_filepath": "data/fsc/parquet/train-00137-of-00139.parquet/sample_001986.wav", "text": "'sa 'paɾaŋ 'boj na mali'ʔet ka'ja 'bojet 'jon", "duration": 3.396}
+{"audio_filepath": "data/fsc/parquet/train-00103-of-00139.parquet/sample_001796.wav", "text": "'dapat si'ɡuɾo ta'ɡaloɡ 'no 'paɾa", "duration": 2.6}
+{"audio_filepath": "data/fsc/parquet/train-00101-of-00139.parquet/sample_001073.wav", "text": "na mapakikina'baŋan naŋ ban'saʔ", "duration": 1.742}
+{"audio_filepath": "data/fsc/parquet/train-00084-of-00139.parquet/sample_001716.wav", "text": "ŋa'jon 'balak ko na ʔe lu'mipat saʔ", "duration": 2.201}
+{"audio_filepath": "data/fsc/parquet/train-00120-of-00139.parquet/sample_001021.wav", "text": "ʔaj ʔu'mawit naŋ feɾst lav neveɾ dajs", "duration": 2.45}
+{"audio_filepath": "data/fsc/parquet/train-00067-of-00139.parquet/sample_001557.wav", "text": "ʔa'no ba ka'jo", "duration": 0.825}
+{"audio_filepath": "data/fsc/parquet/train-00085-of-00139.parquet/sample_000957.wav", "text": "ka'ja dalida'liŋ tumak'bo pala'bas ʔat tuma'lon sa 'ʔiloɡ", "duration": 3.075}
+{"audio_filepath": "data/fsc/parquet/train-00073-of-00139.parquet/sample_001837.wav", "text": "hu 'minsan", "duration": 0.764}
+{"audio_filepath": "data/fsc/parquet/train-00036-of-00139.parquet/sample_000275.wav", "text": "ʔa'ko si 'laɾa", "duration": 0.954}
+{"audio_filepath": "data/fsc/parquet/train-00046-of-00139.parquet/sample_001105.wav", "text": "'taʔo 'ɾito", "duration": 0.719}
+{"audio_filepath": "data/fsc/parquet/train-00026-of-00139.parquet/sample_001352.wav", "text": "'meɾon si'laŋ mali'ʔit", "duration": 1.225}
+{"audio_filepath": "data/fsc/parquet/train-00022-of-00139.parquet/sample_000682.wav", "text": "ʔi'kaw na ʔaŋ ɡaɡa'wa njan di ba", "duration": 1.862}
+{"audio_filepath": "data/fsc/parquet/train-00025-of-00139.parquet/sample_001733.wav", "text": "ʔaŋ ma'hiɾap", "duration": 0.575}
+{"audio_filepath": "data/fsc/parquet/train-00076-of-00139.parquet/sample_001968.wav", "text": "ʔat napaɡʔiʔi'wanan ka na", "duration": 1.4}
+{"audio_filepath": "data/fsc/parquet/train-00126-of-00139.parquet/sample_001155.wav", "text": "'ʔisaŋ 'bataŋ ba'baʔe ʔaŋ biɡ'laŋ ʔu'mabot sa ka'maj naŋ la'laki", "duration": 3.5}
+{"audio_filepath": "data/fsc/parquet/train-00134-of-00139.parquet/sample_000591.wav", "text": "waɡ maɡmuk'mok ʔat maɡsawalaŋki'bo na 'lamaŋ", "duration": 2.42}
+{"audio_filepath": "data/fsc/parquet/train-00130-of-00139.parquet/sample_000821.wav", "text": "'ʔa 'buti na 'laŋ", "duration": 1.102}
+{"audio_filepath": "data/fsc/parquet/train-00097-of-00139.parquet/sample_001094.wav", "text": "ʔaŋ ka'tuloŋ", "duration": 0.75}
+{"audio_filepath": "data/fsc/parquet/train-00075-of-00139.parquet/sample_001504.wav", "text": "tumatan'da ka na", "duration": 1.025}
+{"audio_filepath": "data/fsc/parquet/train-00104-of-00139.parquet/sample_000709.wav", "text": "'meɾon si'laŋ mali'ʔit na 'lupaʔ", "duration": 1.75}
+{"audio_filepath": "data/fsc/parquet/train-00067-of-00139.parquet/sample_001683.wav", "text": "sa 'ʔamiŋ 'bajan", "duration": 1.05}
+{"audio_filepath": "data/fsc/parquet/train-00044-of-00139.parquet/sample_001508.wav", "text": "ba'hala na", "duration": 0.73}
+{"audio_filepath": "data/fsc/parquet/train-00004-of-00139.parquet/sample_000669.wav", "text": "'peɾo 'laɡi 'natiŋ", "duration": 1.175}
+{"audio_filepath": "data/fsc/parquet/train-00125-of-00139.parquet/sample_000030.wav", "text": "pambi'hiɾaŋ ʔu'laŋ bu'muhos 'ʔisaŋ ta'ʔon sa lu'ɡaɾ na ʔi'to na ki'lala sa maɡaɡan'daŋ dalampa'siɡan", "duration": 5.85}
+{"audio_filepath": "data/fsc/parquet/train-00115-of-00139.parquet/sample_001991.wav", "text": "'halos la'hat naŋ", "duration": 0.672}
+{"audio_filepath": "data/fsc/parquet/train-00025-of-00139.parquet/sample_000629.wav", "text": "naɡʔaʔa'laɡa naŋ ma'ɾamiŋ 'hajop", "duration": 1.718}
+{"audio_filepath": "data/fsc/parquet/train-00034-of-00139.parquet/sample_001964.wav", "text": "pe'likula 'juŋ 'kɾawt͡ʃiŋ", "duration": 1.103}
+{"audio_filepath": "data/fsc/parquet/train-00068-of-00139.parquet/sample_001135.wav", "text": "'d͡ʒoj 'juŋ pa'ŋalan nja di 'kɾisti", "duration": 2.068}
+{"audio_filepath": "data/fsc/parquet/train-00000-of-00139.parquet/sample_001365.wav", "text": "t͡ʃi'nelas daw", "duration": 1.45}
+{"audio_filepath": "data/fsc/parquet/train-00106-of-00139.parquet/sample_000978.wav", "text": "ʔat tumatan'da ka naʔ", "duration": 1.36}
+{"audio_filepath": "data/fsc/parquet/train-00062-of-00139.parquet/sample_000970.wav", "text": "naɡ'hiɾap ʔaŋ ʔi'saŋ 'dati ʔaj masa'ɡanaŋ 'bajan", "duration": 2.65}
+{"audio_filepath": "data/fsc/parquet/train-00101-of-00139.parquet/sample_001967.wav", "text": "ma'ŋa hin'di ma'ʃadoŋ", "duration": 1.135}
+{"audio_filepath": "data/fsc/parquet/train-00129-of-00139.parquet/sample_001971.wav", "text": "na kaj'laŋan na ma'tapos ko sa tatloŋ'puŋ mi'nuto", "duration": 4.248}
+{"audio_filepath": "data/fsc/parquet/train-00049-of-00139.parquet/sample_000058.wav", "text": "'baɡo ʔaŋ kɾi'men", "duration": 1.325}
+{"audio_filepath": "data/fsc/parquet/train-00047-of-00139.parquet/sample_001548.wav", "text": "'bakit hin'di na 'laŋ 'natiŋ tana'win ʔaŋ 'bukas ʔat paɡhanda'ʔan ʔaŋ ʔanu'maŋ paɡ'subok na maʔa'ʔaɾiŋ duma'tiŋ pa", "duration": 8.1}
+{"audio_filepath": "data/fsc/parquet/train-00134-of-00139.parquet/sample_001452.wav", "text": "si'ɡuɾo ma'ŋa dala'waŋ", "duration": 1.118}
+{"audio_filepath": "data/fsc/parquet/train-00088-of-00139.parquet/sample_001685.wav", "text": "siɡuɾa'duhin 'lamaŋ na ʔaŋ 'basoŋ kinalalaɡ'jan naŋ 'dahon ʔaj 'nasa ta'pat naŋ ʔin'joŋ 'ʔulo", "duration": 4.341}
+{"audio_filepath": "data/fsc/parquet/train-00021-of-00139.parquet/sample_000967.wav", "text": "foɾ t͡ʃiɾ", "duration": 0.775}
+{"audio_filepath": "data/fsc/parquet/train-00122-of-00139.parquet/sample_001234.wav", "text": "ʔaŋ 'baso na'man ʔaj ʔila'ɡaj 'njo", "duration": 2.0}
+{"audio_filepath": "data/fsc/parquet/train-00021-of-00139.parquet/sample_001562.wav", "text": "hin'di na'man ʃa masa'maŋ 'taʔo", "duration": 2.05}
+{"audio_filepath": "data/fsc/parquet/train-00028-of-00139.parquet/sample_001288.wav", "text": "hini'ŋan 'ŋa ʔa'ko naŋ mala'kiŋ hala'ɡa nuŋ maŋɡa'ɡamot", "duration": 2.597}
+{"audio_filepath": "data/fsc/parquet/train-00006-of-00139.parquet/sample_001576.wav", "text": "biɡ'jan mo ʔa'ko njaŋ kina'kaʔin mo", "duration": 1.88}
+{"audio_filepath": "data/fsc/parquet/train-00024-of-00139.parquet/sample_000526.wav", "text": "na pumun'ta 'dun sa 'teɾejs ʔat tiɡ tiŋ'nan 'mismo kuŋ ʔa'noŋ naŋ'jaɾe", "duration": 3.997}
+{"audio_filepath": "data/fsc/parquet/train-00021-of-00139.parquet/sample_001549.wav", "text": "ʔaj maj 'ʔanim na 'pɾemjo 'bawat", "duration": 1.725}
+{"audio_filepath": "data/fsc/parquet/train-00078-of-00139.parquet/sample_001971.wav", "text": "kinokon'tɾol na ni'la ʔaŋ paɡ'dami naŋ ma'ŋa 'taʔo", "duration": 3.358}
+{"audio_filepath": "data/fsc/parquet/train-00083-of-00139.parquet/sample_000232.wav", "text": "ʔu'wi si'ɡuɾo ʔa'ko sanda'li 'samen ma'ŋa 'tu 'wiks hin'di pa na'man ka'se ʔa'ko ɡa'ɡɾad͡ʒwejt 'ʔe", "duration": 3.335}
+{"audio_filepath": "data/fsc/parquet/train-00054-of-00139.parquet/sample_001926.wav", "text": "'awt 'ʔof si'ɡuɾo ma'damiŋ naɡ ʔa'plaj 'nun ma'ŋa li'ma ka'miŋ na'taŋɡap sa 'θeɾd 'jiɾ", "duration": 4.813}
+{"audio_filepath": "data/fsc/parquet/train-00107-of-00139.parquet/sample_000598.wav", "text": "namu'muŋa 'din naŋ ma'dami ʔaŋ 'ʔakiŋ ma'ŋa ta'nim", "duration": 3.0}
+{"audio_filepath": "data/fsc/parquet/train-00088-of-00139.parquet/sample_001715.wav", "text": "naŋ masu'noɡ ʔaŋ kata'wan naŋ la'lake", "duration": 1.75}
+{"audio_filepath": "data/fsc/parquet/train-00098-of-00139.parquet/sample_001907.wav", "text": "maj dala'wa koŋ kapa'ted na kam'bal", "duration": 2.447}
+{"audio_filepath": "data/fsc/parquet/train-00118-of-00139.parquet/sample_001968.wav", "text": "pun'ta ka'mi naŋ 'bit͡ʃ", "duration": 0.95}
+{"audio_filepath": "data/fsc/parquet/train-00092-of-00139.parquet/sample_001930.wav", "text": "'juŋ 'lajks ko", "duration": 1.062}
+{"audio_filepath": "data/fsc/parquet/train-00098-of-00139.parquet/sample_001817.wav", "text": "kani'la 'nanaj ʔaŋ 'lakad 'natin di'ba", "duration": 1.725}
+{"audio_filepath": "data/fsc/parquet/train-00122-of-00139.parquet/sample_001840.wav", "text": "pa'ti 'juŋ ma'ŋa kapit'bahaj ko 'ju na jiŋ ma'ŋa baɾ'kada ko ʔan'dun pa'ɾatiʔ naka'tambaj sa 'bahaj", "duration": 5.07}
+{"audio_filepath": "data/fsc/parquet/train-00089-of-00139.parquet/sample_001714.wav", "text": "'pano 'njo masisiɡu'ɾado", "duration": 1.625}
+{"audio_filepath": "data/fsc/parquet/train-00028-of-00139.parquet/sample_000297.wav", "text": "nakahu'li 'ɾin naŋ ʔi'saŋ 'ʔaɾaw", "duration": 2.225}
+{"audio_filepath": "data/fsc/parquet/train-00023-of-00139.parquet/sample_001892.wav", "text": "ʔaŋ ma'ŋa 'zibɾa ʔaj luma'lakad", "duration": 1.575}
+{"audio_filepath": "data/fsc/parquet/train-00137-of-00139.parquet/sample_000286.wav", "text": "susu'nod 'koŋ pabo'ɾito ʔaj 'juŋ", "duration": 1.797}
+{"audio_filepath": "data/fsc/parquet/train-00100-of-00139.parquet/sample_000682.wav", "text": "hin'di nawa'laʔ ʔaŋ la'hat", "duration": 1.025}
+{"audio_filepath": "data/fsc/parquet/train-00044-of-00139.parquet/sample_001544.wav", "text": "malala'ki ʔat madidi'law na 'ŋipin", "duration": 1.791}
+{"audio_filepath": "data/fsc/parquet/train-00105-of-00139.parquet/sample_001927.wav", "text": "ta'waɡan mo ʔa'ko", "duration": 1.2}
+{"audio_filepath": "data/fsc/parquet/train-00063-of-00139.parquet/sample_001924.wav", "text": "to tuŋ'kol sa dala'wa 'koŋ makakaki'lala 'non", "duration": 2.09}
+{"audio_filepath": "data/fsc/parquet/train-00099-of-00139.parquet/sample_001934.wav", "text": "naŋ ma'ŋa kapa'tid ko", "duration": 1.467}
+{"audio_filepath": "data/fsc/parquet/train-00130-of-00139.parquet/sample_000193.wav", "text": "si 'ʒaʒa ʔaj ʔu'mawit naŋ feɾst lav 'neveɾ dajs", "duration": 3.28}
+{"audio_filepath": "data/fsc/parquet/train-00063-of-00139.parquet/sample_001790.wav", "text": "masa'kit ha", "duration": 1.069}
+{"audio_filepath": "data/fsc/parquet/train-00127-of-00139.parquet/sample_000505.wav", "text": "naɡ'sabi taj hin'di nawa'laʔ ʔaŋ la'hat naɾi'to pa kaʔ", "duration": 3.694}
+{"audio_filepath": "data/fsc/parquet/train-00135-of-00139.parquet/sample_001913.wav", "text": "maɡan'da na'man 'juŋ 'stoɾje malala'kas si'la 'sana mala'kas 'din ʔa'ko 'paɾa maɡa'wa ko la'hat naŋ ɡus'to ko", "duration": 5.24}
+{"audio_filepath": "data/fsc/parquet/train-00080-of-00139.parquet/sample_001517.wav", "text": "ʔa'no pa ba", "duration": 0.634}
+{"audio_filepath": "data/fsc/parquet/train-00068-of-00139.parquet/sample_000596.wav", "text": "'dahil sa maba'ʔit ʔaŋ ʔa'nak ni'ja", "duration": 1.867}
+{"audio_filepath": "data/fsc/parquet/train-00010-of-00139.parquet/sample_001613.wav", "text": "pakiɡa'wa na nin'jo ʔaŋ da'ʔan", "duration": 1.8}
+{"audio_filepath": "data/fsc/parquet/train-00064-of-00139.parquet/sample_001958.wav", "text": "'lolo ko", "duration": 0.586}
+{"audio_filepath": "data/fsc/parquet/train-00053-of-00139.parquet/sample_001984.wav", "text": "ʔi'ba na 'juŋ ʔa'no 'juŋ ʔen'vajɾonment", "duration": 1.996}
+{"audio_filepath": "data/fsc/parquet/train-00107-of-00139.parquet/sample_000997.wav", "text": "hin'di maʔipali'wanaɡ ʔaŋ kaluŋ'kutan sa muk'ha naŋ 'bataŋ 'bataŋ maɡʔa'sawa", "duration": 4.14}
+{"audio_filepath": "data/fsc/parquet/train-00071-of-00139.parquet/sample_000949.wav", "text": "nawawa'la 'man mu'la pa 'ɾiŋ bumaba'lik", "duration": 3.1}
+{"audio_filepath": "data/fsc/parquet/train-00026-of-00139.parquet/sample_001968.wav", "text": "nuŋ ma'ŋa 'teɾd 'jiɾ ʔa'ko", "duration": 1.276}
+{"audio_filepath": "data/fsc/parquet/train-00018-of-00139.parquet/sample_001490.wav", "text": "ʔat napaɡʔiʔi'wanan ka na naŋ 'mas 'bata sa ʔi'jo", "duration": 3.425}
+{"audio_filepath": "data/fsc/parquet/train-00036-of-00139.parquet/sample_001899.wav", "text": "pa ba", "duration": 0.314}
+{"audio_filepath": "data/fsc/parquet/train-00056-of-00139.parquet/sample_001433.wav", "text": "ʔat ʔidi'kit ʔi'to sa 'ʔisaŋ pa'deɾ sa maj ʔi'babaw naŋ 'ʔulo naŋ 'kama", "duration": 3.7}
+{"audio_filepath": "data/fsc/parquet/train-00077-of-00139.parquet/sample_000381.wav", "text": "'dajl nakakaʔa'liw 'toŋ pano'ʔoɾen", "duration": 1.741}
+{"audio_filepath": "data/fsc/parquet/train-00006-of-00139.parquet/sample_001302.wav", "text": "sa'ʔan pa'laŋ li'biŋ", "duration": 1.175}
+{"audio_filepath": "data/fsc/parquet/train-00125-of-00139.parquet/sample_001616.wav", "text": "ɡu'tom na ko 'sana makau'wiʔ na ko 'dahil ɡus'to ko naŋ ku'maʔin", "duration": 3.292}
+{"audio_filepath": "data/fsc/parquet/train-00091-of-00139.parquet/sample_001982.wav", "text": "'dun sa 'foɾt ʔilo'kand͡ʒa", "duration": 2.031}
+{"audio_filepath": "data/fsc/parquet/train-00075-of-00139.parquet/sample_001008.wav", "text": "nasu'ɡatan ʔa'ko", "duration": 0.9}
+{"audio_filepath": "data/fsc/parquet/train-00089-of-00139.parquet/sample_001975.wav", "text": "'ʔoj 'seni vilja'ɾama", "duration": 1.5}
+{"audio_filepath": "data/fsc/parquet/train-00077-of-00139.parquet/sample_001685.wav", "text": "'paɾaŋ ʔaɾ ʔo 'din", "duration": 2.591}
+{"audio_filepath": "data/fsc/parquet/train-00073-of-00139.parquet/sample_000784.wav", "text": "sa'ʔan 'ɡaliŋ jan", "duration": 1.175}
+{"audio_filepath": "data/fsc/parquet/train-00034-of-00139.parquet/sample_001984.wav", "text": "ta'pos na'ɡiŋ kaʔi'biɡan ko pa 'juŋ ʔi'ba ni'laŋ kaʔi'biɡan", "duration": 2.695}
+{"audio_filepath": "data/fsc/parquet/train-00018-of-00139.parquet/sample_000626.wav", "text": "ɡus'to 'koŋ mana'tili 'dito sa pili'pinas habaŋ'buhaj", "duration": 4.001}
+{"audio_filepath": "data/fsc/parquet/train-00005-of-00139.parquet/sample_001795.wav", "text": "'ʔisaŋ 'ʔaɾaw ʔaj maluŋ'kot na pinano'ʔod", "duration": 2.0}
+{"audio_filepath": "data/fsc/parquet/train-00009-of-00139.parquet/sample_000051.wav", "text": "'pwede ka 'njaŋ batu'hen kuŋ 'sino 'juŋ maj 'hawak naŋ 'bola", "duration": 1.908}
+{"audio_filepath": "data/fsc/parquet/train-00002-of-00139.parquet/sample_000741.wav", "text": "'peɾo nuŋ ban'daŋ 'teɾd 'jiɾ ʔend 'foɾt 'jiɾ", "duration": 2.366}
+{"audio_filepath": "data/fsc/parquet/train-00084-of-00139.parquet/sample_000766.wav", "text": "'klasmejt͡s na", "duration": 0.882}
+{"audio_filepath": "data/fsc/parquet/train-00061-of-00139.parquet/sample_001362.wav", "text": "paɡka'tapos naŋ 'hajskul ʔaj ʔa'ɡad ʔa'koŋ pumun'ta 'ɾito ʔat naɡtɾa'baho 'bilaŋ ka'tuloŋ sa ʔi'saŋ kaɾpin'teɾo", "duration": 7.525}
+{"audio_filepath": "data/fsc/parquet/train-00077-of-00139.parquet/sample_001982.wav", "text": "ŋa'jon 'ʔeto ʔa'lam ni 'fɾansis 'to", "duration": 1.868}
+{"audio_filepath": "data/fsc/parquet/train-00004-of-00139.parquet/sample_001848.wav", "text": "'t͡ʃopej koŋ ba'baʔe tat'loŋ ta'ʔon ʔaŋ pa'ɡitan 'namin", "duration": 2.851}
+{"audio_filepath": "data/fsc/parquet/train-00074-of-00139.parquet/sample_001205.wav", "text": "hu 'hul", "duration": 0.775}
+{"audio_filepath": "data/fsc/parquet/train-00111-of-00139.parquet/sample_001965.wav", "text": "pakalat'kalat 'laŋ paɡ ɡa'bi ma'ŋa wa'laŋ maɡa'waʔ", "duration": 2.498}
+{"audio_filepath": "data/fsc/parquet/train-00102-of-00139.parquet/sample_000823.wav", "text": "maɡan'daŋ ʔu'maɡa 'poʔ", "duration": 1.156}
+{"audio_filepath": "data/fsc/parquet/train-00114-of-00139.parquet/sample_000545.wav", "text": "ka'ja nahi'ɡa 'muna ʃa sa so'fa", "duration": 1.975}
+{"audio_filepath": "data/fsc/parquet/train-00106-of-00139.parquet/sample_001533.wav", "text": "'juŋ 'nansi 'dɾu", "duration": 0.992}
+{"audio_filepath": "data/fsc/parquet/train-00012-of-00139.parquet/sample_000304.wav", "text": "na maʔa'ʔaɾiŋ duma'tiŋ", "duration": 1.6}
+{"audio_filepath": "data/fsc/parquet/train-00026-of-00139.parquet/sample_000061.wav", "text": "mu'li pa 'ɾiŋ bumaba'lik", "duration": 1.4}
+{"audio_filepath": "data/fsc/parquet/train-00108-of-00139.parquet/sample_000669.wav", "text": "maʔa'ʔaɾiŋ ma'kadama ka naŋ saɡ'lit", "duration": 1.925}
+{"audio_filepath": "data/fsc/parquet/train-00048-of-00139.parquet/sample_001738.wav", "text": "hin'di na'man ʃa masa'maŋ 'taʔo", "duration": 1.725}
+{"audio_filepath": "data/fsc/parquet/train-00027-of-00139.parquet/sample_001026.wav", "text": "ʔat naɡ'fiʃiŋ", "duration": 0.727}
+{"audio_filepath": "data/fsc/parquet/train-00032-of-00139.parquet/sample_001823.wav", "text": "'loj 'luk", "duration": 0.974}
+{"audio_filepath": "data/fsc/parquet/train-00057-of-00139.parquet/sample_000073.wav", "text": "kuŋ nalu'luɡi ʔaŋ ne'ɡoʃo mo", "duration": 1.425}
+{"audio_filepath": "data/fsc/parquet/train-00128-of-00139.parquet/sample_000770.wav", "text": "ʔaŋ 'ʔakiŋ ma'ŋa ta'nim", "duration": 1.175}
+{"audio_filepath": "data/fsc/parquet/train-00008-of-00139.parquet/sample_001068.wav", "text": "ʔat sa vene'zwela ʔaŋ ʔi'na nja", "duration": 1.825}
+{"audio_filepath": "data/fsc/parquet/train-00075-of-00139.parquet/sample_001066.wav", "text": "ma'ʔis ʔat", "duration": 0.65}
+{"audio_filepath": "data/fsc/parquet/train-00123-of-00139.parquet/sample_001010.wav", "text": "ʔa'no ta'ʔos na ba", "duration": 0.875}
+{"audio_filepath": "data/fsc/parquet/train-00005-of-00139.parquet/sample_001737.wav", "text": "kakan'ta na 'laŋ ʔa'ko", "duration": 1.35}
+{"audio_filepath": "data/fsc/parquet/train-00083-of-00139.parquet/sample_001756.wav", "text": "ka'ja 'jon pina'jaɡan ni'la ko ʔat 'jon 'skolaɾ ŋa ʔa'ko 'foɾ", "duration": 4.267}
+{"audio_filepath": "data/fsc/parquet/train-00088-of-00139.parquet/sample_001376.wav", "text": "na si'laʔ ʔat ʔi'kaw ʔaj wa'laʔ", "duration": 1.75}
+{"audio_filepath": "data/fsc/parquet/train-00052-of-00139.parquet/sample_000630.wav", "text": "i'kaw na ʔaŋ", "duration": 1.645}
+{"audio_filepath": "data/fsc/parquet/train-00068-of-00139.parquet/sample_001283.wav", "text": "'baɡo pa 'lamaŋ ma'kuha ʔaŋ hinihi'liŋ moŋ doku'mento", "duration": 3.03}
+{"audio_filepath": "data/fsc/parquet/train-00008-of-00139.parquet/sample_000013.wav", "text": "sa'ʔan 'ɡaliŋ ʔi'jan", "duration": 1.25}
+{"audio_filepath": "data/fsc/parquet/train-00000-of-00139.parquet/sample_000928.wav", "text": "kaj'laŋan kala'ɡajan", "duration": 1.375}
+{"audio_filepath": "data/fsc/parquet/train-00016-of-00139.parquet/sample_001367.wav", "text": "ʔaŋ 'dahoŋ 'koɾteŋ 'pusoʔ ʔaj ʔila'laɡaj nin'jo sa 'basoŋ maj 'tubiɡ", "duration": 4.489}
+{"audio_filepath": "data/fsc/parquet/train-00024-of-00139.parquet/sample_000573.wav", "text": "ma'ŋa pin'ja", "duration": 0.933}
+{"audio_filepath": "data/fsc/parquet/train-00059-of-00139.parquet/sample_001658.wav", "text": "ʔaŋ naɡlili'wanaɡ na ɡin'toŋ", "duration": 1.775}
+{"audio_filepath": "data/fsc/parquet/train-00010-of-00139.parquet/sample_001624.wav", "text": "ta'kot ʔa'ko sa 'bola", "duration": 1.085}
+{"audio_filepath": "data/fsc/parquet/train-00067-of-00139.parquet/sample_001976.wav", "text": "ʔu'mabot naŋ ɡɾejd siks", "duration": 2.478}
+{"audio_filepath": "data/fsc/parquet/train-00064-of-00139.parquet/sample_000699.wav", "text": "na'maʔos na si 'lina", "duration": 1.476}
+{"audio_filepath": "data/fsc/parquet/train-00033-of-00139.parquet/sample_001016.wav", "text": "naŋ pana'hon", "duration": 0.675}
+{"audio_filepath": "data/fsc/parquet/train-00115-of-00139.parquet/sample_000360.wav", "text": "ʔaŋ kalaŋi'tan", "duration": 0.9}
+{"audio_filepath": "data/fsc/parquet/train-00048-of-00139.parquet/sample_001546.wav", "text": "ʔaŋ ma'ŋa 'zibɾa ʔaj luma'lakad sa 'ʔapat na pa'ʔa", "duration": 2.92}
+{"audio_filepath": "data/fsc/parquet/train-00035-of-00139.parquet/sample_001957.wav", "text": "'paɾa hin'di ʃa ma'ɡiŋ kala'hok 'dun sa 'maɾʃal 'lo na 'jun", "duration": 4.263}
+{"audio_filepath": "data/fsc/parquet/train-00114-of-00139.parquet/sample_001024.wav", "text": "pakilu'toʔ i'toŋ ʔis'daʔ", "duration": 1.3}
