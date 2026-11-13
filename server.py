@@ -6,45 +6,40 @@ import threading
 import unicodedata
 import webbrowser
 from functools import lru_cache
-from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Literal
 
+import pandas as pd
 import uvicorn
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Response
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-import triage
+import comparisons
 
-import pandas as pd
-from fastapi import FastAPI, HTTPException, Response
-
-_parquet_cache: dict[Path, pd.DataFrame] = {}
-
+_parquet_cache = {}
 HERE = Path(__file__).resolve().parent
 ROOT = Path.cwd().resolve()
 
 app = FastAPI(title="Manifest reviewer")
 
 
-@dataclass
 class Session:
-    entries: dict = field(default_factory=dict)
-    done: dict = field(default_factory=dict)
-    out: Path | None = None
-    lock: threading.Lock = field(default_factory=threading.Lock)
+    def __init__(self):
+        self.entries = {}
+        self.done = {}
+        self.out = None
+        self.lock = threading.Lock()
 
 
 session = Session()
 
 
 class LoadRequest(BaseModel):
-    mode: Literal["new", "resume"]
+    mode: str
     out_path: str
-    manifest_path: str | None = None
-    manifest_text: str | None = None
+    manifest_path: str = None
+    manifest_text: str = None
 
 
 class SaveRequest(BaseModel):
@@ -52,20 +47,37 @@ class SaveRequest(BaseModel):
     text: str
 
 
-def fail(msg: str, code: int = 400):
+class CompareLoadRequest(BaseModel):
+    mode: str
+    out_path: str
+    a_path: str = None
+    a_text: str = None
+    b_path: str = None
+    b_text: str = None
+    include_unpaired: bool = True
+    order: str = "easy"
+
+
+class CompareSaveRequest(BaseModel):
+    key: str
+    choice: str
+    text: str = None
+
+
+def fail(msg, code=400):
     raise HTTPException(status_code=code, detail=msg)
 
 
-def norm(p: str) -> str:
+def norm(p):
     return p.replace("\\", "/").removeprefix("./")
 
 
-def inside_root(path: Path) -> Path | None:
+def inside_root(path):
     path = path.resolve()
     return path if path.is_relative_to(ROOT) else None
 
 
-def in_root(rel: str) -> Path:
+def in_root(rel):
     if not rel:
         fail("A file path is required.")
     return inside_root(ROOT / norm(rel)) or fail(
@@ -73,12 +85,11 @@ def in_root(rel: str) -> Path:
     )
 
 
-def resolve_audio(rel: str) -> Path | None:
-    return inside_root(
-        ROOT / norm(rel)
-    ) 
+def resolve_audio(rel):
+    return inside_root(ROOT / norm(rel))
 
-def split_parquet(rel: str) -> tuple[Path, int] | None:
+
+def split_parquet(rel):
     """'a/b.parquet/sample_000012.wav' -> (parquet path inside ROOT, 12)."""
     parquet, _, sample = norm(rel).rpartition("/")
     path = inside_root(ROOT / parquet) if parquet.endswith(".parquet") else None
@@ -86,20 +97,21 @@ def split_parquet(rel: str) -> tuple[Path, int] | None:
     return (path, int(idx)) if path and idx.isdigit() else None
 
 
-def audio_exists(rel: str) -> bool:
+def audio_exists(rel):
     if pq := split_parquet(rel):
-        return pq[0].is_file()  # the sample itself is only checked when played
+        return pq[0].is_file()
     path = resolve_audio(rel)
     return bool(path and path.is_file())
 
 
-def parquet_audio(path: Path, idx: int) -> bytes | None:
+def parquet_audio(path, idx):
     if path not in _parquet_cache:
         _parquet_cache[path] = pd.read_parquet(path, columns=["audio"])
     df = _parquet_cache[path]
     return df.loc[idx, "audio"]["bytes"] if idx in df.index else None
 
-def read_records(text: str) -> tuple[list[dict], int]:
+
+def read_records(text):
     text = text.lstrip("\ufeff")
     if text.lstrip().startswith("["):
         try:
@@ -119,11 +131,11 @@ def read_records(text: str) -> tuple[list[dict], int]:
     return records, bad
 
 
-def dump(rec: dict) -> bytes:
+def dump(rec):
     return (json.dumps(rec, ensure_ascii=False) + "\n").encode("utf-8")
 
 
-def append_record(path: Path, rec: dict) -> None:
+def append_record(path, rec):
     with open(path, "ab+") as f:
         if f.seek(0, os.SEEK_END) > 0:
             f.seek(-1, os.SEEK_END)
@@ -134,7 +146,7 @@ def append_record(path: Path, rec: dict) -> None:
         os.fsync(f.fileno())
 
 
-def rewrite_all(path: Path, records) -> None:
+def rewrite_all(path, records):
     tmp = path.with_name(path.name + ".tmp")
     with open(tmp, "wb") as f:
         f.writelines(dump(r) for r in records)
@@ -143,7 +155,7 @@ def rewrite_all(path: Path, records) -> None:
     os.replace(tmp, path)
 
 
-def list_json_files(max_depth: int = 3) -> list[str]:
+def list_json_files(max_depth=3):
     found = []
     for dirpath, dirs, files in os.walk(ROOT):
         rel = Path(dirpath).relative_to(ROOT)
@@ -159,15 +171,14 @@ def list_json_files(max_depth: int = 3) -> list[str]:
         ]
     return sorted(found)[:500]
 
-# API endpoints
-# TODO: Cleanup
 
 @app.get("/api/files")
 def files():
     return {"root": str(ROOT), "files": list_json_files()}
 
+
 @app.get("/audio")
-def audio(p: str):
+def audio(p):
     if not audio_exists(p):
         fail("Audio file not found", 404)
     if pq := split_parquet(p):
@@ -191,7 +202,7 @@ def load(req: LoadRequest):
 
     records, _ = read_records(text)
     valid = [r for r in records if isinstance(r.get("audio_filepath"), str)]
-    entries: dict[str, dict] = {}
+    entries = {}
     for r in valid:
         entries.setdefault(norm(r["audio_filepath"]), r)
     if not entries:
@@ -226,7 +237,7 @@ def load(req: LoadRequest):
         out.touch()
 
     queue = []
-    for key, entry in list(entries.items()):  # bottom-up
+    for key, entry in entries.items():
         if key not in done:
             queue.append(
                 {
@@ -265,77 +276,54 @@ def save(req: SaveRequest):
         return {"ok": True, "saved": len(session.done)}
 
 
-# ---------------------------------------------------------------------------
-# Compare two manifests (static/compare.html)
-# ---------------------------------------------------------------------------
-
-
-@dataclass
 class CompareSession:
-    agreed: dict = field(default_factory=dict)  # key -> record (to write as-is)
-    conflicts: dict = field(default_factory=dict)  # key -> {"a": rec, "b": rec}
-    done: dict = field(default_factory=dict)  # key -> record already in the output
-    out: Path | None = None
-    mode: str = "new"
-    committed: bool = False
-    triage: dict = field(default_factory=dict)  # key -> {parts, hunks, suggested, tier}
-    order: str = "easy"
-    stats: dict = field(default_factory=dict)
-    edited: set = field(default_factory=set)  # keys whose saved text goes beyond picking A/B
-    edit_log: Path | None = None  # txt file listing the audio_filepath of every edited entry
-    lock: threading.Lock = field(default_factory=threading.Lock)
+    def __init__(self):
+        self.agreed = {}
+        self.conflicts = {}
+        self.done = {}
+        self.out = None
+        self.mode = "new"
+        self.committed = False
+        self.annotations = {}
+        self.order = "easy"
+        self.stats = {}
+        self.edited = set()
+        self.edit_log = None
+        self.lock = threading.Lock()
 
 
 compare = CompareSession()
 
 
-class CompareLoadRequest(BaseModel):
-    mode: Literal["new", "resume"]
-    out_path: str
-    a_path: str | None = None
-    a_text: str | None = None
-    b_path: str | None = None
-    b_text: str | None = None
-    include_unpaired: bool = True
-    order: Literal["easy", "file"] = "easy"
-
-
-class CompareSaveRequest(BaseModel):
-    key: str
-    choice: Literal["a", "b", "manual", "merge", "expert"]
-    text: str | None = None
-
-
-def canon(text) -> str:
+def canon(text):
     """Texts that differ only in whitespace / Unicode normalisation don't conflict."""
     return unicodedata.normalize("NFC", " ".join(str(text or "").split()))
 
 
-def swapped(key: str) -> bool:
+def swapped(key):
     """Blind review: whether this entry shows B on the left. Pseudo-random per entry but stable
     across sessions / resumes, so the same sample always appears the same way round."""
     return hashlib.sha256(("side:" + key).encode("utf-8")).digest()[0] & 1 == 1
 
 
-def is_pick(text, parts) -> bool:
+def is_pick(text, parts):
     """True if `text` can be built purely by choosing A or B for each word-level difference
-    (this includes 'all A', 'all B' and any merge of the two). Anything else is a further edit."""
+    (this includes 'all A', 'all B' and any merge of the two). Anything else is a further edit.
+    """
     toks = canon(text).split()
 
     @lru_cache(maxsize=None)
-    def go(i: int, j: int) -> bool:
+    def go(i, j):
         if i == len(parts):
             return j == len(toks)
         p = parts[i]
         options = [p["w"]] if p["t"] == "eq" else [p["a"], p["b"]]
-        return any(
-            toks[j : j + len(w)] == w and go(i + 1, j + len(w)) for w in options
-        )
+        return any(toks[j : j + len(w)] == w and go(i + 1, j + len(w)) for w in options)
 
     return go(0, 0)
 
 
-def counts() -> dict:
+def counts():
     """Live tallies for the review page."""
     return {
         "expert": sum(
@@ -347,7 +335,7 @@ def counts() -> dict:
     }
 
 
-def write_edit_log() -> None:
+def write_edit_log():
     """Rewrite the txt file of audio_filepaths where the adjudicator edited beyond picking."""
     if compare.edit_log is None:
         return
@@ -358,21 +346,20 @@ def write_edit_log() -> None:
     ]
     tmp = compare.edit_log.with_name(compare.edit_log.name + ".tmp")
     with open(tmp, "w", encoding="utf-8", newline="\n") as f:
-        f.write("".join(line + "\n" for line in lines))
+        f.writelines(line + "\n" for line in lines)
         f.flush()
         os.fsync(f.fileno())
     os.replace(tmp, compare.edit_log)
 
 
-def load_side(path: str | None, text: str | None, name: str):
-    """-> (entries by key, invalid count, duplicate count)"""
+def load_side(path, text, name):
     if text is None:
         f = in_root(path or "")
         if not f.is_file():
             fail(f"File {name} not found: {path}")
         text = f.read_text(encoding="utf-8-sig")
     records, _ = read_records(text)
-    entries: dict[str, dict] = {}
+    entries = {}
     invalid = dupes = 0
     for r in records:
         if not isinstance(r.get("audio_filepath"), str):
@@ -380,7 +367,7 @@ def load_side(path: str | None, text: str | None, name: str):
             continue
         k = norm(r["audio_filepath"])
         if k in entries:
-            dupes += 1  # first occurrence wins, like the single-file reviewer
+            dupes += 1
         else:
             entries[k] = r
     if not entries:
@@ -390,7 +377,6 @@ def load_side(path: str | None, text: str | None, name: str):
 
 @app.post("/api/compare/load")
 def compare_load(req: CompareLoadRequest):
-    """Match the two files and count conflicts. Writes nothing."""
     a, a_bad, a_dup = load_side(req.a_path, req.a_text, "A")
     b, b_bad, b_dup = load_side(req.b_path, req.b_text, "B")
 
@@ -399,8 +385,7 @@ def compare_load(req: CompareLoadRequest):
         if p and in_root(p) == out:
             fail("The output file can't be one of the input files.")
 
-    done: dict[str, dict] = {}
-    ignored = 0
+    done, ignored = {}, 0
     if req.mode == "resume":
         if not out.is_file():
             fail(f"Output file not found: {req.out_path}")
@@ -419,8 +404,7 @@ def compare_load(req: CompareLoadRequest):
             409,
         )
 
-    agreed: dict[str, dict] = {}
-    conflicts: dict[str, dict] = {}
+    agreed, conflicts = {}, {}
     for k in [*a, *(k for k in b if k not in a)]:
         ra, rb = a.get(k), b.get(k)
         if ra is not None and rb is not None:
@@ -432,13 +416,13 @@ def compare_load(req: CompareLoadRequest):
             agreed[k] = ra or rb
 
     aligned = {
-        k: triage.align(p["a"].get("text") or "", p["b"].get("text") or "")
+        k: comparisons.align(p["a"].get("text") or "", p["b"].get("text") or "")
         for k, p in conflicts.items()
     }
-    agreed_texts = [
-        (a[k].get("text") or "") for k in agreed if k in a and k in b
-    ]
-    notes = triage.annotate(aligned, triage.lexicon(list(aligned.values()), agreed_texts))
+    agreed_texts = [(a[k].get("text") or "") for k in agreed if k in a and k in b]
+    notes = comparisons.annotate(
+        aligned, comparisons.lexicon(list(aligned.values()), agreed_texts)
+    )
     pending = [notes[k] for k in conflicts if k not in done]
 
     stats = {
@@ -458,13 +442,15 @@ def compare_load(req: CompareLoadRequest):
         "include_unpaired": req.include_unpaired,
         "hunks": sum(n["hunks"] for n in pending),
         "hunks_suggested": sum(n["suggested"] for n in pending),
-        "unique_pairs": len({h["pair"] for n in pending for h in n["parts"] if h["t"] == "h"}),
+        "unique_pairs": len(
+            {h["pair"] for n in pending for h in n["parts"] if h["t"] == "h"}
+        ),
         "tier0": sum(n["tier"] == 0 for n in pending),
         "tier1": sum(n["tier"] == 1 for n in pending),
         "tier2": sum(n["tier"] == 2 for n in pending),
     }
     with compare.lock:
-        compare.triage, compare.order = notes, req.order
+        compare.annotations, compare.order = notes, req.order
         compare.agreed, compare.conflicts, compare.done = agreed, conflicts, done
         compare.out, compare.mode, compare.committed = out, req.mode, False
         compare.stats = stats
@@ -475,7 +461,6 @@ def compare_load(req: CompareLoadRequest):
 
 @app.post("/api/compare/commit")
 def compare_commit():
-    """Write every non-conflicting entry to the output, then hand back the conflicts to resolve."""
     with compare.lock:
         if compare.out is None:
             fail("Nothing analysed yet. Analyse the files first.")
@@ -500,12 +485,13 @@ def compare_commit():
                 compare.done.setdefault(k, compare.agreed[k])
             compare.committed = True
             compare.stats["written_agreed"] = len(todo)
-            # resumed output: work out which earlier decisions were free edits
             compare.edited = {
                 k
                 for k in compare.conflicts
                 if k in compare.done
-                and not is_pick(compare.done[k].get("text"), compare.triage[k]["parts"])
+                and not is_pick(
+                    compare.done[k].get("text"), compare.annotations[k]["parts"]
+                )
             }
             write_edit_log()
         queue = []
@@ -519,13 +505,13 @@ def compare_commit():
                     "a": pair["a"].get("text") or "",
                     "b": pair["b"].get("text") or "",
                     "audio_ok": audio_exists(pair["a"]["audio_filepath"]),
-                    "parts": compare.triage[k]["parts"],
-                    "tier": compare.triage[k]["tier"],
+                    "parts": compare.annotations[k]["parts"],
+                    "tier": compare.annotations[k]["tier"],
                     "swap": swapped(k),
                 }
             )
         if compare.order == "easy":
-            queue.sort(key=lambda q: q["tier"])  # stable: file order kept inside each tier
+            queue.sort(key=lambda q: q["tier"])
         return {
             "queue": queue,
             "total_conflicts": len(compare.conflicts),
@@ -541,7 +527,9 @@ def compare_commit():
 def compare_save(req: CompareSaveRequest):
     with compare.lock:
         if not compare.committed or req.key not in compare.conflicts:
-            fail("No comparison is loaded for that entry. Reload the page and start again.")
+            fail(
+                "No comparison is loaded for that entry. Reload the page and start again."
+            )
         pair = compare.conflicts[req.key]
         ta, tb = pair["a"].get("text") or "", pair["b"].get("text") or ""
         base = {**pair["a"]}
@@ -555,7 +543,7 @@ def compare_save(req: CompareSaveRequest):
             fail("No text was provided.")
         elif req.choice in ("manual", "merge"):
             rec = {**base, "text": req.text}
-        else:  # expert: unresolved, keep both versions; "text" is the current textbox content
+        else:
             rec = {
                 **base,
                 "text": req.text,
@@ -569,9 +557,8 @@ def compare_save(req: CompareSaveRequest):
             rewrite_all(compare.out, compare.done.values())
         else:
             append_record(compare.out, rec)
-        # a free edit = hand-typed text (or an expert flag's text) that is not a pick of A/B
         if req.choice in ("manual", "expert") and not is_pick(
-            rec["text"], compare.triage[req.key]["parts"]
+            rec["text"], compare.annotations[req.key]["parts"]
         ):
             compare.edited.add(req.key)
         else:
@@ -581,12 +568,10 @@ def compare_save(req: CompareSaveRequest):
         return {"ok": True, "left": left, **counts()}
 
 
-app.mount(
-    "/", StaticFiles(directory=HERE / "static", html=True), name="static"
-)
+app.mount("/", StaticFiles(directory=HERE / "static", html=True), name="static")
 
 
-def main() -> None:
+def main():
     global ROOT
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
