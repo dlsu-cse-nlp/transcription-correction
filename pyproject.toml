@@ -26,5 +26,9 @@ package = false
 
 [dependency-groups]
 dev = [
+    "euporie>=2.10.4",
     "pre-commit>=4.6.2",
 ]
+
+[tool.black]
+target-version = ["py312"]
