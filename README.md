@@ -18,6 +18,8 @@ The `output/` directory contains annotation files across different processing st
 
 ```
 output/
+├── resolved_expert_a.jsonl
+├── resolved_expert_b.jsonl
 ├── fleurs/
 │   ├── test/
 │   │   ├── fleurs_test_raw_lorenz.jsonl
