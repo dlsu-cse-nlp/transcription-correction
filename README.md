@@ -12,18 +12,7 @@ Open <http://127.0.0.1:8000/compare.html>. It matches two `.jsonl` outputs on `a
 
 To speed up review, each conflict is split into word-level differences. Pick A or B per difference (`Alt+1` / `Alt+2`), apply the suggestions (`Alt+S`), or accept them and save in one go (`Alt+A`). Suggestions come from the phoneme chart rules and from a lexicon of words both files agree on; a pair you have already decided is pre-filled the next time it appears. `comparisons.py` holds the alignment and suggestion logic.
 
-### Blind adjudication
-
-The compare page hides which annotator wrote what:
-
-- Nothing in the review screen shows a file name. Transcriptions are labelled **Version 1** (left) and **Version 2** (right), and the A/B reasons behind suggestions are rewritten to match.
-- Which annotator's transcription is on the left is pseudo-random per `audio_filepath` (a hash of the path), so it is stable when you resume or reload. `Alt+1` / `Alt+2` always mean "left" / "right"; the page maps your choice back to the real file when it saves.
-- The review bar shows **Sent to expert** (entries currently flagged `raise_to_expert`, including ones from a resumed output) and **Edited beyond picking**.
-- Every entry where the saved text cannot be built by choosing version 1 or 2 for each word-level difference (free edits, including edited expert entries) has its `audio_filepath` written to `<output name>_edited.txt` next to the output file, one per line. Pure picks, whole-version picks and per-difference merges are not listed. The file is rewritten on every save (so re-deciding an entry updates it) and rebuilt from the output when you resume.
-
----
-
-## Output Data and Processing Pipeline
+## Output datasets and processing pipeline
 
 The `output/` directory contains annotation files across different processing stages for FLEURS and FSC datasets.
 
@@ -33,81 +22,104 @@ output/
 │   ├── test/
 │   │   ├── fleurs_test_raw_lorenz.jsonl
 │   │   ├── fleurs_test_raw_paulo.jsonl
-│   │   ├── fleurs_test_no_syllable_stress_lorenz.jsonl
-│   │   ├── fleurs_test_no_syllable_stress_paulo.jsonl
-│   │   ├── fleurs_test_deduplicate_stress_lorenz.jsonl
-│   │   ├── fleurs_test_deduplicate_stress_paulo.jsonl
-│   │   ├── fleurs_test_cleaned_lorenz.jsonl
-│   │   ├── fleurs_test_cleaned_paulo.jsonl
-│   │   ├── fleurs_test_cleaned_paulo_fixed_glottal.jsonl
+│   │   ├── fleurs_test_resolved_raw.jsonl
 │   │   ├── fleurs_test_resolved.jsonl
-│   │   └── fleurs_test_resolved_transfer.jsonl
+│   │   ├── fleurs_test_resolved_audit.jsonl
+│   │   ├── fleurs_test_resolved_expert.jsonl
+│   │   └── fleurs_test_resolved_no_expert.jsonl
 │   └── valid/
 │       ├── fleurs_valid_raw_lorenz.jsonl
 │       ├── fleurs_valid_raw_paulo.jsonl
-│       ├── fleurs_valid_no_syllable_stress_lorenz.jsonl
-│       ├── fleurs_valid_no_syllable_stress_paulo.jsonl
-│       ├── fleurs_valid_deduplicate_stress_lorenz.jsonl
-│       ├── fleurs_valid_deduplicate_stress_paulo.jsonl
-│       ├── fleurs_valid_cleaned_lorenz.jsonl
-│       ├── fleurs_valid_cleaned_paulo.jsonl
+│       ├── fleurs_valid_resolved_raw.jsonl
 │       ├── fleurs_valid_resolved.jsonl
-│       └── fleurs_valid_resolved_transfer.jsonl
+│       ├── fleurs_valid_resolved_audit.jsonl
+│       ├── fleurs_valid_resolved_expert.jsonl
+│       └── fleurs_valid_resolved_no_expert.jsonl
 └── fsc/
-    ├── fsc_raw_lorenz.jsonl
-    └── fsc_valid_raw_lorenz.jsonl
+    ├── test/
+    │   ├── fsc_test_raw_lorenz.jsonl
+    │   ├── fsc_test_raw_paulo.jsonl
+    │   ├── fsc_test_resolved_raw.jsonl
+    │   ├── fsc_test_resolved.jsonl
+    │   ├── fsc_test_resolved_audit.jsonl
+    │   ├── fsc_test_resolved_expert.jsonl
+    │   └── fsc_test_resolved_no_expert.jsonl
+    └── valid/
+        ├── fsc_valid_raw_lorenz.jsonl
+        ├── fsc_valid_raw_paulo.jsonl
+        ├── fsc_valid_resolved_raw.jsonl
+        ├── fsc_valid_resolved.jsonl
+        ├── fsc_valid_resolved_audit.jsonl
+        ├── fsc_valid_resolved_expert.jsonl
+        └── fsc_valid_resolved_no_expert.jsonl
 ```
 
-### Pipeline Stages
+### Reproduction
 
-```
-                       [Annotator Raw Reviews]
-                       (fleurs_*_raw_*.jsonl)
-                                 │
-               ┌─────────────────┴─────────────────┐
-               ▼                                   ▼
-   [scripts/unstress_monosyllables.py]     [Cleaned Annotator]
- (fleurs_*_no_syllable_stress_*.jsonl)    (fleurs_*_cleaned_*.jsonl)
-               │
-               ▼
-   [scripts/keep_last_stress.py]
- (fleurs_*_deduplicate_stress_*.jsonl)
-               │
-               ▼
-      [Blind Adjudication]
-    (compare.html / comparisons.py)
-               │
-               ▼
-       [Initial Resolved]
-    (fleurs_*_resolved.jsonl)
-               │
-               ▼
-  [Flagged-Group Valid->Test Transfer]
- (fleurs_*_resolved_transfer.jsonl)
+#### Remove single-word utterances from FSC
+
+Filter single-word utterances from raw source manifests before annotation using `scripts/remove_single_word.py`:
+
+```bash
+python scripts/remove_single_word.py data/fsc/test_manifest.json -o data/fsc/test_manifest_multiword.json
+python scripts/remove_single_word.py data/fsc/valid_manifest.json -o data/fsc/valid_manifest_multiword_clean.json
 ```
 
-1. **Raw Annotations (`raw`)**:
-   - Initial manual phoneme transcription corrections from each annotator (`lorenz`, `paulo`) performed via the annotation UI (`/` on `server.py`). Note: `fleurs_test_raw_paulo.jsonl` is an earlier 269-entry partial snapshot; the full 798-entry test annotations are in the downstream test files.
+#### Manual correction
 
-2. **Monosyllabic Stress Removal (`no_syllable_stress`)**:
-   - Generated by `scripts/unstress_monosyllables.py` from the raw manifests.
-   - Strips the primary stress mark (`'`) from single-syllable words (words containing exactly one vowel in `aeiouəɛɔɪʊɐ`).
+1. Start the local server (`python server.py`) and complete per-annotator phoneme corrections at <http://127.0.0.1:8000/> to produce `output/<dataset>/<split>/<prefix>_raw_{lorenz,paulo}.jsonl`.
+2. Resolve conflicts between the two annotators at <http://127.0.0.1:8000/compare.html> (`comparisons.py`) and save the merged output as `output/<dataset>/<split>/<prefix>_resolved_raw.jsonl`.
 
-3. **Stress Deduplication (`deduplicate_stress`)**:
-   - Generated by `scripts/keep_last_stress.py` taking the monosyllable-unstressed manifests as input.
-   - In words containing more than one stress marker (`'`), retains only the last stress marker (closest to the end of the word) and removes preceding duplicates.
+#### Pipeline
+To regenerate all `*_resolved.jsonl`, `*_resolved_audit.jsonl`, `*_resolved_expert.jsonl`, and `*_resolved_no_expert.jsonl` manifests across `fleurs/test`, `fleurs/valid`, `fsc/test`, and `fsc/valid` from `*_resolved_raw.jsonl`:
 
-4. **Cleaned & Normalized (`cleaned`)**:
-   - Parallel per-annotator cleaning track from `raw` normalizing stray characters into the phoneme inventory (`pbkɡtdʔmŋnɾfvszʃʒhwjlaeiouə'͡`), character mappings, and glottal stop fixes (`*_fixed_glottal.jsonl`).
+```bash
+python scripts/run_pipeline.py
+```
 
-5. **Adjudicated Merges (`resolved`)**:
-   - Consensus transcriptions produced using the blind adjudication interface (`compare.html`) and `comparisons.py`. Word-level discrepancies between annotators are resolved by picking, merging suggestions, or flagging for expert review (`raise_to_expert: true`).
-   - `fleurs_test_resolved.jsonl` contains 798 entries; `fleurs_valid_resolved.jsonl` contains 269 entries.
+Or run each stage manually for a single split:
 
-6. **Flagged-Group Transfer (`resolved_transfer`)**:
-   - Moves all 21 validation samples belonging to the 8 sentence groups (`id`s `121, 345, 687, 1551, 1757, 1783, 1798, 1894`) that had at least one `raise_to_expert`-flagged validation entry (`group_has_flagged_valid_sample`) into the test set, leaving validation with zero pending expert flags:
-     - `fleurs_valid_resolved_transfer.jsonl`: 248 entries (269 - 21)
-     - `fleurs_test_resolved_transfer.jsonl`: 819 entries (798 + 21)
+```bash
+# Remove monosyllabic stress and deduplicate multi-stress words
+python scripts/unstress_monosyllables.py output/<dataset>/<split>/<prefix>_resolved_raw.jsonl -o /tmp/<prefix>_unstressed.jsonl
+python scripts/keep_last_stress.py /tmp/<prefix>_unstressed.jsonl -o output/<dataset>/<split>/<prefix>_resolved.jsonl
+rm /tmp/<prefix>_unstressed.jsonl
 
->[!NOTE]
->The files here are put directly with `_corrected.jsonl` suffixes in the main repo
+# Apply audit rule fixes (inventory, tie bars, glottal stops, stress)
+python scripts/audit_transcriptions.py output/<dataset>/<split>/<prefix>_resolved.jsonl -o output/<dataset>/<split>/<prefix>_resolved_audit.jsonl
+
+# Split into expert-flagged and non-expert manifests
+python scripts/extract_expert.py output/<dataset>/<split>/<prefix>_resolved_audit.jsonl \
+    -o output/<dataset>/<split>/<prefix>_resolved_expert.jsonl \
+    -n output/<dataset>/<split>/<prefix>_resolved_no_expert.jsonl
+```
+
+### Pipeline overview
+
+```
+[Annotator Raw Reviews]
+(*_raw_{lorenz,paulo}.jsonl)
+                 │
+                 ▼
+[Blind Adjudication]
+(compare.html / comparisons.py)
+                 │
+                 ▼
+[Raw Adjudicated Merge]
+(*_resolved_raw.jsonl)
+                 │
+                 ▼
+[scripts/unstress_monosyllables.py]
++ [scripts/keep_last_stress.py]
+(*_resolved.jsonl)
+                 │
+                 ▼
+[scripts/audit_transcriptions.py]
+(*_resolved_audit.jsonl)
+                 │
+                 ▼
+[scripts/extract_expert.py]
+  ┌──────────────┴──────────────┐
+  ▼                             ▼
+ (*_resolved_expert.jsonl)  (*_resolved_no_expert.jsonl)
+```

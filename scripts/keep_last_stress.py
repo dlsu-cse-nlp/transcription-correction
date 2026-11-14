@@ -22,14 +22,14 @@ def keep_last(word):
 
 ap = argparse.ArgumentParser()
 ap.add_argument("manifest")
-ap.add_argument("-o", "--output", help="default: <manifest>_laststress<ext>")
+ap.add_argument("-o", "--output", help="default: <manifest>_dedup<ext>")
 args = ap.parse_args()
 
 manifest = Path(args.manifest)
 out = (
     Path(args.output)
     if args.output
-    else manifest.with_name(f"{manifest.stem}_laststress{manifest.suffix}")
+    else manifest.with_name(f"{manifest.stem}_dedup{manifest.suffix}")
 )
 if out.resolve() == manifest.resolve():
     ap.error("output must differ from the input manifest")
