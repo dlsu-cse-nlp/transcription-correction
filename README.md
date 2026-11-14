@@ -125,3 +125,44 @@ python scripts/extract_expert.py output/<dataset>/<split>/<prefix>_resolved_audi
   ▼                             ▼
  (*_resolved_expert.jsonl)  (*_resolved_no_expert.jsonl)
 ```
+
+## Dictée recording datasets and manifest merge
+
+Two notebooks generate speech prompt datasets for acoustic evaluation and recording with [Dictée](https://github.com/benjaminbellamy/Dictee):
+- `notebooks/g2p_error_simulation.ipynb`: Generates 100 samples (50 clean sentences + 50 sentences with simulated phoneme errors: stress shift, vowel confusion, r/l confusion, glottal deletion).
+- `notebooks/wikipron_dual_pronunciations.ipynb`: Generates 100 samples (50 words x 2 valid pronunciation variants contrasting stress, glottal stop, or both).
+
+Both notebooks export prompts formatted for Dictée into `output/dictee/<dataset>/sentences.txt` alongside companion metadata. Prompt entries in `sentences.txt` are strictly formatted as IPA phonemic transcriptions (rather than orthographic graphemes) so the speaker articulates the exact phonetic sequence and stress pattern.
+
+### Recording with Dictée
+
+Run Dictée pointing to the exported `sentences.txt`:
+
+```bash
+flatpak run fr.benjaminbellamy.dictee output/dictee/g2p_error_simulation/sentences.txt
+# or
+flatpak run fr.benjaminbellamy.dictee output/dictee/wikipron_dual_pronunciations/sentences.txt
+```
+
+Dictée records 16 kHz mono WAV files (`audio_00.wav`, `audio_01.wav`, ...) and writes a TSV manifest (`trans.txt`) into a `sentences/` subfolder.
+
+### Merging back into manifest JSONL
+
+Use `scripts/merge_dictee.py` (or the merger cells directly inside each notebook) to pair the recorded audio files with their metadata and calculate durations:
+
+```bash
+# Merge G2P error simulation recordings
+python scripts/merge_dictee.py \
+    --dictee-dir output/dictee/g2p_error_simulation/sentences \
+    --metadata output/dictee/g2p_error_simulation/metadata.csv \
+    --output output/dictee/g2p_error_simulation/manifest.jsonl
+
+# Merge WikiPron dual-pronunciation recordings
+python scripts/merge_dictee.py \
+    --dictee-dir output/dictee/wikipron_dual_pronunciations/sentences \
+    --metadata output/dictee/wikipron_dual_pronunciations/metadata.csv \
+    --output output/dictee/wikipron_dual_pronunciations/manifest.jsonl
+```
+
+Pass `--dry-run` to build placeholder manifests before recording begins.
+
