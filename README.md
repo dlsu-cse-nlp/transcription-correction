@@ -20,6 +20,8 @@ The `output/` directory contains annotation files across different processing st
 output/
 ├── resolved_expert_a.jsonl
 ├── resolved_expert_b.jsonl
+├── resolved_expert_a_grouped.jsonl
+├── resolved_expert_b_grouped.jsonl
 ├── fleurs/
 │   ├── test/
 │   │   ├── fleurs_test_raw_lorenz.jsonl
@@ -125,3 +127,16 @@ python scripts/extract_expert.py output/<dataset>/<split>/<prefix>_resolved_audi
   ▼                             ▼
  (*_resolved_expert.jsonl)  (*_resolved_no_expert.jsonl)
 ```
+
+### Expert review manifests and `error_type` legend
+
+All 102 entries flagged with `"raise_to_expert": true` across FLEURS and FSC are combined into `output/resolved_expert_{a,b}.jsonl` (in split order) and `output/resolved_expert_{a,b}_grouped.jsonl` (grouped by conflict type and sub-clustered by recurring word/pattern for `compare.html`). Each entry carries an `"error_type"` key:
+
+| `error_type` | Description | Representative Conflicts | Samples | Grouped Lines |
+| :--- | :--- | :--- | :-: | :-: |
+| `glottal_deletion` | Word-internal glottal stop deletion & `VʔV` $\rightarrow$ `V` syllable contraction | `maʔa'ʔaɾi(ŋ)` vs. `ma'ʔaɾi(ŋ)` (19), prefix reduplication `CVʔV-` $\rightarrow$ `CV-` (`naɡʔaʔa'lok` vs. `naɡaʔa'lok`, `pinaʔaʔan'daɾ` vs. `pinaʔan'daɾ`, `naʔuʔu'nahan` vs. `naʔu'nahan`) (8), `majɾo'ʔon(ɡ)` vs. `maj'ɾon(ɡ)` (3), `pa'ʔano` vs. `'pano` (2), `'ʔoʔo` vs. `ʔo` / `do'ʔon` vs. `don` (3) | 35 | `L1–L35` |
+| `glottal_retention_and_blending` | Word-boundary glottal stop retention (`-ʔ` in *malumi*/*maragsa* words) & cross-word glottal/clitic blending | `<word> + ʔa'ko` $\rightarrow$ `ŋa ko` / `'nako` / `ko` (7), `pa/na + ʔa'koŋ` $\rightarrow$ `koŋ` (3), `sa + 'ʔakiŋ/'ʔamin` $\rightarrow$ `sa kiŋ`/`'samin` & `ma'kita + ʔaŋ` $\rightarrow$ `ma'kitaŋ` (4), word-final `-ʔ` retention (`'pusoʔ`, `'punoʔ`, `ba'haɡiʔ`, `si'laʔ`, `diʔ`) (6) | 20 | `L36–L55` |
+| `stress_shift` | Primary stress placement shifts on identical phoneme sequences | `ka'ɾotenojd` vs. `kaɾote'nojd` (1), `'paɾaŋ` vs. `pa'ɾaŋ` / `'paɾa` / `'peɾo` (6), `(pinaka)maɡan'daŋ` vs. `'(pinaka)maɡandaŋ` / `ɡin'toŋ` (3), `'ʔinteɾnet` vs. `ʔinteɾ'net` (2), other polysyllabic/loanword shifts (`ʔeskandi'nabo`, `'bihaɡ`, `heneti'ko`, `'ministɾi`, `ʔispesi'men`) (5) | 17 | `L56–L72` |
+| `glottal_glide_hiatus` | Glottal stop vs. epenthetic palatal glide at vowel hiatus (`ʔ` vs. `j`) | `paɡʔiʔis'kiʔiŋ` vs. `paɡʔiʔis'kijiŋ` (2), `kaʔuɡali'ʔan` vs. `kaʔuɡali'jan` (1), `ba'baʔe` vs. `ba'baji` (1) | 4 | `L73–L76` |
+| `vowel_alternation` | Vowel height/quality alternations (`/e/` $\leftrightarrow$ `/i/`, `/o/` $\leftrightarrow$ `/u/`) & diphthong reduction | `'keɾi` vs. `'kuɾi` (3), `/o/` $\leftrightarrow$ `/u/` (`paʔon'ti` vs. `paʔun'ti`, `konda'lini` vs. `kunda'lini`, `taɡapaɡ'tuɾo` vs. `taɡapaɡ'tuɾu`) (3), `/e/` $\leftrightarrow$ `/i/` & diphthong reductions (`'ʔeposed` vs. `ʔepi'sod`, `ɡɾa'jib` vs. `ɡɾe'jib`, `ʔiniʔimbestiɡa'han`, `medita'ʃoŋ`, `ɡwen` vs. `ɡa'win`, `ki` vs. `kaj`) (6) | 12 | `L77–L88` |
+| `segmental_and_lexical` | Affrication, palatalization, consonant cluster deletion & lexical/morphological differences | `kaw pa'ɾejd` & `pinakamala'ki` (2), palatalization/affricates (`'pɾansja` vs. `'pɾanʃa`, `'t͡ʃina` vs. `'t͡sina`, `'ʃwaʃiniɡeɾ`) (3), cluster reduction & syncope (`ʔa'paɾtment` vs. `ʔa'paɾtmen`, `an'taɾktik` vs. `an'taɾtik`, `ɾehijo'nal` vs. `ɾehi'nal`, `pɾo'ɡɾama`) (4), reduplication & segmental disputes (`nakikipaɡtuŋɡa'liʔ`, `naki'kita`, `'metɾoplas`, `ma'ŋa` vs. `ba'ŋa`, `ʔak'tibuɡo`) (5) | 14 | `L89–L102` |
