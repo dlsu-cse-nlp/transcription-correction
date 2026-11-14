@@ -3,6 +3,7 @@
 python scripts/run_pipeline.py
 """
 
+import json
 import shutil
 import subprocess
 import sys
@@ -47,3 +48,21 @@ for rel_dir, prefix in SPLITS:
             for tag in ("_unstressed_", "_dedup_", "_cleaned_", "_transfer")
         ):
             p.unlink()
+
+lines_a, lines_b = [], []
+for rel_dir, prefix in SPLITS:
+    exp_path = ROOT / "output" / rel_dir / f"{prefix}_resolved_expert.jsonl"
+    for l in exp_path.read_text(encoding="utf-8").splitlines():
+        if not l.strip():
+            continue
+        r = json.loads(l)
+        base = {"audio_filepath": r["audio_filepath"], "duration": r["duration"]}
+        lines_a.append(json.dumps({**base, "text": r["text_a"]}, ensure_ascii=False))
+        lines_b.append(json.dumps({**base, "text": r["text_b"]}, ensure_ascii=False))
+
+exp_a = ROOT / "output/resolved_expert_a.jsonl"
+exp_b = ROOT / "output/resolved_expert_b.jsonl"
+exp_a.write_text("\n".join(lines_a) + "\n", encoding="utf-8")
+exp_b.write_text("\n".join(lines_b) + "\n", encoding="utf-8")
+(ROOT / "output/resolved_expert.jsonl").unlink(missing_ok=True)
+print(f"{len(lines_a)} expert entries -> {exp_a} and {exp_b}")

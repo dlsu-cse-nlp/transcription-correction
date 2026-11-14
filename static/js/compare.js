@@ -214,11 +214,12 @@ function chip(item, h, side, sug) {
   b.classList.toggle("sug", sug.pick === side);
   const k = document.createElement("small");
   k.textContent = NUM[side];
-  const form = h[side].join(" ");
-  const other = h[side === "a" ? "b" : "a"].join(" ");
+  const fa = h.a.join(" ");
+  const fb = h.b.join(" ");
+  const form = side === "a" ? fa : fb;
   b.append(k);
   if (!form) b.append("∅");
-  else b.append(...marked(form, other, side === "a" ? "del" : "ins"));
+  else b.append(...marked(fa, fb, side === "a" ? "del" : "ins"));
   b.title = sug.pick === side && sug.why ? `Suggested: ${sug.why}` : "";
   b.addEventListener("mousedown", (e) => e.preventDefault());
   b.addEventListener("click", () => pickHunk(h.id, side));
