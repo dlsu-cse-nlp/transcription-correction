@@ -38,8 +38,8 @@ session = Session()
 class LoadRequest(BaseModel):
     mode: str
     out_path: str
-    manifest_path: str = None
-    manifest_text: str = None
+    manifest_path: str | None = None
+    manifest_text: str | None = None
 
 
 class SaveRequest(BaseModel):
@@ -50,10 +50,10 @@ class SaveRequest(BaseModel):
 class CompareLoadRequest(BaseModel):
     mode: str
     out_path: str
-    a_path: str = None
-    a_text: str = None
-    b_path: str = None
-    b_text: str = None
+    a_path: str | None = None
+    a_text: str | None = None
+    b_path: str | None = None
+    b_text: str | None = None
     include_unpaired: bool = True
     order: str = "easy"
 
@@ -61,7 +61,7 @@ class CompareLoadRequest(BaseModel):
 class CompareSaveRequest(BaseModel):
     key: str
     choice: str
-    text: str = None
+    text: str | None = None
 
 
 def fail(msg, code=400):
