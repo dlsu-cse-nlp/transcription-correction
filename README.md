@@ -14,7 +14,7 @@ To speed up review, each conflict is split into word-level differences. Pick A o
 
 ## Output datasets and processing pipeline
 
-The `output/` directory contains annotation files across different processing stages for FLEURS and FSC datasets.
+The `output/` directory contains annotation files across different processing stages for FLEURS and FSC datasets, as well as custom [Dictée](https://github.com/benjaminbellamy/Dictee) recording datasets.
 
 ```
 output/
@@ -22,6 +22,17 @@ output/
 ├── resolved_expert_b.jsonl
 ├── resolved_expert_a_grouped.jsonl
 ├── resolved_expert_b_grouped.jsonl
+├── dictee/
+│   ├── g2p_error_simulation/
+│   │   ├── metadata.csv
+│   │   ├── sentences.txt
+│   │   └── sentences/
+│   │       └── trans.txt
+│   └── wikipron_dual_pronunciations/
+│       ├── metadata.csv
+│       ├── sentences.txt
+│       └── sentences/
+│           └── trans.txt
 ├── fleurs/
 │   ├── test/
 │   │   ├── fleurs_test_raw_lorenz.jsonl
@@ -140,3 +151,47 @@ All 102 entries flagged with `"raise_to_expert": true` across FLEURS and FSC are
 | `glottal_glide_hiatus` | Glottal stop vs. epenthetic palatal glide at vowel hiatus (`ʔ` vs. `j`) | `paɡʔiʔis'kiʔiŋ` vs. `paɡʔiʔis'kijiŋ` (2), `kaʔuɡali'ʔan` vs. `kaʔuɡali'jan` (1), `ba'baʔe` vs. `ba'baji` (1) | 4 | `L73–L76` |
 | `vowel_alternation` | Vowel height/quality alternations (`/e/` $\leftrightarrow$ `/i/`, `/o/` $\leftrightarrow$ `/u/`) & diphthong reduction | `'keɾi` vs. `'kuɾi` (3), `/o/` $\leftrightarrow$ `/u/` (`paʔon'ti` vs. `paʔun'ti`, `konda'lini` vs. `kunda'lini`, `taɡapaɡ'tuɾo` vs. `taɡapaɡ'tuɾu`) (3), `/e/` $\leftrightarrow$ `/i/` & diphthong reductions (`'ʔeposed` vs. `ʔepi'sod`, `ɡɾa'jib` vs. `ɡɾe'jib`, `ʔiniʔimbestiɡa'han`, `medita'ʃoŋ`, `ɡwen` vs. `ɡa'win`, `ki` vs. `kaj`) (6) | 12 | `L77–L88` |
 | `segmental_and_lexical` | Affrication, palatalization, consonant cluster deletion & lexical/morphological differences | `kaw pa'ɾejd` & `pinakamala'ki` (2), palatalization/affricates (`'pɾansja` vs. `'pɾanʃa`, `'t͡ʃina` vs. `'t͡sina`, `'ʃwaʃiniɡeɾ`) (3), cluster reduction & syncope (`ʔa'paɾtment` vs. `ʔa'paɾtmen`, `an'taɾktik` vs. `an'taɾtik`, `ɾehijo'nal` vs. `ɾehi'nal`, `pɾo'ɡɾama`) (4), reduplication & segmental disputes (`nakikipaɡtuŋɡa'liʔ`, `naki'kita`, `'metɾoplas`, `ma'ŋa` vs. `ba'ŋa`, `ʔak'tibuɡo`) (5) | 14 | `L89–L102` |
+
+## Custom Dictée recording datasets
+
+Two custom 100-sample evaluation sets are prepared under `output/dictee/` for recording with [Dictée](https://github.com/benjaminbellamy/Dictee):
+
+- **`g2p_error_simulation`** (`notebooks/g2p_error_simulation.ipynb`): 50 clean sentences sampled from `data/g2p/manual_set_{1,2}.csv` paired with 50 versions containing simulated phonemic errors (`stress_misplacement`: 20, `glottal_stop_deletion`: 15, `vowel_confusion`: 10, `r_l_confusion`: 5).
+- **`wikipron_dual_pronunciations`** (`notebooks/wikipron_dual_pronunciations.ipynb`): 50 words from `data/g2p/wikipron_filtered.jsonl` that have two valid pronunciations, expanded into 100 prompt entries (2 variants per word).
+
+### 1. Generate prompts and metadata (optional)
+
+`sentences.txt` and `metadata.csv` are already exported in `output/dictee/<dataset>/`. To regenerate them from `data/g2p/`, run all cells in `notebooks/g2p_error_simulation.ipynb` and `notebooks/wikipron_dual_pronunciations.ipynb`.
+
+### 2. Record prompts with Dictée
+
+Install [Dictée](https://flathub.org/apps/fr.benjaminbellamy.dictee) (`flatpak install flathub fr.benjaminbellamy.dictee`) and launch it with either `sentences.txt` file:
+
+```bash
+# G2P simulated error dataset (100 prompts)
+flatpak run fr.benjaminbellamy.dictee output/dictee/g2p_error_simulation/sentences.txt
+
+# WikiPron dual-pronunciation dataset (100 prompts)
+flatpak run fr.benjaminbellamy.dictee output/dictee/wikipron_dual_pronunciations/sentences.txt
+```
+
+Dictée saves 16 kHz mono WAV files (`audio_00.wav` .. `audio_99.wav`) and a tab-separated `trans.txt` inside `output/dictee/<dataset>/sentences/`.
+
+### 3. Merge recordings into a NeMo/ASR manifest JSONL
+
+After recording, run `scripts/merge_dictee.py` to match the recorded `audio_*.wav` files with `metadata.csv`, compute audio durations, and output `manifest.jsonl`:
+
+```bash
+python scripts/merge_dictee.py \
+    --dictee-dir output/dictee/g2p_error_simulation/sentences \
+    --metadata output/dictee/g2p_error_simulation/metadata.csv \
+    --output output/dictee/g2p_error_simulation/manifest.jsonl
+
+python scripts/merge_dictee.py \
+    --dictee-dir output/dictee/wikipron_dual_pronunciations/sentences \
+    --metadata output/dictee/wikipron_dual_pronunciations/metadata.csv \
+    --output output/dictee/wikipron_dual_pronunciations/manifest.jsonl
+```
+
+*(Pass `--dry-run` to generate a placeholder manifest before all audio files have been recorded.)*
+
