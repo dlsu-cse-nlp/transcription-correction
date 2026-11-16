@@ -1,0 +1,101 @@
+sample_id,pair_id,word,variant_id,phoneme,alternate_phoneme,contrast_type,contrast_detail,source_file
+0,0,kurisma,0,ku'ɾisma,kuɾis'ma,stress_contrast,stress shift: ku'ɾisma vs kuɾis'ma,wikipron_filtered.jsonl
+1,0,kurisma,1,kuɾis'ma,ku'ɾisma,stress_contrast,stress shift: ku'ɾisma vs kuɾis'ma,wikipron_filtered.jsonl
+2,1,pasanin,0,pa'sanin,pasa'nin,stress_contrast,stress shift: pa'sanin vs pasa'nin,wikipron_filtered.jsonl
+3,1,pasanin,1,pasa'nin,pa'sanin,stress_contrast,stress shift: pa'sanin vs pasa'nin,wikipron_filtered.jsonl
+4,2,gulod,0,ɡu'lod,'ɡulod,stress_contrast,stress shift: ɡu'lod vs 'ɡulod,wikipron_filtered.jsonl
+5,2,gulod,1,'ɡulod,ɡu'lod,stress_contrast,stress shift: ɡu'lod vs 'ɡulod,wikipron_filtered.jsonl
+6,3,suha,0,su'haʔ,'suhaʔ,stress_contrast,stress shift: su'haʔ vs 'suhaʔ,wikipron_filtered.jsonl
+7,3,suha,1,'suhaʔ,su'haʔ,stress_contrast,stress shift: su'haʔ vs 'suhaʔ,wikipron_filtered.jsonl
+8,4,kasukasuan,0,kasukasu'ʔan,kasuka'suʔan,stress_contrast,stress shift: kasukasu'ʔan vs kasuka'suʔan,wikipron_filtered.jsonl
+9,4,kasukasuan,1,kasuka'suʔan,kasukasu'ʔan,stress_contrast,stress shift: kasukasu'ʔan vs kasuka'suʔan,wikipron_filtered.jsonl
+10,5,bao,0,ba'ʔo,'baʔo,stress_contrast,stress shift: ba'ʔo vs 'baʔo,wikipron_filtered.jsonl
+11,5,bao,1,'baʔo,ba'ʔo,stress_contrast,stress shift: ba'ʔo vs 'baʔo,wikipron_filtered.jsonl
+12,6,atay,0,ʔa'taj,'ʔataj,stress_contrast,stress shift: ʔa'taj vs 'ʔataj,wikipron_filtered.jsonl
+13,6,atay,1,'ʔataj,ʔa'taj,stress_contrast,stress shift: ʔa'taj vs 'ʔataj,wikipron_filtered.jsonl
+14,7,ayibutod,0,ʔajibu'tod,ʔaji'butod,stress_contrast,stress shift: ʔajibu'tod vs ʔaji'butod,wikipron_filtered.jsonl
+15,7,ayibutod,1,ʔaji'butod,ʔajibu'tod,stress_contrast,stress shift: ʔajibu'tod vs ʔaji'butod,wikipron_filtered.jsonl
+16,8,takure,0,taku'ɾe,taku'ɾeʔ,stress_and_glottal_contrast,stress & glottal shift: taku'ɾe vs taku'ɾeʔ,wikipron_filtered.jsonl
+17,8,takure,1,taku'ɾeʔ,taku'ɾe,stress_and_glottal_contrast,stress & glottal shift: taku'ɾe vs taku'ɾeʔ,wikipron_filtered.jsonl
+18,9,tatsulok,0,tatsu'lok,tat'sulok,stress_contrast,stress shift: tatsu'lok vs tat'sulok,wikipron_filtered.jsonl
+19,9,tatsulok,1,tat'sulok,tatsu'lok,stress_contrast,stress shift: tatsu'lok vs tat'sulok,wikipron_filtered.jsonl
+20,10,bimpo,0,'bimpo,bim'po,stress_contrast,stress shift: 'bimpo vs bim'po,wikipron_filtered.jsonl
+21,10,bimpo,1,bim'po,'bimpo,stress_contrast,stress shift: 'bimpo vs bim'po,wikipron_filtered.jsonl
+22,11,hitik,0,'hitik,hi'tik,stress_contrast,stress shift: 'hitik vs hi'tik,wikipron_filtered.jsonl
+23,11,hitik,1,hi'tik,'hitik,stress_contrast,stress shift: 'hitik vs hi'tik,wikipron_filtered.jsonl
+24,12,palitan,0,pali'tan,pa'litan,stress_contrast,stress shift: pali'tan vs pa'litan,wikipron_filtered.jsonl
+25,12,palitan,1,pa'litan,pali'tan,stress_contrast,stress shift: pali'tan vs pa'litan,wikipron_filtered.jsonl
+26,13,kulayin,0,ku'lajin,kula'jin,stress_contrast,stress shift: ku'lajin vs kula'jin,wikipron_filtered.jsonl
+27,13,kulayin,1,kula'jin,ku'lajin,stress_contrast,stress shift: ku'lajin vs kula'jin,wikipron_filtered.jsonl
+28,14,supot,0,su'pot,'supot,stress_contrast,stress shift: su'pot vs 'supot,wikipron_filtered.jsonl
+29,14,supot,1,'supot,su'pot,stress_contrast,stress shift: su'pot vs 'supot,wikipron_filtered.jsonl
+30,15,mamanginoon,0,mamaŋino'ʔon,mamaŋi'noʔon,stress_contrast,stress shift: mamaŋino'ʔon vs mamaŋi'noʔon,wikipron_filtered.jsonl
+31,15,mamanginoon,1,mamaŋi'noʔon,mamaŋino'ʔon,stress_contrast,stress shift: mamaŋino'ʔon vs mamaŋi'noʔon,wikipron_filtered.jsonl
+32,16,bahagi,0,ba'haɡi,ba'haɡiʔ,stress_and_glottal_contrast,stress & glottal shift: ba'haɡi vs ba'haɡiʔ,wikipron_filtered.jsonl
+33,16,bahagi,1,ba'haɡiʔ,ba'haɡi,stress_and_glottal_contrast,stress & glottal shift: ba'haɡi vs ba'haɡiʔ,wikipron_filtered.jsonl
+34,17,basagin,0,basa'ɡin,ba'saɡin,stress_contrast,stress shift: basa'ɡin vs ba'saɡin,wikipron_filtered.jsonl
+35,17,basagin,1,ba'saɡin,basa'ɡin,stress_contrast,stress shift: basa'ɡin vs ba'saɡin,wikipron_filtered.jsonl
+36,18,biya,0,bi'aʔ,'bia,stress_and_glottal_contrast,stress & glottal shift: bi'aʔ vs 'bia,wikipron_filtered.jsonl
+37,18,biya,1,'bia,bi'aʔ,stress_and_glottal_contrast,stress & glottal shift: bi'aʔ vs 'bia,wikipron_filtered.jsonl
+38,19,lalayan,0,lala'jan,la'lajan,stress_contrast,stress shift: lala'jan vs la'lajan,wikipron_filtered.jsonl
+39,19,lalayan,1,la'lajan,lala'jan,stress_contrast,stress shift: lala'jan vs la'lajan,wikipron_filtered.jsonl
+40,20,poa,0,'pwa,'poa,segmental_contrast,segmental difference: 'pwa vs 'poa,wikipron_filtered.jsonl
+41,20,poa,1,'poa,'pwa,segmental_contrast,segmental difference: 'pwa vs 'poa,wikipron_filtered.jsonl
+42,21,aramaiko,0,ʔaɾa'majko,ʔaɾa'maiko,segmental_contrast,segmental difference: ʔaɾa'majko vs ʔaɾa'maiko,wikipron_filtered.jsonl
+43,21,aramaiko,1,ʔaɾa'maiko,ʔaɾa'majko,segmental_contrast,segmental difference: ʔaɾa'majko vs ʔaɾa'maiko,wikipron_filtered.jsonl
+44,22,palabilangan,0,palabila'ŋan,palabi'laŋan,stress_contrast,stress shift: palabila'ŋan vs palabi'laŋan,wikipron_filtered.jsonl
+45,22,palabilangan,1,palabi'laŋan,palabila'ŋan,stress_contrast,stress shift: palabila'ŋan vs palabi'laŋan,wikipron_filtered.jsonl
+46,23,w,0,'dobolju,'wa,segmental_contrast,segmental difference: 'dobolju vs 'wa,wikipron_filtered.jsonl
+47,23,w,1,'wa,'dobolju,segmental_contrast,segmental difference: 'dobolju vs 'wa,wikipron_filtered.jsonl
+48,24,agwanta,0,ʔaɡwan'ta,ʔaɡ'wanta,stress_contrast,stress shift: ʔaɡwan'ta vs ʔaɡ'wanta,wikipron_filtered.jsonl
+49,24,agwanta,1,ʔaɡ'wanta,ʔaɡwan'ta,stress_contrast,stress shift: ʔaɡwan'ta vs ʔaɡ'wanta,wikipron_filtered.jsonl
+50,25,mutawi,0,mu'tawi,mu'tawiʔ,stress_and_glottal_contrast,stress & glottal shift: mu'tawi vs mu'tawiʔ,wikipron_filtered.jsonl
+51,25,mutawi,1,mu'tawiʔ,mu'tawi,stress_and_glottal_contrast,stress & glottal shift: mu'tawi vs mu'tawiʔ,wikipron_filtered.jsonl
+52,26,alipala,0,ʔali'pala,ʔali'palaʔ,stress_and_glottal_contrast,stress & glottal shift: ʔali'pala vs ʔali'palaʔ,wikipron_filtered.jsonl
+53,26,alipala,1,ʔali'palaʔ,ʔali'pala,stress_and_glottal_contrast,stress & glottal shift: ʔali'pala vs ʔali'palaʔ,wikipron_filtered.jsonl
+54,27,loboc,0,lo'bok,'lobok,stress_contrast,stress shift: lo'bok vs 'lobok,wikipron_filtered.jsonl
+55,27,loboc,1,'lobok,lo'bok,stress_contrast,stress shift: lo'bok vs 'lobok,wikipron_filtered.jsonl
+56,28,ulok,0,'ʔulok,ʔu'lok,stress_contrast,stress shift: 'ʔulok vs ʔu'lok,wikipron_filtered.jsonl
+57,28,ulok,1,ʔu'lok,'ʔulok,stress_contrast,stress shift: 'ʔulok vs ʔu'lok,wikipron_filtered.jsonl
+58,29,punla,0,pun'la,pun'laʔ,stress_and_glottal_contrast,stress & glottal shift: pun'la vs pun'laʔ,wikipron_filtered.jsonl
+59,29,punla,1,pun'laʔ,pun'la,stress_and_glottal_contrast,stress & glottal shift: pun'la vs pun'laʔ,wikipron_filtered.jsonl
+60,30,sibi,0,'sibi,'sibiʔ,stress_and_glottal_contrast,stress & glottal shift: 'sibi vs 'sibiʔ,wikipron_filtered.jsonl
+61,30,sibi,1,'sibiʔ,'sibi,stress_and_glottal_contrast,stress & glottal shift: 'sibi vs 'sibiʔ,wikipron_filtered.jsonl
+62,31,polo,0,'poloʔ,'polo,stress_and_glottal_contrast,stress & glottal shift: 'poloʔ vs 'polo,wikipron_filtered.jsonl
+63,31,polo,1,'polo,'poloʔ,stress_and_glottal_contrast,stress & glottal shift: 'poloʔ vs 'polo,wikipron_filtered.jsonl
+64,32,butod,0,'butod,bu'tod,stress_contrast,stress shift: 'butod vs bu'tod,wikipron_filtered.jsonl
+65,32,butod,1,bu'tod,'butod,stress_contrast,stress shift: 'butod vs bu'tod,wikipron_filtered.jsonl
+66,33,sahuran,0,sa'huɾan,sahu'ɾan,stress_contrast,stress shift: sa'huɾan vs sahu'ɾan,wikipron_filtered.jsonl
+67,33,sahuran,1,sahu'ɾan,sa'huɾan,stress_contrast,stress shift: sa'huɾan vs sahu'ɾan,wikipron_filtered.jsonl
+68,34,bakbakan,0,bakba'kan,bak'bakan,stress_contrast,stress shift: bakba'kan vs bak'bakan,wikipron_filtered.jsonl
+69,34,bakbakan,1,bak'bakan,bakba'kan,stress_contrast,stress shift: bakba'kan vs bak'bakan,wikipron_filtered.jsonl
+70,35,panti,0,'panti,pan'ti,stress_contrast,stress shift: 'panti vs pan'ti,wikipron_filtered.jsonl
+71,35,panti,1,pan'ti,'panti,stress_contrast,stress shift: 'panti vs pan'ti,wikipron_filtered.jsonl
+72,36,galing,0,'ɡaliŋ,ɡa'liŋ,stress_contrast,stress shift: 'ɡaliŋ vs ɡa'liŋ,wikipron_filtered.jsonl
+73,36,galing,1,ɡa'liŋ,'ɡaliŋ,stress_contrast,stress shift: 'ɡaliŋ vs ɡa'liŋ,wikipron_filtered.jsonl
+74,37,kusina,0,ku'sina,ku'sinaʔ,stress_and_glottal_contrast,stress & glottal shift: ku'sina vs ku'sinaʔ,wikipron_filtered.jsonl
+75,37,kusina,1,ku'sinaʔ,ku'sina,stress_and_glottal_contrast,stress & glottal shift: ku'sina vs ku'sinaʔ,wikipron_filtered.jsonl
+76,38,gaano,0,ɡa'ʔano,ɡaʔa'no,stress_contrast,stress shift: ɡa'ʔano vs ɡaʔa'no,wikipron_filtered.jsonl
+77,38,gaano,1,ɡaʔa'no,ɡa'ʔano,stress_contrast,stress shift: ɡa'ʔano vs ɡaʔa'no,wikipron_filtered.jsonl
+78,39,dulugan,0,du'luɡan,dulu'ɡan,stress_contrast,stress shift: du'luɡan vs dulu'ɡan,wikipron_filtered.jsonl
+79,39,dulugan,1,dulu'ɡan,du'luɡan,stress_contrast,stress shift: du'luɡan vs dulu'ɡan,wikipron_filtered.jsonl
+80,40,magkalat,0,maɡka'lat,maɡ'kalat,stress_contrast,stress shift: maɡka'lat vs maɡ'kalat,wikipron_filtered.jsonl
+81,40,magkalat,1,maɡ'kalat,maɡka'lat,stress_contrast,stress shift: maɡka'lat vs maɡ'kalat,wikipron_filtered.jsonl
+82,41,golyorya,0,ɡol'joɾja,ɡoljoɾ'ja,stress_contrast,stress shift: ɡol'joɾja vs ɡoljoɾ'ja,wikipron_filtered.jsonl
+83,41,golyorya,1,ɡoljoɾ'ja,ɡol'joɾja,stress_contrast,stress shift: ɡol'joɾja vs ɡoljoɾ'ja,wikipron_filtered.jsonl
+84,42,tanggapan,0,taŋɡa'pan,taŋ'ɡapan,stress_contrast,stress shift: taŋɡa'pan vs taŋ'ɡapan,wikipron_filtered.jsonl
+85,42,tanggapan,1,taŋ'ɡapan,taŋɡa'pan,stress_contrast,stress shift: taŋɡa'pan vs taŋ'ɡapan,wikipron_filtered.jsonl
+86,43,yapak,0,ja'pak,'japak,stress_contrast,stress shift: ja'pak vs 'japak,wikipron_filtered.jsonl
+87,43,yapak,1,'japak,ja'pak,stress_contrast,stress shift: ja'pak vs 'japak,wikipron_filtered.jsonl
+88,44,pista,0,pis'ta,pis'taʔ,stress_and_glottal_contrast,stress & glottal shift: pis'ta vs pis'taʔ,wikipron_filtered.jsonl
+89,44,pista,1,pis'taʔ,pis'ta,stress_and_glottal_contrast,stress & glottal shift: pis'ta vs pis'taʔ,wikipron_filtered.jsonl
+90,45,saya,0,'saja,sa'ja,stress_contrast,stress shift: 'saja vs sa'ja,wikipron_filtered.jsonl
+91,45,saya,1,sa'ja,'saja,stress_contrast,stress shift: 'saja vs sa'ja,wikipron_filtered.jsonl
+92,46,pawis,0,'pawis,pa'wis,stress_contrast,stress shift: 'pawis vs pa'wis,wikipron_filtered.jsonl
+93,46,pawis,1,pa'wis,'pawis,stress_contrast,stress shift: 'pawis vs pa'wis,wikipron_filtered.jsonl
+94,47,anumaliya,0,ʔanuma'lia,ʔanumali'a,stress_contrast,stress shift: ʔanuma'lia vs ʔanumali'a,wikipron_filtered.jsonl
+95,47,anumaliya,1,ʔanumali'a,ʔanuma'lia,stress_contrast,stress shift: ʔanuma'lia vs ʔanumali'a,wikipron_filtered.jsonl
+96,48,sinta,0,sin'taʔ,sin'ta,stress_and_glottal_contrast,stress & glottal shift: sin'taʔ vs sin'ta,wikipron_filtered.jsonl
+97,48,sinta,1,sin'ta,sin'taʔ,stress_and_glottal_contrast,stress & glottal shift: sin'taʔ vs sin'ta,wikipron_filtered.jsonl
+98,49,kayarian,0,kaja'ɾiʔan,kajaɾi'ʔan,stress_contrast,stress shift: kaja'ɾiʔan vs kajaɾi'ʔan,wikipron_filtered.jsonl
+99,49,kayarian,1,kajaɾi'ʔan,kaja'ɾiʔan,stress_contrast,stress shift: kaja'ɾiʔan vs kajaɾi'ʔan,wikipron_filtered.jsonl
