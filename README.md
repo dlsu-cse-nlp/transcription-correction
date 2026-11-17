@@ -169,7 +169,7 @@ Install [Dictée](https://flathub.org/apps/fr.benjaminbellamy.dictee) (`flatpak 
 
 ```bash
 # G2P simulated error dataset (100 prompts)
-flatpak run fr.benjaminbellamy.dictee output/dictee/g2p_error_simulation/sentences.txt
+flatpak run fr.benjaminbellamy.dictee output/dictee/g2p_error_simulation/corrected_sentences.txt
 
 # WikiPron dual-pronunciation dataset (100 prompts)
 flatpak run fr.benjaminbellamy.dictee output/dictee/wikipron_dual_pronunciations/sentences.txt
