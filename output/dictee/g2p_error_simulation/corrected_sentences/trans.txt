@@ -1,0 +1,100 @@
+audio_000.wav	ma'ɾamiŋ tu'ɾista ʔaŋ bumibi'sita sa ʔalva'ɾado taʔonta'ʔon
+audio_001.wav	ta'wista ka ba
+audio_002.wav	ʔaŋ 'ʔalpa ʔaj naɡbibi'ɡaj naŋ pa'japaŋ 'himiɡ
+audio_003.wav	ʔaŋ la'junin naŋ paɡbubuŋ'kal ʔaj 'ʔupaŋ luma'bo ʔaŋ 'lupaʔ
+audio_004.wav	naɾi'niɡ ko ʔaŋ 'ɡadaŋ sa la'bas naŋ 'bahaj
+audio_005.wav	ma'ɾamiŋ tu'ɾista ʔaŋ bumaba'lik sa pili'pinas 'paɾa laŋ makati'kim naŋ le't͡ʃoŋ pi'noj
+audio_006.wav	ʔaŋ hu'li 'namiŋ ka'sama ʔaj si hu'wan
+audio_007.wav	ʔaŋ 'baha naŋ 'kabinet ʔaj pu'noʔ naŋ ʔalika'bok
+audio_008.wav	ma'ɾamiŋ naɡpupun'ta sa hoɾta'lesa 'paɾa sa kani'laŋ ma'ŋa paŋaŋaʔi'laŋan sa bu'hok ʔat ba'lat
+audio_009.wav	hin'diʔ naɡta'ɡal ʔaŋ paɡha'habol naŋ kani'laŋ ɾe'klamo sa 'koɾte
+audio_010.wav	majɾo'ʔon ka'miŋ kapit'bahaj na ʔaŋ ʔapel'jido ʔaj za'valja
+audio_011.wav	pinaɡba'walan ʃa naŋ ɡu'ɾoʔ na ba'tukin ʔaŋ ka'klase
+audio_012.wav	mada'las na su'hulan ʔaŋ ma'ŋa ʔopi'ʃal sa ban'saŋ ʔi'jon 'paɾa mapaba'lis ʔaŋ ma'ŋa tɾansak'ʃon
+audio_013.wav	ʔaŋ ʔabaka'han naŋ minda'naw ʔaj pinaɡmumu'lan naŋ dekali'dad na hib'la
+audio_014.wav	ʔaŋ 'lapad naŋ diʔen'ʔe stɾand ʔaj 'nasa ʔi'laŋ nano'metɾo
+audio_015.wav	paɡtatalu'nan naŋ ma'ŋa 'bataʔ ʔaŋ buhaŋi'nan sa pala'ɾuʔan mama'jaŋ 'hapon
+audio_016.wav	ʔaŋ ʔu'ɡoj naŋ kan'jaŋ 'tiniɡ ʔaj naka'tuloŋ sa 'ʔakin na maka'tuloɡ
+audio_017.wav	ma'ɾamiŋ tɾadi'ʃon ʔaŋ kanka'naʔej na ma'jaman sa kul'tuɾa
+audio_018.wav	nasa'ʔan ʔaŋ maɡʔaʔa'ɾal
+audio_019.wav	ʔaŋ bi'ŋot na 'ŋipin ʔaj ma'hiɾap hi'lahin
+audio_020.wav	ʔi'jon ʔaj kaɾa'niwan naŋ ɡinaɡa'waʔ hin'diʔ ʔi'jon 'tulad naŋ paɡɡu'pit naŋ ma'ŋa du'luhan
+audio_021.wav	'bawat 'hihip naŋ 'ʔihip ʔaj naɡbibiɡaj'buhaj sa 'ʔinit naŋ ʔa'poj
+audio_022.wav	maɡlala'koʔ si 'nena naŋ 'luɡaw 'paɾa sa kan'jaŋ pɾo'jekto
+audio_023.wav	ka'pe pa paki'ʔusap
+audio_024.wav	maʔa'ʔaɾiʔ kaŋ ma'lunod sa ʔi'joŋ sa'ɾiliŋ 'luhaʔ kuŋ hin'diʔ ka maɡpakata'taɡ
+audio_025.wav	ʔi'saŋ tɾa'hed͡ʒa ʔaŋ ba'litaʔ na maj naɡtaŋ'kaŋ maɡbiɡ'tiʔ sa ku'luŋan
+audio_026.wav	maʔu'poʔ ka
+audio_027.wav	ʔaŋ 'ʔamiŋ palan't͡sahan sa 'bahaj ʔaj nakaka'tuloŋ sa 'ʔamiŋ 'ʔoɾas
+audio_028.wav	bumi'li ʔa'ko naŋ meɾ'jenda 'ɡamit ʔaŋ 'ʔakiŋ 'ɡaɾjaʔ
+audio_029.wav	ʔaŋ 'bilo ʔaj ʔi'saŋ popu'laɾ na paŋhi'maɡas sa 'ʔamiŋ 'bajan
+audio_030.wav	hu'waɡ moŋ saksa'kan naŋ ka'ɾajom ʔaŋ 'lobo 'dahil sa'saboɡ ʔi'to
+audio_031.wav	ʔaŋ 'lawaj ʔaj ʔimpoɾ'tante sa paɡ'tunaw naŋ paɡ'kaʔin
+audio_032.wav	ʔaŋ 'simpleŋ pata'ŋoʔ ʔaj sa'pat na 'ʔupaŋ maʔintindi'han ʃa
+audio_033.wav	ʔaŋ tɾend naŋ da'mit na ʔi'to ʔaj li'pas na ka'jaʔ hin'diʔ na ʔi'to binibi'li
+audio_034.wav	'dahil sa kan'jaŋ mala'kiŋ 'sweldo nakakabi'jahe ʃa sa ʔi'baŋ ban'saʔ taʔonta'ʔon
+audio_035.wav	ʔaŋ hi'saʃi ʔaj ʔi'saŋ kaɡami'tan sa paɡ'putol naŋ bu'hok
+audio_036.wav	ʔaŋ 'fud͡ʒi ʔaj ʔi'saŋ kaɾa'niwaŋ ʔapel'jido sa d͡ʒa'pan
+audio_037.wav	paki'ʔusap ʔipaɡwa'ɡiʔ mo ʔa'ko sa kompeti'ʃon
+audio_038.wav	'ʔaken ʔaŋ 'bola sa 'mesa
+audio_039.wav	ɡu'misiŋ naŋ ma'ʔaɡa 'ʔupan makasa'baj sa 'ʔunaŋ bi'jahe
+audio_040.wav	'bawat kala'hok sa patimpa'lak ʔaj ʔinampa'lan naŋ li'maŋ bati'kaŋ hu'ɾado
+audio_041.wav	ʔaŋ 'lupaʔ sa bajaba'san ʔaj mata'baʔ
+audio_042.wav	hu'waɡ moŋ pipi'ʔin ʔaŋ pa'pel
+audio_043.wav	ʔaŋ ma'ŋa mi'jembɾo naŋ ʔasam'bleja ʔaj naɡ'puloŋ 'ʔupaŋ tala'kajin ʔaŋ 'baɡoŋ panu'kalaŋ ba'tas
+audio_044.wav	napakasanda'liʔ naŋ 'ʔamiŋ paɡlalak'baj
+audio_045.wav	kaʔi'laŋaŋ ja'jatin ʔaŋ 'tela 'paɾa maɡ'kaʃa sa mali'ʔit na ʔes'paʃo
+audio_046.wav	tinamba'kan naŋ ʔu'lan ʔaŋ bu'ʔoŋ 'bajan kaɡa'bi
+audio_047.wav	ʔaŋ 'dulo naŋ 'kable ʔaj pi'ŋas ʔat hin'diʔ na maɡa'ɡamit
+audio_048.wav	sinusun'doʔ ko ʔaŋ 'ʔakiŋ kapa'tid 'dahil paʔu'wiʔ na ʃa mu'laʔ sa tɾa'baho
+audio_049.wav	kumun'sulta sa dok'toɾ ka'paɡ luma'laʔ ʔaŋ ʔi'joŋ tala'sok
+audio_050.wav	ma'ɾamiŋ tu'ɾista aŋ bumibi'sita sa ʔalva'ɾado taʔonta'ʔon
+audio_051.wav	'tawista ka ba
+audio_052.wav	ʔaŋ 'ʔalpa ʔaj naɡbibi'ɡaj naŋ paja'paŋ 'himiɡ
+audio_053.wav	ʔaŋ la'junin naŋ paɡbuboŋ'kal ʔaj 'ʔupaŋ luma'bo ʔaŋ 'lupaʔ
+audio_054.wav	nali'niɡ ko ʔaŋ 'ɡadaŋ sa la'bas naŋ 'bahaj
+audio_055.wav	'maɾamiŋ tu'ɾista ʔaŋ buma'balik sa pili'pinas 'paɾa laŋ makati'kim naŋ le't͡ʃoŋ pi'noj
+audio_056.wav	ʔaŋ 'huli 'namiŋ 'kasama ʔaj si hu'wan
+audio_057.wav	ʔaŋ 'baha naŋ ka'binet ʔaj pu'noʔ naŋ ʔalika'bok
+audio_058.wav	ma'ɾamiŋ naɡpupun'ta sa hoɾta'lesa 'paɾa sa kani'laŋ ma'ŋa paŋa'ŋaʔilaŋan sa bu'hok ʔat ba'lat
+audio_059.wav	hin'diʔ naɡta'ɡal ʔaŋ paɡha'habol naŋ kani'laŋ ɾe'klamo sa 'koɾti
+audio_060.wav	majɾo'ʔon ka'miŋ kapit'bahaj na ʔaŋ apel'jido ʔaj za'valja
+audio_061.wav	pinaɡbawa'ɾan ʃa naŋ ɡu'ɾoʔ na batu'kin ʔaŋ ka'klase
+audio_062.wav	mada'las na suhu'lan ʔaŋ ma'ŋa ʔopi'ʃal sa ban'saŋ ʔi'jun 'paɾa mapaba'lis ʔaŋ ma'ŋa tɾansak'ʃon
+audio_063.wav	ʔaŋ ʔabaka'han naŋ minda'naw ʔaj pi'naɡmumulan naŋ deka'lidad na hib'la
+audio_064.wav	ʔaŋ 'lapad naŋ diʔen'ʔe stɾand ʔaj na'sa ʔi'laŋ nano'metɾo
+audio_065.wav	paɡtatalu'nan naŋ ma'ŋa 'bataʔ ʔaŋ buhaŋi'nan sa palaɾu'ʔan mama'jaŋ 'hapon
+audio_066.wav	ʔaŋ ʔu'ɡoj naŋ kan'jaŋ 'teniɡ ʔaj naka'tuloŋ sa 'ʔakin na maka'tuloɡ
+audio_067.wav	ma'ɾamiŋ tɾadi'ʃon ʔaŋ kanka'naʔej na ma'jaman sa 'kultuɾa
+audio_068.wav	nasa'ʔan aŋ maɡʔaʔa'ɾal
+audio_069.wav	ʔaŋ bi'ŋot na 'ŋipin ʔaj ma'hiɾap hi'ɾahin
+audio_070.wav	ʔi'jon ʔaj kaɾa'niwan naŋ ɡina'ɡawaʔ hin'di ʔi'jon 'tulad naŋ paɡɡu'pit naŋ ma'ŋa du'luhan
+audio_071.wav	'bawat 'hihip naŋ 'ʔihip ʔaj naɡbebiɡaj'buhaj sa 'ʔinit naŋ ʔa'poj
+audio_072.wav	maɡlala'ko si 'nena naŋ 'luɡaw 'paɾa sa kan'jaŋ pɾo'jekto
+audio_073.wav	ka'pe pa paki'ʔosap
+audio_074.wav	maʔa'ʔaɾi kaŋ ma'lunod sa ʔi'joŋ sa'ɾiliŋ 'luhaʔ kuŋ hin'diʔ ka maɡpakata'taɡ
+audio_075.wav	ʔi'saŋ tla'hed͡ʒa ʔaŋ ba'litaʔ na maj naɡ'taŋkaŋ maɡbiɡ'tiʔ sa ku'luŋan
+audio_076.wav	maʔo'poʔ ka
+audio_077.wav	ʔaŋ ʔa'miŋ palan't͡sahan sa 'bahaj ʔaj naka'katuloŋ sa 'ʔamiŋ 'ʔoɾas
+audio_078.wav	bumi'li ʔa'ko naŋ meɾ'jenda 'ɡamit ʔaŋ 'ʔakiŋ 'ɡaɾja
+audio_079.wav	ʔaŋ 'bilo ʔaj ʔe'saŋ popu'laɾ na paŋhi'maɡas sa 'ʔamiŋ 'bajan
+audio_080.wav	hu'waɡ moŋ saksa'kan naŋ ka'ɾajom aŋ 'lobo 'dahil sa'saboɡ ʔi'to
+audio_081.wav	ʔaŋ la'waj ʔaj ʔimpuɾ'tante sa paɡtu'naw naŋ paɡ'kaʔin
+audio_082.wav	ʔaŋ 'simpleŋ pata'ŋoʔ ʔaj sa'pat na 'ʔupaŋ maʔin'tindihan ʃa
+audio_083.wav	ʔaŋ tɾend naŋ da'mit na i'to ʔaj li'pas na ka'jaʔ hin'diʔ na ʔi'to bini'bili
+audio_084.wav	'dahil sa kan'jaŋ ma'lakiŋ 'sweldo nakakabi'jahe ʃa sa ʔi'baŋ ban'saʔ ta'ʔontaʔon
+audio_085.wav	ʔaŋ hi'saʃi ʔaj i'saŋ kaɡami'tan sa paɡpu'tol naŋ bu'hok
+audio_086.wav	ʔaŋ 'fud͡ʒi ʔaj ʔi'saŋ kaɾa'niwaŋ 'ʔapeljido sa d͡ʒa'pan
+audio_087.wav	paki'ʔusap ʔipaɡwa'ɡiʔ mo 'ʔako sa kompeti'ʃon
+audio_088.wav	'aken ʔaŋ 'bola sa 'mesa
+audio_089.wav	ɡu'misiŋ naŋ ma'ʔaɡa 'ʔupan makasa'baj sa 'ʔunaŋ be'jahe
+audio_090.wav	'bawat kala'hok sa patim'palak ʔaj ʔinam'palan naŋ 'limaŋ bati'kaŋ hu'ɾado
+audio_091.wav	ʔaŋ 'lupaʔ sa baja'basan ʔaj mata'ba
+audio_092.wav	hu'waɡ moŋ pi'piʔin aŋ pa'pel
+audio_093.wav	ʔaŋ ma'ŋa mi'jembɾo naŋ ʔasam'bleja aj naɡ'puloŋ 'ʔupaŋ talaka'jin ʔaŋ 'baɡoŋ panuka'laŋ 'batas
+audio_094.wav	na'pakasandaliʔ naŋ ʔa'miŋ paɡlala'kbaj
+audio_095.wav	kaʔi'laŋaŋ ja'jatin ʔaŋ 'tela 'paɾa maɡ'kaʃa sa maɾi'ʔit na ʔes'paʃo
+audio_096.wav	'tinambakan naŋ ʔu'lan ʔaŋ bu'ʔoŋ 'bajan kaɡa'bi
+audio_097.wav	ʔaŋ du'lo naŋ 'kable ʔaj pi'ŋas ʔat hin'diʔ na maɡa'ɡamit
+audio_098.wav	sinusun'doʔ ko ʔaŋ 'ʔakiŋ kapa'tid 'dahil paʔu'wiʔ na ʃa mu'la sa tɾa'baho
+audio_099.wav	kumuŋ'sulta sa 'doktoɾ ka'paɡ luma'laʔ ʔaŋ ʔi'joŋ tala'sok
